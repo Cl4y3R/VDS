@@ -1,6 +1,7 @@
-# 学习笔记
+# LGSVL_ROS2_C++
 2021.9.16  
-一个想法：在某个小的仿真环境内完成规划控制的算法，初步想法是一个封赛道。  
-具体需要实现的算法最小集为：运动规划(Motion Planning)和运动控制(Motion Control)  
-需要先设定使用何种仿真环境，是否先从Matlab开始？  
-车辆动力学模型用什么实现？
+Vehicle Dynamics Simulation with LGSVL_ROS2_C++  
+
+Tutorial:  
+https://zhuanlan.zhihu.com/p/392768756  
+https://zhuanlan.zhihu.com/p/393079410
