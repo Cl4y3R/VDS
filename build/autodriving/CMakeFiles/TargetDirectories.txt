@@ -1,0 +1,10 @@
+/home/cl4y3r/VDS/build/autodriving/CMakeFiles/install/local.dir
+/home/cl4y3r/VDS/build/autodriving/CMakeFiles/install.dir
+/home/cl4y3r/VDS/build/autodriving/CMakeFiles/list_install_components.dir
+/home/cl4y3r/VDS/build/autodriving/CMakeFiles/rebuild_cache.dir
+/home/cl4y3r/VDS/build/autodriving/CMakeFiles/install/strip.dir
+/home/cl4y3r/VDS/build/autodriving/CMakeFiles/main_msg.dir
+/home/cl4y3r/VDS/build/autodriving/CMakeFiles/edit_cache.dir
+/home/cl4y3r/VDS/build/autodriving/CMakeFiles/test.dir
+/home/cl4y3r/VDS/build/autodriving/CMakeFiles/autodriving_uninstall.dir
+/home/cl4y3r/VDS/build/autodriving/CMakeFiles/uninstall.dir

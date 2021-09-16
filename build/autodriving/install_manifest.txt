@@ -1,0 +1,16 @@
+/home/cl4y3r/VDS/install/autodriving/lib/autodriving/main_msg
+/home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/package_run_dependencies/autodriving
+/home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/parent_prefix_path/autodriving
+/home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/ament_prefix_path.sh
+/home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/ament_prefix_path.dsv
+/home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/path.sh
+/home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/path.dsv
+/home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.bash
+/home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.sh
+/home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.zsh
+/home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.dsv
+/home/cl4y3r/VDS/install/autodriving/share/autodriving/package.dsv
+/home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/packages/autodriving
+/home/cl4y3r/VDS/install/autodriving/share/autodriving/cmake/autodrivingConfig.cmake
+/home/cl4y3r/VDS/install/autodriving/share/autodriving/cmake/autodrivingConfig-version.cmake
+/home/cl4y3r/VDS/install/autodriving/share/autodriving/package.xml
