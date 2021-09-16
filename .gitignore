@@ -4,5 +4,6 @@
 !*.pdf
 !*.md
 !*.hpp
-!*.yaml
+!*.xml
 !*.csv
+!*.txt
