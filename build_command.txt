@@ -1,0 +1,6 @@
+cd lgsvl_simu
+ros2 pkg create --build-type ament_cmake autodriving  (C++包)
+ros2 pkg create --build-type ament_python autodriving  (Python包)
+nano autodriving/src/msg_subpub.cpp
+source (path\to\bridge\repository)/install/setup.bash
+lgsvl_bridge
