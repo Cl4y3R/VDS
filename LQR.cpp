@@ -1,11 +1,11 @@
-#include <string>
-#include <vector>
+#include <math.h>
 #include <iostream>
+# include "Vehicle.h"
 using namespace std;
 int main() {
-    vector<int> numbers = {1, 2, 3};
-    vector<string> names = {"Igor", "Cyrill"};
-    names.push_back("another_string");
-    cout << "First name: " << names.back() << endl;
-    cout << "Last number: " << numbers.back() << endl; return 0;
+    A test;
+    test.a=1;
+    double aha;
+    aha=test.a;
+    std::cout<<test.a<<std::endl;
 }
