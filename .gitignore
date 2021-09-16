@@ -3,3 +3,6 @@
 !*.h
 !*.pdf
 !*.md
+!*.hpp
+!*.yaml
+!*.csv
