@@ -13,3 +13,6 @@ Part2:https://zhuanlan.zhihu.com/p/393079410
 ROS2运用，CMake使用
 下一步需要弄清楚的内容：
 如何获得车辆数据，如何发送控制指令
+
+2021.9.22  
+C++教程地址：https://light-city.club/sc/
