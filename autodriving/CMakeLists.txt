@@ -1,9 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 project(autodriving)
 
-cmake_minimum_required(VERSION 3.5)
-project(autodriving)
-
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 14)
