@@ -102,7 +102,7 @@ void msgSubPub::publisher_callback()
     // 车辆控制
     auto control = lgsvl_msgs::msg::VehicleControlData();
     control.target_gear = lgsvl_msgs::msg::VehicleControlData::GEAR_DRIVE; //前进档位
-    control.acceleration_pct = 1;  //加速度
+    control.acceleration_pct = 5;  //加速度
     // 车辆状态
     auto state = lgsvl_msgs::msg::VehicleStateData();
     state.autonomous_mode_active = true;
