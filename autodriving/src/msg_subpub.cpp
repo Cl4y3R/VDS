@@ -13,6 +13,7 @@
 
 // 消息类型-订阅
 #include "sensor_msgs/msg/compressed_image.hpp"     
+#include "sensor_msgs/msg/imu.hpp" 
 #include "lgsvl_msgs/msg/detection3_d_array.hpp"
 #include "lgsvl_msgs/msg/signal_array.hpp"
 #include "lgsvl_msgs/msg/can_bus_data.hpp"
@@ -22,7 +23,7 @@
 
 
 using namespace std::chrono_literals;
-typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::CompressedImage, lgsvl_msgs::msg::Detection3DArray, 
+typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::CompressedImage, sensor_msgs::msg::Imu, lgsvl_msgs::msg::Detection3DArray, 
                                                           lgsvl_msgs::msg::SignalArray, lgsvl_msgs::msg::CanBusData> MySyncPolicy;
 
 class msgSubPub : public rclcpp::Node
@@ -34,20 +35,22 @@ class msgSubPub : public rclcpp::Node
   private:
 
     // 消息订阅的回调函数
-    void subscriber_callback(const sensor_msgs::msg::CompressedImage::ConstSharedPtr& image_msg, const lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg, 
-                              const lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg, const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg);
+    void subscriber_callback(const sensor_msgs::msg::CompressedImage::ConstSharedPtr& image_msg, const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg, 
+                              const lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg, const lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg, 
+                              const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg);
     
     // 消息发布的回调函数
     void publisher_callback();
 
     // 消息订阅对象
     message_filters::Subscriber<sensor_msgs::msg::CompressedImage> image_sub;           // 摄像机传感器
+    message_filters::Subscriber<sensor_msgs::msg::Imu> imu_sub;                         // IMU传感器
     message_filters::Subscriber<lgsvl_msgs::msg::Detection3DArray> groundturth_sub;     // 3D 地面真相传感器
     message_filters::Subscriber<lgsvl_msgs::msg::SignalArray> signal_sub;               // 信号灯传感器
     message_filters::Subscriber<lgsvl_msgs::msg::CanBusData> canbus_sub;                // 车辆底盘传感器
     // 松时间同步
     message_filters::Synchronizer<MySyncPolicy> *sync = new message_filters::Synchronizer<MySyncPolicy>
-                                                                (MySyncPolicy(10), image_sub, groundturth_sub, signal_sub, canbus_sub);
+                                                                (MySyncPolicy(10), image_sub, imu_sub, groundturth_sub, signal_sub, canbus_sub);
 
     // 消息发布对象
     rclcpp::Publisher<lgsvl_msgs::msg::VehicleStateData>::SharedPtr state_pub;           // 车辆状态
@@ -64,11 +67,12 @@ msgSubPub::msgSubPub() : Node("msg_publish_subscribe"), count_(0)
 
     // 订阅消息 ""中的内容必须和对应的传感器Topic相同。
     image_sub.subscribe(this, "/simulator/sensor/camera/center/image/compressed");
+    imu_sub.subscribe(this, "/simulator/sensor/imu");
     groundturth_sub.subscribe(this, "/simulator/ground_truth/m3d_detections");
     signal_sub.subscribe(this, "/simulator/ground_truth/signals");
     canbus_sub.subscribe(this, "/simulator/canbus");
     // 注册回调函数
-    sync -> registerCallback(boost::bind(&msgSubPub::subscriber_callback, this, _1, _2, _3, _4));
+    sync -> registerCallback(boost::bind(&msgSubPub::subscriber_callback, this, _1, _2, _3, _4, _5));
 
     // 发布消息
     state_pub = this->create_publisher<lgsvl_msgs::msg::VehicleStateData>("/simulator/vehicle_state", 10);
@@ -83,13 +87,14 @@ msgSubPub::~msgSubPub()
 }
 
 // 订阅者的回调函数
-void msgSubPub::subscriber_callback(const sensor_msgs::msg::CompressedImage::ConstSharedPtr& image_msg, const lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg, 
-                          const lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg, const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg)
+void msgSubPub::subscriber_callback(const sensor_msgs::msg::CompressedImage::ConstSharedPtr& image_msg, const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg, 
+                              const lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg, const lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg, 
+                              const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg)
 {
     // TEST
-    RCLCPP_INFO(this->get_logger(), "Subscribed: Get 3D_ground_truth & signal & can_bus_data Message");
+    RCLCPP_INFO(this->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");
 
-    RCLCPP_INFO(this->get_logger(), "scan stamp:%d - %d - %d - %d", image_msg->header.stamp.sec, groundturth_msg->header.stamp.sec, 
+    RCLCPP_INFO(this->get_logger(), "scan stamp:%d - %d - %d - %d -%d", image_msg->header.stamp.sec, imu_msg->header.stamp.sec, groundturth_msg->header.stamp.sec, 
                                                                     signal_msg->header.stamp.sec, canbus_msg->header.stamp.sec);
 
     // Solve all of perception here...
@@ -116,6 +121,7 @@ void msgSubPub::publisher_callback()
     control.acceleration_pct = 0.5;  //加速踏板
     control.braking_pct = 0; //制动踏板
     control.target_wheel_angle = 0.26; //车轮转角
+    control.target_wheel_angular_rate = 0.1; //车轮转角角速度
 
     /*车辆状态
       uint8 blinker_state

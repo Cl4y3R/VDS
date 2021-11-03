@@ -1,0 +1,31 @@
+/* Full command line help
+   Follow this instruction to create ROS2-based AD controller.*/
+
+// create the workspace
+mkdir VDS
+cd VDS
+
+// create ros2 package
+ros2 pkg create --build-type ament_cmake autodriving
+
+// create cpp in src
+cd src
+vim autodriving/src/msg_subpub.cpp
+
+// build
+colcon build --packages-select autodriving
+
+// startup the lgsvl_bridge, need to source for the first time
+cd VDS
+source install/setup.bash
+lgsvl_bridge
+
+// open another terminal to run our algorithm
+source /opt/ros/foxy/setup.bash
+source install/setup.bash
+ros2 run autodriving main_msg
+
+// open another terminal to monitor topic subs and pubs
+source /opt/ros/foxy/setup.bash
+source ros2 topic list
+source ros2 topic echo xxx
