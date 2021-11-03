@@ -29,3 +29,10 @@ C++教程地址：https://light-city.club/sc/
 经过多个测试，暂时还是回归ROS2直接自己写控制算法。现在已可以连通ROS2和LGSVL，需要搞明白msg的通信用法。第一步要搞清楚通信机制，搞定信息获取和发出的方法！
 在运行lgsvl_bridge 和 ros2 run autodriving main_msg后，输入ros2 topic list，可以看到有哪些订阅的消息，用ros2 topic echo xxx就可以看到内容。用rosbag录制的命令ros2 bag record xxx，最好现cd到建好的文件夹内录制。录制多个则为ros2 bag record -o subset xxx yyy。其中 -o参数是用来设置数据库文件名的，此时文件名叫subset。查看则为：ros2 bag play subset.
 ros2 topic echo xxx可以实时看到topic内消息！
+
+### 2021.10.28
+列举所需要的车辆状态参数
+1. 车速Vx
+2. 加速度ax,ay
+3. 横摆角速度phi_p
+4. 车轮转角delta
