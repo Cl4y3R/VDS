@@ -101,9 +101,9 @@ void msgSubPub::subscriber_callback(const sensor_msgs::msg::CompressedImage::Con
               imu_msg->linear_acceleration.x, imu_msg->linear_acceleration.y, imu_msg->linear_acceleration.z,
               imu_msg->angular_velocity.x, imu_msg->angular_velocity.y, imu_msg->angular_velocity.z,
               imu_msg->orientation.x, imu_msg->orientation.y, imu_msg->orientation.z, imu_msg->orientation.w);
-    
-}
-
+    //Subscribe can bus info
+    RCLCPP_INFO(this->get_logger(), "Speed: %.3f [m/s] - Throttle: %.3f [-] - Brake: %.3f [-] - Steer: %.3f [-]",
+              canbus_msg->speed_mps, canbus_msg->throttle_pct, canbus_msg->brake_pct, canbus_msg->steer_pct);
 }
 // 发布者的回调函数
 void msgSubPub::publisher_callback()

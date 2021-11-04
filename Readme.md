@@ -41,3 +41,7 @@ ros2 topic echo xxx可以实时看到topic内消息！
 修改了cpp代码！增加了imu的内容，成功build并运行，获得了imu数据！  
 需要注意的是订阅的topic必须在lgsvl的sensor里面进行设置相同的topic！  
 新的发现：lgsvl_msg,sensor_msg的内容都在/opt/ros/foxy/include内，可以看到各种源码定义！  
+
+### 2021.11.4
+再次修改cpp代码，发现需要进一步学习ros2的内容，研究传感器信号msgs。  
+现在加入了对imu、canbus信号的读取，可以用RCLCPP_INFO()实时显示。

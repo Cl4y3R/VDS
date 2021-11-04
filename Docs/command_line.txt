@@ -17,6 +17,7 @@ colcon build --packages-select autodriving
 
 // startup the lgsvl_bridge, need to source for the first time
 cd VDS
+source /opt/ros/foxy/setup.bash
 source install/setup.bash
 lgsvl_bridge
 
