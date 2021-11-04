@@ -91,16 +91,20 @@ void msgSubPub::subscriber_callback(const sensor_msgs::msg::CompressedImage::Con
                               const lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg, const lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg, 
                               const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg)
 {
-    // TEST
+    //Subscribe info
     RCLCPP_INFO(this->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");
-
+    //Subscribe time stamp info
     RCLCPP_INFO(this->get_logger(), "scan stamp:%d - %d - %d - %d -%d", image_msg->header.stamp.sec, imu_msg->header.stamp.sec, groundturth_msg->header.stamp.sec, 
                                                                     signal_msg->header.stamp.sec, canbus_msg->header.stamp.sec);
-
-    // Solve all of perception here...
+    //Subscribe imu info
+    RCLCPP_INFO(this->get_logger(), "Accel: %.3f,%.3f,%.3f [m/s^2] - Ang. vel: %.3f,%.3f,%.3f [deg/sec] - Orient. Quat: %.3f,%.3f,%.3f,%.3f",
+              imu_msg->linear_acceleration.x, imu_msg->linear_acceleration.y, imu_msg->linear_acceleration.z,
+              imu_msg->angular_velocity.x, imu_msg->angular_velocity.y, imu_msg->angular_velocity.z,
+              imu_msg->orientation.x, imu_msg->orientation.y, imu_msg->orientation.z, imu_msg->orientation.w);
     
 }
 
+}
 // 发布者的回调函数
 void msgSubPub::publisher_callback()
 {
