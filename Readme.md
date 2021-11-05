@@ -45,3 +45,6 @@ ros2 topic echo xxx可以实时看到topic内消息！
 ### 2021.11.4
 再次修改cpp代码，发现需要进一步学习ros2的内容，研究传感器信号msgs。  
 现在加入了对imu、canbus信号的读取，可以用RCLCPP_INFO()实时显示。
+
+### 2021.11.5
+从lgsvl中导出opendrive格式的地图，研究一下这种格式的地图可否获取有效信息以得到规划的基本参数。
