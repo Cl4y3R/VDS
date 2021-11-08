@@ -26,7 +26,21 @@ using namespace std::chrono_literals;
 typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::CompressedImage, sensor_msgs::msg::Imu, lgsvl_msgs::msg::Detection3DArray, 
                                                           lgsvl_msgs::msg::SignalArray, lgsvl_msgs::msg::CanBusData> MySyncPolicy;
 
-class msgSubPub : public rclcpp::Node
+class chassisController
+{
+  public:
+    chassisController(){};
+    ~chassisController(){};
+    double long_controller(double long_acc);
+};
+
+double chassisController::long_controller(double long_acc){
+  double long_out = long_acc*long_acc;
+  return long_out;
+}
+
+//需要继承控制器类！
+class msgSubPub : public rclcpp::Node, public chassisController
 {
   public:
     msgSubPub();
@@ -60,6 +74,7 @@ class msgSubPub : public rclcpp::Node
     size_t count_;
 };
 
+//类外定义构造函数，并初始化成员列表
 msgSubPub::msgSubPub() : Node("msg_publish_subscribe"), count_(0)
 {
     // INFO
@@ -74,7 +89,10 @@ msgSubPub::msgSubPub() : Node("msg_publish_subscribe"), count_(0)
     // 注册回调函数
     sync -> registerCallback(boost::bind(&msgSubPub::subscriber_callback, this, _1, _2, _3, _4, _5));
 
-    // 发布消息
+    /* 发布消息
+    rclcpp::Node::create_publisher (const std::string& topic_name, //The depth of the publisher message queue,
+		                                size_t  qos_history_depth, //The topic for this publisher to publish on,
+		                                std::shared_ptr<Alloc> allocator = nullptr //Optional custom allocator)*/
     state_pub = this->create_publisher<lgsvl_msgs::msg::VehicleStateData>("/simulator/vehicle_state", 10);
     control_pub = this->create_publisher<lgsvl_msgs::msg::VehicleControlData>("/simulator/vehicle_control", 10);
 
@@ -88,8 +106,8 @@ msgSubPub::~msgSubPub()
 
 // 订阅者的回调函数
 void msgSubPub::subscriber_callback(const sensor_msgs::msg::CompressedImage::ConstSharedPtr& image_msg, const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg, 
-                              const lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg, const lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg, 
-                              const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg)
+                                    const lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg, const lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg, 
+                                    const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg)
 {
     //Subscribe info
     RCLCPP_INFO(this->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");
@@ -104,6 +122,10 @@ void msgSubPub::subscriber_callback(const sensor_msgs::msg::CompressedImage::Con
     //Subscribe can bus info
     RCLCPP_INFO(this->get_logger(), "Speed: %.3f [m/s] - Throttle: %.3f [-] - Brake: %.3f [-] - Steer: %.3f [-]",
               canbus_msg->speed_mps, canbus_msg->throttle_pct, canbus_msg->brake_pct, canbus_msg->steer_pct);
+    //测试自己的控制器代码
+    //调用控制器类中的函数
+    auto my_out = chassisController::long_controller(imu_msg->linear_acceleration.x);
+    RCLCPP_INFO(this->get_logger(), "+++++My controller output is: %.3f+++++++", my_out);
 }
 // 发布者的回调函数
 void msgSubPub::publisher_callback()
@@ -120,11 +142,12 @@ void msgSubPub::publisher_callback()
       uint8 GEAR_REVERSE = 2
       uint8 GEAR_PARKING = 3
       uint8 GEAR_LOW = 4*/
+    //auto my_out = chassisController::long_controller(imu_msg->linear_acceleration.x);
     auto control = lgsvl_msgs::msg::VehicleControlData();
     control.target_gear = lgsvl_msgs::msg::VehicleControlData::GEAR_DRIVE; //前进档位
-    control.acceleration_pct = 0.5;  //加速踏板
+    control.acceleration_pct = 0;  //加速踏板
     control.braking_pct = 0; //制动踏板
-    control.target_wheel_angle = 0.26; //车轮转角
+    control.target_wheel_angle = 0; //车轮转角
     control.target_wheel_angular_rate = 0.1; //车轮转角角速度
 
     /*车辆状态

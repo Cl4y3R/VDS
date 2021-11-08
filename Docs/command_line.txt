@@ -12,7 +12,8 @@ ros2 pkg create --build-type ament_cmake autodriving
 cd src
 vim autodriving/src/msg_subpub.cpp
 
-// build
+// return to VDS and build
+cd VDS
 colcon build --packages-select autodriving
 
 // startup the lgsvl_bridge, need to source for the first time
