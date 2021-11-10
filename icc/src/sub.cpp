@@ -27,13 +27,6 @@ class msgSub : public rclcpp::Node
     msgSub();
     ~msgSub();
 
-  private:
-
-    // subscriber callback function declare
-    void subscriber_callback(const sensor_msgs::msg::CompressedImage::ConstSharedPtr& image_msg, const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg, 
-                              const lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg, const lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg, 
-                              const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg);
-
     // subscribe object
     message_filters::Subscriber<sensor_msgs::msg::CompressedImage> image_sub;           // camera
     message_filters::Subscriber<sensor_msgs::msg::Imu> imu_sub;                         // imu
@@ -46,6 +39,12 @@ class msgSub : public rclcpp::Node
     // time set
     rclcpp::TimerBase::SharedPtr timer_;
     size_t count_;
+  
+  private:
+    // subscriber callback function declare
+    void subscriber_callback(const sensor_msgs::msg::CompressedImage::ConstSharedPtr& image_msg, const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg, 
+                              const lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg, const lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg, 
+                              const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg);
 };
 
 msgSub::msgSub() : Node("msg_subscribe"), count_(0)

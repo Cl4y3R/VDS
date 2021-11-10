@@ -2,7 +2,6 @@
 #include <memory>
 #include <boost/bind.hpp>
 
-#include <message_filters/subscriber.h>
 #include <message_filters/synchronizer.h>
 #include <message_filters/sync_policies/approximate_time.h>
 
@@ -27,8 +26,6 @@ class msgPub : public rclcpp::Node, public chassisController
   public:
     msgPub();
     ~msgPub();
-
-  private:
 
     void publisher_callback();
 

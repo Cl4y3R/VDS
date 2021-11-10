@@ -1,13 +1,14 @@
+#include "sub.cpp"
 // 控制器
-class chassisController
+class chassisController:public msgSub
 {
   public:
-    chassisController(){};
-    ~chassisController(){};
-    double long_controller(double long_acc);
+    chassisController();
+    ~chassisController();
+    double long_controller(msgSub::imu_sub);
 };
 
-double chassisController::long_controller(double long_acc){
-  double long_out = long_acc*long_acc;
+double chassisController::long_controller(msgSub::imu_sub){
+  double long_out = imu_msg->linear_acceleration.x*imu_msg->linear_acceleration.x;
   return long_out;
 }
