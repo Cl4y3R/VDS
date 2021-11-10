@@ -29,8 +29,8 @@ typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Compre
 class chassisController
 {
   public:
-    chassisController(){};
-    ~chassisController(){};
+    chassisController();
+    ~chassisController();
     double long_controller(double long_acc);
 };
 
