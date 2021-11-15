@@ -29,8 +29,6 @@ typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Compre
 class chassisController
 {
   public:
-    chassisController();
-    ~chassisController();
     double long_controller(double long_acc);
 };
 
@@ -46,7 +44,12 @@ class msgSubPub : public rclcpp::Node, public chassisController
     msgSubPub();
     ~msgSubPub();
 
-  private:
+    // 消息订阅对象
+    message_filters::Subscriber<sensor_msgs::msg::CompressedImage> image_sub;           // 摄像机传感器
+    message_filters::Subscriber<sensor_msgs::msg::Imu> imu_sub;                         // IMU传感器
+    message_filters::Subscriber<lgsvl_msgs::msg::Detection3DArray> groundturth_sub;     // 3D 地面真相传感器
+    message_filters::Subscriber<lgsvl_msgs::msg::SignalArray> signal_sub;               // 信号灯传感器
+    message_filters::Subscriber<lgsvl_msgs::msg::CanBusData> canbus_sub;                // 车辆底盘传感器
 
     // 消息订阅的回调函数
     void subscriber_callback(const sensor_msgs::msg::CompressedImage::ConstSharedPtr& image_msg, const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg, 
@@ -55,13 +58,7 @@ class msgSubPub : public rclcpp::Node, public chassisController
     
     // 消息发布的回调函数
     void publisher_callback();
-
-    // 消息订阅对象
-    message_filters::Subscriber<sensor_msgs::msg::CompressedImage> image_sub;           // 摄像机传感器
-    message_filters::Subscriber<sensor_msgs::msg::Imu> imu_sub;                         // IMU传感器
-    message_filters::Subscriber<lgsvl_msgs::msg::Detection3DArray> groundturth_sub;     // 3D 地面真相传感器
-    message_filters::Subscriber<lgsvl_msgs::msg::SignalArray> signal_sub;               // 信号灯传感器
-    message_filters::Subscriber<lgsvl_msgs::msg::CanBusData> canbus_sub;                // 车辆底盘传感器
+    
     // 松时间同步
     message_filters::Synchronizer<MySyncPolicy> *sync = new message_filters::Synchronizer<MySyncPolicy>
                                                                 (MySyncPolicy(10), image_sub, imu_sub, groundturth_sub, signal_sub, canbus_sub);
@@ -89,10 +86,6 @@ msgSubPub::msgSubPub() : Node("msg_publish_subscribe"), count_(0)
     // 注册回调函数
     sync -> registerCallback(boost::bind(&msgSubPub::subscriber_callback, this, _1, _2, _3, _4, _5));
 
-    /* 发布消息
-    rclcpp::Node::create_publisher (const std::string& topic_name, //The depth of the publisher message queue,
-		                                size_t  qos_history_depth, //The topic for this publisher to publish on,
-		                                std::shared_ptr<Alloc> allocator = nullptr //Optional custom allocator)*/
     state_pub = this->create_publisher<lgsvl_msgs::msg::VehicleStateData>("/simulator/vehicle_state", 10);
     control_pub = this->create_publisher<lgsvl_msgs::msg::VehicleControlData>("/simulator/vehicle_control", 10);
 
@@ -142,10 +135,9 @@ void msgSubPub::publisher_callback()
       uint8 GEAR_REVERSE = 2
       uint8 GEAR_PARKING = 3
       uint8 GEAR_LOW = 4*/
-    //auto my_out = chassisController::long_controller(imu_msg->linear_acceleration.x);
     auto control = lgsvl_msgs::msg::VehicleControlData();
     control.target_gear = lgsvl_msgs::msg::VehicleControlData::GEAR_DRIVE; //前进档位
-    control.acceleration_pct = 0;  //加速踏板
+    control.acceleration_pct = 0.1;  //加速踏板
     control.braking_pct = 0; //制动踏板
     control.target_wheel_angle = 0; //车轮转角
     control.target_wheel_angular_rate = 0.1; //车轮转角角速度
