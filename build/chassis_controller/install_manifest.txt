@@ -1,0 +1,16 @@
+/home/cl4y3r/VDS/install/chassis_controller/lib/chassis_controller/chassis_controller
+/home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/package_run_dependencies/chassis_controller
+/home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/parent_prefix_path/chassis_controller
+/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.sh
+/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.dsv
+/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/path.sh
+/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/path.dsv
+/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.bash
+/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.sh
+/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.zsh
+/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.dsv
+/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.dsv
+/home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/packages/chassis_controller
+/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig.cmake
+/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig-version.cmake
+/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.xml
