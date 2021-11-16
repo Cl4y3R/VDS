@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(icc)
+project(chassiscontroller)
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
@@ -18,15 +18,11 @@ find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(lgsvl_msgs REQUIRED)
 
-add_executable(sub src/sub.cpp)
-ament_target_dependencies(sub message_filters rclcpp std_msgs sensor_msgs lgsvl_msgs) 
-
-add_executable(pub src/pub.cpp)
-ament_target_dependencies(pub message_filters rclcpp std_msgs sensor_msgs lgsvl_msgs) 
+add_executable(chassis_controller src/chassis_controller.cpp)
+ament_target_dependencies(chassis_controller message_filters rclcpp std_msgs sensor_msgs lgsvl_msgs) 
 
 install(TARGETS
-  sub
-  pub
+  chassis_controller
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
