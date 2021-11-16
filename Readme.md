@@ -62,3 +62,6 @@ OpenDrive里，道路参考线（一般是道路的中心线）用来描述道�
 
 ### 2021.11.8
 注意：create_wall_timer调用的回调函数不能包含argument
+
+### 2021.11.16
+今天发现publisher callback调用subscriber的内容时，停止循环发布了，需要解决这个问题。
