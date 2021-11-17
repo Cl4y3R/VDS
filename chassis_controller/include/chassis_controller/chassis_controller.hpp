@@ -34,19 +34,28 @@ class ChassisController: public rclcpp::Node{
         message_filters::Subscriber<lgsvl_msgs::msg::Detection3DArray> groundturth_sub;     // 3D 地面真相传感器
         message_filters::Subscriber<lgsvl_msgs::msg::CanBusData> canbus_sub;                // 车辆底盘传感器
         
+        //消息同步
         message_filters::Synchronizer<MySyncPolicy> *sync = new message_filters::Synchronizer<MySyncPolicy>
                                                                 (MySyncPolicy(10), imu_sub, groundturth_sub, canbus_sub);
 
         rclcpp::Publisher<lgsvl_msgs::msg::VehicleStateData>::SharedPtr state_pub;           // 车辆状态
         rclcpp::Publisher<lgsvl_msgs::msg::VehicleControlData>::SharedPtr control_pub;      // 车辆控制
 
+        //计时器
         rclcpp::TimerBase::SharedPtr timer;
-        size_t count;
 
+        //计数器
+        size_t count;
+        
+        //中间变量参数
+        double linear_acc_x;
+
+        //订阅消息
         sensor_msgs::msg::Imu::ConstSharedPtr imu_msg;
         lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr groundturth_msg;
         lgsvl_msgs::msg::CanBusData::ConstSharedPtr canbus_msg;
 
+        //回调函数
         void msg_subscriber(const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg, 
                             const lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg,
                             const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg);
