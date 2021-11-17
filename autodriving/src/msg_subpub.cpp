@@ -59,7 +59,7 @@ class msgSubPub : public rclcpp::Node, public chassisController
     // 消息发布的回调函数
     void publisher_callback();
     
-    // 松时间同步
+    // 时间同步
     message_filters::Synchronizer<MySyncPolicy> *sync = new message_filters::Synchronizer<MySyncPolicy>
                                                                 (MySyncPolicy(10), image_sub, imu_sub, groundturth_sub, signal_sub, canbus_sub);
 
