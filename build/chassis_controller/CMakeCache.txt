@@ -328,6 +328,9 @@ chassis_controller_BINARY_DIR:STATIC=/home/cl4y3r/VDS/build/chassis_controller
 //Value Computed by CMake
 chassis_controller_SOURCE_DIR:STATIC=/home/cl4y3r/VDS/chassis_controller
 
+//The directory containing a CMake configuration file for cmath.
+cmath_DIR:PATH=cmath_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/foxy/lib/cmake/fastcdr
 

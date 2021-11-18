@@ -22,6 +22,8 @@ find_package(lgsvl_msgs REQUIRED)
 add_executable(chassis_controller src/chassis_controller.cpp)
 ament_target_dependencies(chassis_controller message_filters rclcpp std_msgs sensor_msgs lgsvl_msgs) 
 
+target_link_libraries(${PROJECT_NAME} m)
+
 install(TARGETS
   chassis_controller
   DESTINATION lib/${PROJECT_NAME})

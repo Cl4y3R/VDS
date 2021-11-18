@@ -1,18 +1,21 @@
 #include "chassis_controller.hpp"
+
+#define PI 3.1415926
+
 // 控制器
-ChassisController::ChassisController() : Node("mycontroller"), count(0){
+ChassisController::ChassisController() : Node("mycontroller"){
     RCLCPP_INFO(this->get_logger(), "My chassis controller");
 
     // subscribe
     imu_sub.subscribe(this, "/simulator/sensor/imu");
-    groundturth_sub.subscribe(this, "/simulator/ground_truth/m3d_detections");
+    odometry_sub.subscribe(this, "/simulator/odometry");
     canbus_sub.subscribe(this, "/simulator/canbus");
     sync -> registerCallback(boost::bind(&ChassisController::msg_subscriber, this, _1, _2, _3));
 
     // publish
     state_pub = this->create_publisher<lgsvl_msgs::msg::VehicleStateData>("/simulator/vehicle_state", 10);
     control_pub = this->create_publisher<lgsvl_msgs::msg::VehicleControlData>("/simulator/vehicle_control", 10);
-    timer = this->create_wall_timer(500ms, std::bind(&ChassisController::long_controller, this));
+    timer = this->create_wall_timer(500ms, std::bind(&ChassisController::controller, this));
     
 }
 
@@ -22,26 +25,29 @@ ChassisController::~ChassisController()
 }
 
 void ChassisController::msg_subscriber(const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg, 
-                            const lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg,
+                            const lgsvl_msgs::msg::VehicleOdometry::ConstSharedPtr& odometry_msg,
                             const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg)
 {
-    RCLCPP_INFO(this->get_logger(), "Accel: %.3f,%.3f,%.3f [m/s^2] - Ang. vel: %.3f,%.3f,%.3f [deg/sec] - Orient. Quat: %.3f,%.3f,%.3f,%.3f",
-              imu_msg->linear_acceleration.x, imu_msg->linear_acceleration.y, imu_msg->linear_acceleration.z,
-              imu_msg->angular_velocity.x, imu_msg->angular_velocity.y, imu_msg->angular_velocity.z,
-              imu_msg->orientation.x, imu_msg->orientation.y, imu_msg->orientation.z, imu_msg->orientation.w);
-    
-    linear_acc_x=imu_msg->linear_acceleration.x;
+    /*RCLCPP_INFO(this->get_logger(), "Accel X,Y: %.3f,%.3f [m/s^2] - Yaw rate: %.3f [deg/sec]",
+              imu_msg->linear_acceleration.x, imu_msg->linear_acceleration.y,imu_msg->angular_velocity.z);*/
+    RCLCPP_INFO(this->get_logger(), "Velocity: %f [m/s]", canbus_msg->speed_mps);
+    RCLCPP_INFO(this->get_logger(), "Front wheel angle: %f [rad]", odometry_msg->front_wheel_angle);
+    //传递变量
+    vx = canbus_msg->speed_mps;
+    delta = odometry_msg->front_wheel_angle;
+    acc_x = imu_msg->linear_acceleration.x;
+    acc_y = imu_msg->linear_acceleration.y;
+    yaw_rate = imu_msg->angular_velocity.z;
+    yaw_rate = yaw_rate*PI/180;
 }
 
-void ChassisController::long_controller(){
-    RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", count++);
-    RCLCPP_INFO(this->get_logger(), "Output: '%d'", linear_acc_x);
+void ChassisController::controller(){
     auto control = lgsvl_msgs::msg::VehicleControlData();
     control.target_gear = lgsvl_msgs::msg::VehicleControlData::GEAR_DRIVE; //前进档位
-    control.acceleration_pct = 0.1;  //加速踏板
+    control.acceleration_pct = 0.3;  //加速踏板
     control.braking_pct = 0; //制动踏板
-    control.target_wheel_angle = linear_acc_x; //车轮转角
-    control.target_wheel_angular_rate = 0; //车轮转角角速度
+    control.target_wheel_angle = 0.5; //车轮转角 rad
+    control.target_wheel_angular_rate = 0; //车轮转角角速度 rad/s
 
     auto state = lgsvl_msgs::msg::VehicleStateData();
     state.autonomous_mode_active = true; //自动驾驶模式激活
