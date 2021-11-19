@@ -18,9 +18,11 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(lgsvl_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
 
 add_executable(chassis_controller src/chassis_controller.cpp)
-ament_target_dependencies(chassis_controller message_filters rclcpp std_msgs sensor_msgs lgsvl_msgs) 
+ament_target_dependencies(chassis_controller message_filters rclcpp std_msgs sensor_msgs lgsvl_msgs geometry_msgs nav_msgs) 
 
 target_link_libraries(${PROJECT_NAME} m)
 

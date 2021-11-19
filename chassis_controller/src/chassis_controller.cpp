@@ -10,12 +10,13 @@ ChassisController::ChassisController() : Node("mycontroller"){
     imu_sub.subscribe(this, "/simulator/sensor/imu");
     odometry_sub.subscribe(this, "/simulator/odometry");
     canbus_sub.subscribe(this, "/simulator/canbus");
-    sync -> registerCallback(boost::bind(&ChassisController::msg_subscriber, this, _1, _2, _3));
+    gps_sub.subscribe(this, "/simulator/nav/gps");
+    sync -> registerCallback(boost::bind(&ChassisController::msg_subscriber, this, _1, _2, _3, _4));
 
     // publish
     state_pub = this->create_publisher<lgsvl_msgs::msg::VehicleStateData>("/simulator/vehicle_state", 10);
     control_pub = this->create_publisher<lgsvl_msgs::msg::VehicleControlData>("/simulator/vehicle_control", 10);
-    timer = this->create_wall_timer(500ms, std::bind(&ChassisController::controller, this));
+    timer = this->create_wall_timer(500ms, std::bind(&ChassisController::lateral_controller, this));
     
 }
 
@@ -26,7 +27,8 @@ ChassisController::~ChassisController()
 
 void ChassisController::msg_subscriber(const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg, 
                             const lgsvl_msgs::msg::VehicleOdometry::ConstSharedPtr& odometry_msg,
-                            const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg)
+                            const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg,
+                            const nav_msgs::msg::Odometry::ConstSharedPtr& gps_msg)
 {
     /*RCLCPP_INFO(this->get_logger(), "Accel X,Y: %.3f,%.3f [m/s^2] - Yaw rate: %.3f [deg/sec]",
               imu_msg->linear_acceleration.x, imu_msg->linear_acceleration.y,imu_msg->angular_velocity.z);*/
@@ -34,14 +36,18 @@ void ChassisController::msg_subscriber(const sensor_msgs::msg::Imu::ConstSharedP
     RCLCPP_INFO(this->get_logger(), "Front wheel angle: %f [rad]", odometry_msg->front_wheel_angle);
     //传递变量
     vx = canbus_msg->speed_mps;
+    vy = 0;
+    phi = 0;
+    x = gps_msg->pose.pose.position.x;
+    y = gps_msg->pose.pose.position.y;
     delta = odometry_msg->front_wheel_angle;
     acc_x = imu_msg->linear_acceleration.x;
     acc_y = imu_msg->linear_acceleration.y;
-    yaw_rate = imu_msg->angular_velocity.z;
-    yaw_rate = yaw_rate*PI/180;
+    phi_p = imu_msg->angular_velocity.z;
+    phi_p = phi_p*PI/180;
 }
 
-void ChassisController::controller(){
+void ChassisController::lateral_controller(){
     auto control = lgsvl_msgs::msg::VehicleControlData();
     control.target_gear = lgsvl_msgs::msg::VehicleControlData::GEAR_DRIVE; //前进档位
     control.acceleration_pct = 0.3;  //加速踏板
