@@ -32,8 +32,6 @@ void ChassisController::msg_subscriber(const sensor_msgs::msg::Imu::ConstSharedP
 {
     /*RCLCPP_INFO(this->get_logger(), "Accel X,Y: %.3f,%.3f [m/s^2] - Yaw rate: %.3f [deg/sec]",
               imu_msg->linear_acceleration.x, imu_msg->linear_acceleration.y,imu_msg->angular_velocity.z);*/
-    RCLCPP_INFO(this->get_logger(), "Velocity: %f [m/s]", canbus_msg->speed_mps);
-    RCLCPP_INFO(this->get_logger(), "Front wheel angle: %f [rad]", odometry_msg->front_wheel_angle);
     //传递变量
     vx = canbus_msg->speed_mps;
     vy = 0;
@@ -45,6 +43,10 @@ void ChassisController::msg_subscriber(const sensor_msgs::msg::Imu::ConstSharedP
     acc_y = imu_msg->linear_acceleration.y;
     phi_p = imu_msg->angular_velocity.z;
     phi_p = phi_p*PI/180;
+    RCLCPP_INFO(this->get_logger(), "Velocity: %f [m/s]", vx);
+    RCLCPP_INFO(this->get_logger(), "Front wheel angle: %f [rad]", odometry_msg->front_wheel_angle);
+    RCLCPP_INFO(this->get_logger(), "PositionX: %f [m]", x);
+    RCLCPP_INFO(this->get_logger(), "PositionY: %f [m]", y);
 }
 
 void ChassisController::lateral_controller(){
