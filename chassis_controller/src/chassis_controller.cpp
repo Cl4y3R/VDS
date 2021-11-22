@@ -30,39 +30,47 @@ void ChassisController::msg_subscriber(const sensor_msgs::msg::Imu::ConstSharedP
                             const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg,
                             const nav_msgs::msg::Odometry::ConstSharedPtr& gps_msg)
 {
-    /*RCLCPP_INFO(this->get_logger(), "Accel X,Y: %.3f,%.3f [m/s^2] - Yaw rate: %.3f [deg/sec]",
-              imu_msg->linear_acceleration.x, imu_msg->linear_acceleration.y,imu_msg->angular_velocity.z);*/
-    //传递变量
+    //parameters
     vx = canbus_msg->speed_mps;
-    vy = 0;
-    phi = 0;
-    x = gps_msg->pose.pose.position.x;
-    y = gps_msg->pose.pose.position.y;
-    delta = odometry_msg->front_wheel_angle;
-    acc_x = imu_msg->linear_acceleration.x;
-    acc_y = imu_msg->linear_acceleration.y;
+    vy = 0; //unused for now
     phi_p = imu_msg->angular_velocity.z;
     phi_p = phi_p*PI/180;
-    RCLCPP_INFO(this->get_logger(), "Velocity: %f [m/s]", vx);
-    RCLCPP_INFO(this->get_logger(), "Front wheel angle: %f [rad]", odometry_msg->front_wheel_angle);
-    RCLCPP_INFO(this->get_logger(), "PositionX: %f [m]", x);
-    RCLCPP_INFO(this->get_logger(), "PositionY: %f [m]", y);
+    phi = imu_msg->orientation.z;
+    x = gps_msg->pose.pose.position.x; //to be modified
+    y = gps_msg->pose.pose.position.y; //to be modified
+    delta = odometry_msg->front_wheel_angle;
+    ax = imu_msg->linear_acceleration.x;
+    ay = imu_msg->linear_acceleration.y;
+    steer_angle = odometry_msg->front_wheel_angle;
+
+    //RCLCPP_INFO(this->get_logger(), "Velocity: %f [m/s]", vx);
+    //RCLCPP_INFO(this->get_logger(), "Front wheel angle: %f [rad]", steer_angle);
+    RCLCPP_INFO(this->get_logger(), "PositionX: %f [m], PositionY: %f [m]", x, y);
 }
 
-void ChassisController::lateral_controller(){
+void ChassisController::control_publisher(){
     auto control = lgsvl_msgs::msg::VehicleControlData();
-    control.target_gear = lgsvl_msgs::msg::VehicleControlData::GEAR_DRIVE; //前进档位
-    control.acceleration_pct = 0.3;  //加速踏板
-    control.braking_pct = 0; //制动踏板
-    control.target_wheel_angle = 0.5; //车轮转角 rad
-    control.target_wheel_angular_rate = 0; //车轮转角角速度 rad/s
+    control.target_gear = lgsvl_msgs::msg::VehicleControlData::GEAR_DRIVE; //gear
+    control.acceleration_pct = 0;  //acc in percentage
+    control.braking_pct = 0; //brake in percentage
+    control.target_wheel_angle = 0; //steering angle in rad
+    control.target_wheel_angular_rate = 0; //steering angle velocity in rad/s
 
     auto state = lgsvl_msgs::msg::VehicleStateData();
-    state.autonomous_mode_active = true; //自动驾驶模式激活
-    state.vehicle_mode= lgsvl_msgs::msg::VehicleStateData::VEHICLE_MODE_COMPLETE_AUTO_DRIVE;   //驾驶模式
+    state.autonomous_mode_active = true; 
+    state.vehicle_mode= lgsvl_msgs::msg::VehicleStateData::VEHICLE_MODE_COMPLETE_AUTO_DRIVE;
 
     state_pub->publish(state);
     control_pub->publish(control);
+}
+
+double ChassisController::longitudinal_controller(double velocity_x, double acc_x){
+    return 0; //need to create 2x1 vector which holds acc_pct and brake_pct
+}
+
+double ChassisController::lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y, double velocity_x){
+    double target_steer_angle = 0;
+    return target_steer_anlge;
 }
 
 int main(int argc, char * argv[])

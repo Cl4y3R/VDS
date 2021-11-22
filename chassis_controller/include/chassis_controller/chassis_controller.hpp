@@ -55,8 +55,9 @@ class ChassisController: public rclcpp::Node{
         double x;
         double y;
         double delta;
-        double acc_x;
-        double acc_y;
+        double ax;
+        double ay;
+        double steer_angle;
         
         //subscribed msgs
         sensor_msgs::msg::Imu::ConstSharedPtr imu_msg;
@@ -64,11 +65,14 @@ class ChassisController: public rclcpp::Node{
         lgsvl_msgs::msg::CanBusData::ConstSharedPtr canbus_msg;
         nav_msgs::msg::Odometry::ConstSharedPtr gps_msg;
 
-        //回调函数
+        //ros2 functions
         void msg_subscriber(const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg, 
                             const lgsvl_msgs::msg::VehicleOdometry::ConstSharedPtr& odometry_msg,
                             const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg,
                             const nav_msgs::msg::Odometry::ConstSharedPtr& gps_msg);
-        void lateral_controller();
-        double steer_controller(double yaw, double yaw_rate, double pos_x, double pos_y, double velocity_x, double velocity_y);
+        void control_publisher();
+
+        //controller functions
+        double lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y, double velocity_x);
+        double longitudinal_controller(double velocity, double acc_x);
 };
