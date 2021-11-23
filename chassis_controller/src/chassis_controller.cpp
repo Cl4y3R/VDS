@@ -16,7 +16,7 @@ ChassisController::ChassisController() : Node("mycontroller"){
     // publish
     state_pub = this->create_publisher<lgsvl_msgs::msg::VehicleStateData>("/simulator/vehicle_state", 10);
     control_pub = this->create_publisher<lgsvl_msgs::msg::VehicleControlData>("/simulator/vehicle_control", 10);
-    timer = this->create_wall_timer(500ms, std::bind(&ChassisController::lateral_controller, this));
+    timer = this->create_wall_timer(500ms, std::bind(&ChassisController::control_publisher, this));
     
 }
 
@@ -36,8 +36,8 @@ void ChassisController::msg_subscriber(const sensor_msgs::msg::Imu::ConstSharedP
     phi_p = imu_msg->angular_velocity.z;
     phi_p = phi_p*PI/180;
     phi = imu_msg->orientation.z;
-    x = gps_msg->pose.pose.position.x; //to be modified
-    y = gps_msg->pose.pose.position.y; //to be modified
+    x = -gps_msg->pose.pose.position.y; //to be modified
+    y = gps_msg->pose.pose.position.x; //to be modified
     delta = odometry_msg->front_wheel_angle;
     ax = imu_msg->linear_acceleration.x;
     ay = imu_msg->linear_acceleration.y;
@@ -70,7 +70,7 @@ double ChassisController::longitudinal_controller(double velocity_x, double acc_
 
 double ChassisController::lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y, double velocity_x){
     double target_steer_angle = 0;
-    return target_steer_anlge;
+    return target_steer_angle;
 }
 
 int main(int argc, char * argv[])

@@ -78,4 +78,8 @@ pulisher去(有待检验确认)。现在已经可以成功的根据subscriber的
 ### 2021.11.19
 对于ros2内用到的mgs结构，根据名称找到opt/ros/foxy/include内不同msg包的detail内xxx_struct.h，内有  
 结构体定义，若有嵌套，即表示直接应用了嵌套的结构体定义。层层找下去直到找到变量类型。  
-不要忘记添加msg包到CMakeLists.txt和package.xml里面！！！！
+不要忘记添加msg包到CMakeLists.txt和package.xml里面！！！！  
+
+### 2021.11.23
+神奇的事情需要确认：gps传感器选择ignore map origin则会实时输出unity左手坐标系下的坐标。目前对比  
+opendrive看，x=-pose.pose.position.y,y=pose.pose.position.x。咋回事呢？
