@@ -82,4 +82,15 @@ pulisher去(有待检验确认)。现在已经可以成功的根据subscriber的
 
 ### 2021.11.23
 神奇的事情需要确认：gps传感器选择ignore map origin则会实时输出unity左手坐标系下的坐标。目前对比  
-opendrive看，x=-pose.pose.position.y,y=pose.pose.position.x。咋回事呢？
+opendrive看，x=-pose.pose.position.y,y=pose.pose.position.x。咋回事呢？  
+
+### 2021.11.24
+下一步要做的事情：假设之前的x,y坐标获取的正确的话，就需要根据opendrive的文件生成reference line。  
+再对reference line进行平滑处理，生成path。对于reference line生成，建议不考虑routing算法，建议  
+针对某些地图进行离线处理保存起来，再实时读取。  
+opendrive parampoly3 曲线计算：  
+u local = a u + b u * p + c u * p^2 + d u * p^3
+v local = a v + b v * p + c v * p^2 + d v * p^3  
+思考问题：是否选择在平面上仿真，不使用opendrive的道路，自己设定一个reference line？可视化问题用  
+rviz解决。这样的话可以免去路径生成的麻烦，快速进行控制算法的学习。但是需要评估平面上坐标的问题。  
+新发现：lgsvl导出的autoware格式地图文件，point.csv保存了路径点！

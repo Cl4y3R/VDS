@@ -2,6 +2,11 @@
 #include <cmath>
 #include <memory>
 #include <boost/bind.hpp>
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <sstream>
+#include <string>
 // 消息过滤与时间同步
 #include <message_filters/subscriber.h>
 #include <message_filters/synchronizer.h>
@@ -21,7 +26,17 @@
 #include "lgsvl_msgs/msg/vehicle_state_data.hpp"
 #include "lgsvl_msgs/msg/vehicle_control_data.hpp"
 
+#define PI 3.1415926
+
 using namespace std::chrono_literals;
+using std::string;
+using std::vector;
+using std::ifstream;
+using std::istringstream;
+using std::stringstream;
+using std::cout;
+using std::endl;
+
 typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Imu, lgsvl_msgs::msg::VehicleOdometry, 
                                                         lgsvl_msgs::msg::CanBusData, nav_msgs::msg::Odometry> MySyncPolicy;
 
@@ -58,6 +73,7 @@ class ChassisController: public rclcpp::Node{
         double ax;
         double ay;
         double steer_angle;
+        vector<vector<double>> wp;
         
         //subscribed msgs
         sensor_msgs::msg::Imu::ConstSharedPtr imu_msg;
@@ -71,6 +87,9 @@ class ChassisController: public rclcpp::Node{
                             const lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg,
                             const nav_msgs::msg::Odometry::ConstSharedPtr& gps_msg);
         void control_publisher();
+
+        //waypoint load function
+        vector<vector<double>> waypoint_loader(std::string filename);
 
         //controller functions
         double lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y, double velocity_x);
