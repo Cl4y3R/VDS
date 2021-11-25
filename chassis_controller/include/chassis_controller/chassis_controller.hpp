@@ -73,7 +73,7 @@ class ChassisController: public rclcpp::Node{
         double ax;
         double ay;
         double steer_angle;
-        vector<vector<double>> wp;
+        vector<vector<double>> waypoint;
         
         //subscribed msgs
         sensor_msgs::msg::Imu::ConstSharedPtr imu_msg;

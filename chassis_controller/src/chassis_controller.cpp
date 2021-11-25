@@ -12,9 +12,9 @@ ChassisController::ChassisController() : Node("mycontroller"){
     sync -> registerCallback(boost::bind(&ChassisController::msg_subscriber, this, _1, _2, _3, _4));
 
     //load waypoint
-    wp=waypoint_loader("./maps/pointmap/point.csv");
-    for (auto i: wp)
-        cout << i[0] << endl;
+    waypoint=waypoint_loader("./maps/pointmap/point.csv");
+    for (auto i: waypoint)
+        cout<<"X: "<<i[0]<<" Y: "<<i[1]<<endl;
     // publish
     state_pub = this->create_publisher<lgsvl_msgs::msg::VehicleStateData>("/simulator/vehicle_state", 10);
     control_pub = this->create_publisher<lgsvl_msgs::msg::VehicleControlData>("/simulator/vehicle_control", 10);
@@ -91,6 +91,9 @@ vector<vector<double>> ChassisController::waypoint_loader(string filename){
         x_y.push_back(waypoint_x);
         x_y.push_back(waypoint_y);
         waypoint_container.push_back(x_y);
+
+        //waypoint smoother
+        vector<vector<double>> new_waypoint;
     }
     if(waypoint_container.empty()) cout<<"File is empty!!!!"<<endl;
     cout<<"Waypoints are loaded!"<<endl;
