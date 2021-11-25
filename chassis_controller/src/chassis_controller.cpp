@@ -15,6 +15,7 @@ ChassisController::ChassisController() : Node("mycontroller"){
     waypoint=waypoint_loader("./maps/pointmap/point.csv");
     for (auto i: waypoint)
         cout<<"X: "<<i[0]<<" Y: "<<i[1]<<endl;
+    steer_control=lateral_controller(phi, phi_p, x, x, vx, 0, 0, 0, 0);
     // publish
     state_pub = this->create_publisher<lgsvl_msgs::msg::VehicleStateData>("/simulator/vehicle_state", 10);
     control_pub = this->create_publisher<lgsvl_msgs::msg::VehicleControlData>("/simulator/vehicle_control", 10);
@@ -46,8 +47,8 @@ void ChassisController::msg_subscriber(const sensor_msgs::msg::Imu::ConstSharedP
     steer_angle = odometry_msg->front_wheel_angle;
 
     //RCLCPP_INFO(this->get_logger(), "Velocity: %f [m/s]", vx);
-    //RCLCPP_INFO(this->get_logger(), "Front wheel angle: %f [rad]", steer_angle);
-    RCLCPP_INFO(this->get_logger(), "PositionX: %f [m], PositionY: %f [m]", x, y);
+    RCLCPP_INFO(this->get_logger(), "Front wheel angle: %f [rad]", steer_angle);
+    //RCLCPP_INFO(this->get_logger(), "PositionX: %f [m], PositionY: %f [m]", x, y);
 }
 
 void ChassisController::control_publisher(){
@@ -55,7 +56,7 @@ void ChassisController::control_publisher(){
     control.target_gear = lgsvl_msgs::msg::VehicleControlData::GEAR_DRIVE; //gear
     control.acceleration_pct = 0;  //acc in percentage
     control.braking_pct = 0; //brake in percentage
-    control.target_wheel_angle = 0; //steering angle in rad
+    control.target_wheel_angle = steer_control; //steering angle in rad
     control.target_wheel_angular_rate = 0; //steering angle velocity in rad/s
 
     auto state = lgsvl_msgs::msg::VehicleStateData();
@@ -104,8 +105,10 @@ double ChassisController::longitudinal_controller(double velocity_x, double acc_
     return 0; //need to create 2x1 vector which holds acc_pct and brake_pct
 }
 
-double ChassisController::lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y, double velocity_x){
-    double target_steer_angle = 0;
+double ChassisController::lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y, 
+                                            double velocity_x, double x_ref, double y_ref, double theta_ref, double kappa_ref)
+{
+    double target_steer_angle = 0.5;
     return target_steer_angle;
 }
 

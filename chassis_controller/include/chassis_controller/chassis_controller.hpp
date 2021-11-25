@@ -73,6 +73,7 @@ class ChassisController: public rclcpp::Node{
         double ax;
         double ay;
         double steer_angle;
+        double steer_control;
         vector<vector<double>> waypoint;
         
         //subscribed msgs
@@ -92,6 +93,7 @@ class ChassisController: public rclcpp::Node{
         vector<vector<double>> waypoint_loader(std::string filename);
 
         //controller functions
-        double lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y, double velocity_x);
+        double lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y, 
+                                            double velocity_x, double x_ref, double y_ref, double theta_ref, double kappa_ref);
         double longitudinal_controller(double velocity, double acc_x);
 };
