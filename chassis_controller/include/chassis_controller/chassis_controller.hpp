@@ -7,21 +7,26 @@
 #include <vector>
 #include <sstream>
 #include <string>
+
+//tf2
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2/LinearMath/Matrix3x3.h"
+
 // 消息过滤与时间同步
 #include <message_filters/subscriber.h>
 #include <message_filters/synchronizer.h>
 #include <message_filters/sync_policies/approximate_time.h>
 
-
-// 自定义类继承该基类
+// rclcpp
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/string.hpp"
 
-// 消息类型-订阅   
+// 消息类型-订阅
+#include "std_msgs/msg/string.hpp"
 #include "sensor_msgs/msg/imu.hpp" 
 #include "lgsvl_msgs/msg/vehicle_odometry.hpp"
 #include "lgsvl_msgs/msg/can_bus_data.hpp"
 #include "nav_msgs/msg/odometry.hpp"
+
 // 消息类型-发布
 #include "lgsvl_msgs/msg/vehicle_state_data.hpp"
 #include "lgsvl_msgs/msg/vehicle_control_data.hpp"
@@ -91,6 +96,9 @@ class ChassisController: public rclcpp::Node{
 
         //waypoint load function
         vector<vector<double>> waypoint_loader(std::string filename);
+
+        //quaternion to eular transform
+        double quat_to_euler(const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg);
 
         //controller functions
         double lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y, 

@@ -38,17 +38,19 @@ void ChassisController::msg_subscriber(const sensor_msgs::msg::Imu::ConstSharedP
     vy = 0; //unused for now
     phi_p = imu_msg->angular_velocity.z;
     phi_p = phi_p*PI/180;
-    phi = imu_msg->orientation.z;
+    phi = quat_to_euler(imu_msg);
     x = -gps_msg->pose.pose.position.y; //to be modified
     y = gps_msg->pose.pose.position.x; //to be modified
     delta = odometry_msg->front_wheel_angle;
-    ax = imu_msg->linear_acceleration.x;
+    ax = imu_msg->linear_acceleration.x; 
     ay = imu_msg->linear_acceleration.y;
     steer_angle = odometry_msg->front_wheel_angle;
 
     //RCLCPP_INFO(this->get_logger(), "Velocity: %f [m/s]", vx);
-    RCLCPP_INFO(this->get_logger(), "Front wheel angle: %f [rad]", steer_angle);
+    //RCLCPP_INFO(this->get_logger(), "Front wheel angle: %f [rad]", steer_angle);
     //RCLCPP_INFO(this->get_logger(), "PositionX: %f [m], PositionY: %f [m]", x, y);
+    //RCLCPP_INFO(this->get_logger(), "ACCX: %f [m/s-2], ACCY: %f [m/s-2]", ax, ay);
+    RCLCPP_INFO(this->get_logger(), "Yaw Anlge: %f [rad]", phi);
 }
 
 void ChassisController::control_publisher(){
@@ -56,7 +58,7 @@ void ChassisController::control_publisher(){
     control.target_gear = lgsvl_msgs::msg::VehicleControlData::GEAR_DRIVE; //gear
     control.acceleration_pct = 0;  //acc in percentage
     control.braking_pct = 0; //brake in percentage
-    control.target_wheel_angle = steer_control; //steering angle in rad
+    control.target_wheel_angle = 0; //steering angle in rad
     control.target_wheel_angular_rate = 0; //steering angle velocity in rad/s
 
     auto state = lgsvl_msgs::msg::VehicleStateData();
@@ -67,7 +69,8 @@ void ChassisController::control_publisher(){
     control_pub->publish(control);
 }
 
-vector<vector<double>> ChassisController::waypoint_loader(string filename){
+vector<vector<double>> ChassisController::waypoint_loader(string filename)
+{
     vector<vector<double>> waypoint_container;
     ifstream fin(filename);
     string line;
@@ -101,7 +104,22 @@ vector<vector<double>> ChassisController::waypoint_loader(string filename){
     return waypoint_container;
 }
 
-double ChassisController::longitudinal_controller(double velocity_x, double acc_x){
+double ChassisController::quat_to_euler(const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg)
+{
+    //for now only output yaw angle
+    tf2::Quaternion q(
+        imu_msg->orientation.x,
+        imu_msg->orientation.y,
+        imu_msg->orientation.z,
+        imu_msg->orientation.w);
+    tf2::Matrix3x3 m(q);
+    double roll, pitch, yaw;
+    m.getRPY(roll, pitch, yaw);
+    return yaw;
+}
+
+double ChassisController::longitudinal_controller(double velocity_x, double acc_x)
+{
     return 0; //need to create 2x1 vector which holds acc_pct and brake_pct
 }
 
