@@ -1,0 +1,405 @@
+[0.000000] (-) TimerEvent: {}
+[0.000252] (-) JobUnselected: {'identifier': 'autodriving'}
+[0.000392] (chassis_controller) JobQueued: {'identifier': 'chassis_controller', 'dependencies': OrderedDict()}
+[0.002753] (chassis_controller) JobStarted: {'identifier': 'chassis_controller'}
+[0.016761] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'cmake'}
+[0.018299] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'build'}
+[0.018382] (chassis_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cl4y3r/VDS/build/chassis_controller', '--', '-j8', '-l8'], 'cwd': '/home/cl4y3r/VDS/build/chassis_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cl4y3r'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '2265'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/cl4y3r'), ('OLDPWD', '/home/cl4y3r'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '2045'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/cl4y3r/VDS/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'cl4y3r'), ('JOURNAL_STREAM', '8:50475'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cl4y3r'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu20:@/tmp/.ICE-unix/2293,unix/Ubuntu20:/tmp/.ICE-unix/2293'), ('INVOCATION_ID', '976cf313d85346ce80ae9c2437fad2d2'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/24bd2f43_9a35_4c8d_9dff_5409bd2bdb50'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1076'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cl4y3r/VDS/install/icc:/home/cl4y3r/VDS/install/chassis_controller:/home/cl4y3r/VDS/install/autodriving:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cl4y3r/VDS/build/chassis_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/cl4y3r/VDS/install/icc:/home/cl4y3r/VDS/install/chassis_controller:/home/cl4y3r/VDS/install/autodriving:/opt/ros/foxy')]), 'shell': False}
+[0.076998] (chassis_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target chassis_controller\x1b[0m\n'}
+[0.099378] (-) TimerEvent: {}
+[0.118410] (chassis_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o\x1b[0m\n'}
+[0.199627] (-) TimerEvent: {}
+[0.300155] (-) TimerEvent: {}
+[0.400613] (-) TimerEvent: {}
+[0.501122] (-) TimerEvent: {}
+[0.601585] (-) TimerEvent: {}
+[0.702058] (-) TimerEvent: {}
+[0.802518] (-) TimerEvent: {}
+[0.903021] (-) TimerEvent: {}
+[1.003538] (-) TimerEvent: {}
+[1.104043] (-) TimerEvent: {}
+[1.204727] (-) TimerEvent: {}
+[1.305285] (-) TimerEvent: {}
+[1.405947] (-) TimerEvent: {}
+[1.506451] (-) TimerEvent: {}
+[1.606917] (-) TimerEvent: {}
+[1.707374] (-) TimerEvent: {}
+[1.807834] (-) TimerEvent: {}
+[1.908300] (-) TimerEvent: {}
+[1.986893] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KChassisController::ChassisController()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.987156] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator<<\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::ostream\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[1.987344] (chassis_controller) StderrLine: {'line': b'   17 |         \x1b[32m\x1b[Kcout\x1b[m\x1b[K \x1b[01;31m\x1b[K<<\x1b[m\x1b[K \x1b[34m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[1.987518] (chassis_controller) StderrLine: {'line': b'      |         \x1b[32m\x1b[K~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^~\x1b[m\x1b[K \x1b[34m\x1b[K~\x1b[m\x1b[K\n'}
+[1.987805] (chassis_controller) StderrLine: {'line': b'      |         \x1b[32m\x1b[K|\x1b[m\x1b[K       \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[1.988048] (chassis_controller) StderrLine: {'line': b'      |         \x1b[32m\x1b[K|\x1b[m\x1b[K       \x1b[34m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\n'}
+[1.989879] (chassis_controller) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kstd::ostream {aka std::basic_ostream<char>}\x1b[m\x1b[K\n'}
+[1.990064] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[1.990202] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[1.990353] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[1.990489] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:108:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.990716] (chassis_controller) StderrLine: {'line': b'  108 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(__ostream_type& (*__pf)(__ostream_type&))\n'}
+[1.990880] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.991011] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:108:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>& (*)(std::basic_ostream<char>&)\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[1.991127] (chassis_controller) StderrLine: {'line': b'  108 |       operator<<(\x1b[01;36m\x1b[K__ostream_type& (*__pf)(__ostream_type&)\x1b[m\x1b[K)\n'}
+[1.991238] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.991348] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:117:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.991485] (chassis_controller) StderrLine: {'line': b'  117 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(__ios_type& (*__pf)(__ios_type&))\n'}
+[1.991610] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.991736] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:117:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ios<char>& (*)(std::basic_ios<char>&)\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[1.991873] (chassis_controller) StderrLine: {'line': b'  117 |       operator<<(\x1b[01;36m\x1b[K__ios_type& (*__pf)(__ios_type&)\x1b[m\x1b[K)\n'}
+[1.991985] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.992096] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:127:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.992222] (chassis_controller) StderrLine: {'line': b'  127 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(ios_base& (*__pf) (ios_base&))\n'}
+[1.992335] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.992446] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:127:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::ios_base& (*)(std::ios_base&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.992578] (chassis_controller) StderrLine: {'line': b'  127 |       operator<<(\x1b[01;36m\x1b[Kios_base& (*__pf) (ios_base&)\x1b[m\x1b[K)\n'}
+[1.992690] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.992857] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:166:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.993011] (chassis_controller) StderrLine: {'line': b'  166 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(long __n)\n'}
+[1.993121] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.993231] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:166:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.993346] (chassis_controller) StderrLine: {'line': b'  166 |       operator<<(\x1b[01;36m\x1b[Klong __n\x1b[m\x1b[K)\n'}
+[1.993457] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[1.993565] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:170:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.993679] (chassis_controller) StderrLine: {'line': b'  170 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(unsigned long __n)\n'}
+[1.993791] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.993902] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:170:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.994013] (chassis_controller) StderrLine: {'line': b'  170 |       operator<<(\x1b[01;36m\x1b[Kunsigned long __n\x1b[m\x1b[K)\n'}
+[1.994122] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.994231] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:174:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.994344] (chassis_controller) StderrLine: {'line': b'  174 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(bool __n)\n'}
+[1.994454] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.994562] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:174:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kbool\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.994681] (chassis_controller) StderrLine: {'line': b'  174 |       operator<<(\x1b[01;36m\x1b[Kbool __n\x1b[m\x1b[K)\n'}
+[1.994791] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~^~~\x1b[m\x1b[K\n'}
+[1.994901] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/ostream:702\x1b[m\x1b[K,\n'}
+[1.995012] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[1.995122] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[1.995233] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[1.995343] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/ostream.tcc:91:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.995456] (chassis_controller) StderrLine: {'line': b'   91 |     \x1b[01;36m\x1b[Kbasic_ostream<_CharT, _Traits>\x1b[m\x1b[K::\n'}
+[1.995565] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.995675] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/ostream.tcc:92:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kshort int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.995792] (chassis_controller) StderrLine: {'line': b'   92 |     operator<<(\x1b[01;36m\x1b[Kshort __n\x1b[m\x1b[K)\n'}
+[1.995902] (chassis_controller) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.996027] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[1.996140] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[1.996254] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[1.996370] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:181:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.996504] (chassis_controller) StderrLine: {'line': b'  181 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(unsigned short __n)\n'}
+[1.996622] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.996736] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:181:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kshort unsigned int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.996925] (chassis_controller) StderrLine: {'line': b'  181 |       operator<<(\x1b[01;36m\x1b[Kunsigned short __n\x1b[m\x1b[K)\n'}
+[1.997059] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.997177] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/ostream:702\x1b[m\x1b[K,\n'}
+[1.997291] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[1.997404] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[1.997518] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[1.997632] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/ostream.tcc:105:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.997746] (chassis_controller) StderrLine: {'line': b'  105 |     \x1b[01;36m\x1b[Kbasic_ostream<_CharT, _Traits>\x1b[m\x1b[K::\n'}
+[1.997859] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.997972] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/ostream.tcc:106:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.998087] (chassis_controller) StderrLine: {'line': b'  106 |     operator<<(\x1b[01;36m\x1b[Kint __n\x1b[m\x1b[K)\n'}
+[1.998199] (chassis_controller) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.998311] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[1.998425] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[1.998538] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[1.998652] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:192:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.998769] (chassis_controller) StderrLine: {'line': b'  192 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(unsigned int __n)\n'}
+[1.998881] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.998995] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:192:31:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.999109] (chassis_controller) StderrLine: {'line': b'  192 |       operator<<(\x1b[01;36m\x1b[Kunsigned int __n\x1b[m\x1b[K)\n'}
+[1.999221] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.999333] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:201:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.999460] (chassis_controller) StderrLine: {'line': b'  201 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(long long __n)\n'}
+[1.999573] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.999685] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:201:28:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Klong long int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.999832] (chassis_controller) StderrLine: {'line': b'  201 |       operator<<(\x1b[01;36m\x1b[Klong long __n\x1b[m\x1b[K)\n'}
+[1.999965] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.000103] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:205:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.000225] (chassis_controller) StderrLine: {'line': b'  205 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(unsigned long long __n)\n'}
+[2.000339] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.000451] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:205:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Klong long unsigned int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.000575] (chassis_controller) StderrLine: {'line': b'  205 |       operator<<(\x1b[01;36m\x1b[Kunsigned long long __n\x1b[m\x1b[K)\n'}
+[2.000689] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.000858] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:220:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.001014] (chassis_controller) StderrLine: {'line': b'  220 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(double __f)\n'}
+[2.001149] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.001268] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:220:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.001390] (chassis_controller) StderrLine: {'line': b'  220 |       operator<<(\x1b[01;36m\x1b[Kdouble __f\x1b[m\x1b[K)\n'}
+[2.001510] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.001631] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:224:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.001767] (chassis_controller) StderrLine: {'line': b'  224 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(float __f)\n'}
+[2.001887] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.002006] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:224:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.002126] (chassis_controller) StderrLine: {'line': b'  224 |       operator<<(\x1b[01;36m\x1b[Kfloat __f\x1b[m\x1b[K)\n'}
+[2.002247] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.002367] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:232:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.002490] (chassis_controller) StderrLine: {'line': b'  232 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(long double __f)\n'}
+[2.002610] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.002730] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:232:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Klong double\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.002858] (chassis_controller) StderrLine: {'line': b'  232 |       operator<<(\x1b[01;36m\x1b[Klong double __f\x1b[m\x1b[K)\n'}
+[2.002983] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.003102] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:245:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.003239] (chassis_controller) StderrLine: {'line': b'  245 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(const void* __p)\n'}
+[2.003359] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.003479] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:245:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst void*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.003597] (chassis_controller) StderrLine: {'line': b'  245 |       operator<<(\x1b[01;36m\x1b[Kconst void* __p\x1b[m\x1b[K)\n'}
+[2.003716] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.003849] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/ostream:702\x1b[m\x1b[K,\n'}
+[2.003972] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.004105] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.004247] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.004482] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/ostream.tcc:119:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.004903] (chassis_controller) StderrLine: {'line': b'  119 |     \x1b[01;36m\x1b[Kbasic_ostream<_CharT, _Traits>\x1b[m\x1b[K::\n'}
+[2.005052] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.005182] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/ostream.tcc:120:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>::__streambuf_type*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_streambuf<char>*\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.005308] (chassis_controller) StderrLine: {'line': b'  120 |     operator<<(\x1b[01;36m\x1b[K__streambuf_type* __sbin\x1b[m\x1b[K)\n'}
+[2.005427] (chassis_controller) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[2.005549] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/string:55\x1b[m\x1b[K,\n'}
+[2.005673] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[2.005914] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[2.006061] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[2.006172] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[2.006285] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:80\x1b[m\x1b[K,\n'}
+[2.006396] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:3\x1b[m\x1b[K,\n'}
+[2.006531] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.006672] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6416:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.006786] (chassis_controller) StderrLine: {'line': b' 6416 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os,\n'}
+[2.006896] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.007006] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/basic_string.h:6416:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.007118] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.007232] (chassis_controller) StderrLine: {'line': b'   17 |         cout << \x1b[01;36m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[2.007351] (chassis_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.007463] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:81\x1b[m\x1b[K,\n'}
+[2.007573] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:3\x1b[m\x1b[K,\n'}
+[2.007683] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.007794] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:66:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__shared_ptr<_Tp, _Lp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.007916] (chassis_controller) StderrLine: {'line': b'   66 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(std::basic_ostream<_Ch, _Tr>& __os,\n'}
+[2.008066] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.008177] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:66:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.008294] (-) TimerEvent: {}
+[2.008487] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp, _Lp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.008675] (chassis_controller) StderrLine: {'line': b'   17 |         cout << \x1b[01;36m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[2.008862] (chassis_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.009024] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/bits/ios_base.h:46\x1b[m\x1b[K,\n'}
+[2.009136] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/ios:42\x1b[m\x1b[K,\n'}
+[2.009248] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/ostream:38\x1b[m\x1b[K,\n'}
+[2.009359] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.009470] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.009582] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.009693] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/system_error:217:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.009820] (chassis_controller) StderrLine: {'line': b'  217 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)\n'}
+[2.009939] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.010049] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/system_error:217:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.010160] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_code&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.010280] (chassis_controller) StderrLine: {'line': b'   17 |         cout << \x1b[01;36m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[2.010391] (chassis_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.010502] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.010612] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.010739] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.010848] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:506:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.010960] (chassis_controller) StderrLine: {'line': b'  506 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)\n'}
+[2.011070] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.011177] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:506:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.011285] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[K_CharT\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[2.011396] (chassis_controller) StderrLine: {'line': b'   17 |         cout << \x1b[01;36m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[2.011503] (chassis_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.011607] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.011714] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.011822] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.011931] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:511:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.012045] (chassis_controller) StderrLine: {'line': b'  511 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, char __c)\n'}
+[2.012154] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.012261] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:511:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.012369] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.012484] (chassis_controller) StderrLine: {'line': b'   17 |         cout << \x1b[01;36m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[2.012588] (chassis_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.012694] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.012871] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.013013] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.013121] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:517:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.013230] (chassis_controller) StderrLine: {'line': b'  517 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, char __c)\n'}
+[2.013337] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.013443] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:517:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.013548] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.013657] (chassis_controller) StderrLine: {'line': b'   17 |         cout << \x1b[01;36m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[2.013764] (chassis_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.013870] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.013983] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.014096] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.014203] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:523:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.014315] (chassis_controller) StderrLine: {'line': b'  523 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, signed char __c)\n'}
+[2.014421] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.014528] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:523:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.014635] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Ksigned char\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.014753] (chassis_controller) StderrLine: {'line': b'   17 |         cout << \x1b[01;36m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[2.014861] (chassis_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.014968] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.015076] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.015183] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.015290] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:528:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.015398] (chassis_controller) StderrLine: {'line': b'  528 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, unsigned char __c)\n'}
+[2.015505] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.015610] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:528:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.015718] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kunsigned char\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.015834] (chassis_controller) StderrLine: {'line': b'   17 |         cout << \x1b[01;36m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[2.015944] (chassis_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.016052] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.016160] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.016283] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.016410] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:548:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.016537] (chassis_controller) StderrLine: {'line': b'  548 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)\n'}
+[2.016664] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.016833] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:548:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.016974] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.017104] (chassis_controller) StderrLine: {'line': b'   17 |         cout << \x1b[01;36m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[2.017211] (chassis_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.017318] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/ostream:702\x1b[m\x1b[K,\n'}
+[2.017425] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.017532] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.017638] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.017744] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/ostream.tcc:321:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.017854] (chassis_controller) StderrLine: {'line': b'  321 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)\n'}
+[2.017963] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.018076] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/ostream.tcc:321:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.018185] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.018301] (chassis_controller) StderrLine: {'line': b'   17 |         cout << \x1b[01;36m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[2.018410] (chassis_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.018518] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.018625] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.018732] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.018856] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:565:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.018995] (chassis_controller) StderrLine: {'line': b'  565 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, const char* __s)\n'}
+[2.019131] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.019265] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:565:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.019397] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.019530] (chassis_controller) StderrLine: {'line': b'   17 |         cout << \x1b[01;36m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[2.019637] (chassis_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.019743] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.019855] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.019965] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.020073] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:578:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.020182] (chassis_controller) StderrLine: {'line': b'  578 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, const signed char* __s)\n'}
+[2.020290] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.020397] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:578:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.020505] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kconst signed char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.020620] (chassis_controller) StderrLine: {'line': b'   17 |         cout << \x1b[01;36m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[2.020727] (chassis_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.020923] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.021067] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.021185] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.021347] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:583:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.021499] (chassis_controller) StderrLine: {'line': b'  583 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)\n'}
+[2.021707] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.022086] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:583:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.022212] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.022356] (chassis_controller) StderrLine: {'line': b'   17 |         cout << \x1b[01;36m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[2.022473] (chassis_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.022587] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.022707] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.022832] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.022948] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:691:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.023075] (chassis_controller) StderrLine: {'line': b'  691 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(_Ostream&& __os, const _Tp& __x)\n'}
+[2.023191] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.023306] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:691:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.023423] (chassis_controller) StderrLine: {'line': b'/usr/include/c++/9/ostream: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = std::vector<double, std::allocator<double> >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.023552] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K   required from here\n'}
+[2.023671] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:691:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, std::basic_ostream<char>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.023790] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/future:39\x1b[m\x1b[K,\n'}
+[2.023908] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.024025] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[2.024141] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/subscriber.h:38\x1b[m\x1b[K,\n'}
+[2.024257] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:11\x1b[m\x1b[K,\n'}
+[2.024373] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.024510] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/thread:322:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::thread::id)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.024634] (chassis_controller) StderrLine: {'line': b'  322 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, thread::id __id)\n'}
+[2.024751] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.024972] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/thread:322:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.025104] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::thread::id\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.025225] (chassis_controller) StderrLine: {'line': b'   17 |         cout << \x1b[01;36m\x1b[Ki\x1b[m\x1b[K << endl;\n'}
+[2.025340] (chassis_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.108580] (-) TimerEvent: {}
+[2.209183] (-) TimerEvent: {}
+[2.217378] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble ChassisController::longitudinal_controller(double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.217631] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:100:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kvelocity_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.217787] (chassis_controller) StderrLine: {'line': b'  100 | double ChassisController::longitudinal_controller(\x1b[01;35m\x1b[Kdouble velocity_x\x1b[m\x1b[K, double acc_x){\n'}
+[2.217933] (chassis_controller) StderrLine: {'line': b'      |                                                   \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.218074] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:100:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kacc_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.218215] (chassis_controller) StderrLine: {'line': b'  100 | ontroller::longitudinal_controller(double velocity_x, \x1b[01;35m\x1b[Kdouble acc_x\x1b[m\x1b[K){\n'}
+[2.218369] (chassis_controller) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.218521] (chassis_controller) StderrLine: {'line': b'\n'}
+[2.218661] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble ChassisController::lateral_controller(double, double, double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.218808] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:53:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kyaw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.218946] (chassis_controller) StderrLine: {'line': b'  104 | double ChassisController::lateral_controller(\x1b[01;35m\x1b[Kdouble yaw\x1b[m\x1b[K, double yaw_rate, double pos_x, double pos_y, double velocity_x){\n'}
+[2.219086] (chassis_controller) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.219231] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:65:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kyaw_rate\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.219379] (chassis_controller) StderrLine: {'line': b'  104 | ble ChassisController::lateral_controller(double yaw, \x1b[01;35m\x1b[Kdouble yaw_rate\x1b[m\x1b[K, double pos_x, double pos_y, double velocity_x){\n'}
+[2.219511] (chassis_controller) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[2.219633] (chassis_controller) StderrLine: {'line': b'\n'}
+[2.219765] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpos_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.219922] (chassis_controller) StderrLine: {'line': b'  104 | ller::lateral_controller(double yaw, double yaw_rate, \x1b[01;35m\x1b[Kdouble pos_x\x1b[m\x1b[K, double pos_y, double velocity_x){\n'}
+[2.220069] (chassis_controller) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.220230] (chassis_controller) StderrLine: {'line': b'\n'}
+[2.220371] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:96:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpos_y\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.220500] (chassis_controller) StderrLine: {'line': b'  104 | controller(double yaw, double yaw_rate, double pos_x, \x1b[01;35m\x1b[Kdouble pos_y\x1b[m\x1b[K, double velocity_x){\n'}
+[2.220653] (chassis_controller) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.220845] (chassis_controller) StderrLine: {'line': b'\n'}
+[2.221073] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:110:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kvelocity_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.221205] (chassis_controller) StderrLine: {'line': b'  104 | er(double yaw, double yaw_rate, double pos_x, double pos_y, \x1b[01;35m\x1b[Kdouble velocity_x\x1b[m\x1b[K){\n'}
+[2.221321] (chassis_controller) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.221434] (chassis_controller) StderrLine: {'line': b'\n'}
+[2.309442] (-) TimerEvent: {}
+[2.409962] (-) TimerEvent: {}
+[2.510490] (-) TimerEvent: {}
+[2.611040] (-) TimerEvent: {}
+[2.711570] (-) TimerEvent: {}
+[2.812090] (-) TimerEvent: {}
+[2.912670] (-) TimerEvent: {}
+[3.013412] (-) TimerEvent: {}
+[3.114048] (-) TimerEvent: {}
+[3.214660] (-) TimerEvent: {}
+[3.315198] (-) TimerEvent: {}
+[3.415754] (-) TimerEvent: {}
+[3.516261] (-) TimerEvent: {}
+[3.616822] (-) TimerEvent: {}
+[3.717361] (-) TimerEvent: {}
+[3.817856] (-) TimerEvent: {}
+[3.918345] (-) TimerEvent: {}
+[4.018972] (-) TimerEvent: {}
+[4.119514] (-) TimerEvent: {}
+[4.220158] (-) TimerEvent: {}
+[4.320654] (-) TimerEvent: {}
+[4.421431] (-) TimerEvent: {}
+[4.521977] (-) TimerEvent: {}
+[4.622482] (-) TimerEvent: {}
+[4.722991] (-) TimerEvent: {}
+[4.823626] (-) TimerEvent: {}
+[4.924124] (-) TimerEvent: {}
+[5.024606] (-) TimerEvent: {}
+[5.125134] (-) TimerEvent: {}
+[5.225595] (-) TimerEvent: {}
+[5.326108] (-) TimerEvent: {}
+[5.426607] (-) TimerEvent: {}
+[5.527128] (-) TimerEvent: {}
+[5.627633] (-) TimerEvent: {}
+[5.728159] (-) TimerEvent: {}
+[5.828667] (-) TimerEvent: {}
+[5.929283] (-) TimerEvent: {}
+[6.029851] (-) TimerEvent: {}
+[6.130459] (-) TimerEvent: {}
+[6.230994] (-) TimerEvent: {}
+[6.331511] (-) TimerEvent: {}
+[6.432041] (-) TimerEvent: {}
+[6.532594] (-) TimerEvent: {}
+[6.633214] (-) TimerEvent: {}
+[6.733564] (-) TimerEvent: {}
+[6.834023] (-) TimerEvent: {}
+[6.934499] (-) TimerEvent: {}
+[6.984546] (chassis_controller) StderrLine: {'line': b'make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1\n'}
+[6.985289] (chassis_controller) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2\n'}
+[6.985917] (chassis_controller) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[6.990411] (chassis_controller) CommandEnded: {'returncode': 2}
+[7.032538] (chassis_controller) JobEnded: {'identifier': 'chassis_controller', 'rc': 2}
+[7.034735] (-) TimerEvent: {}
+[7.034882] (-) EventReactorShutdown: {}

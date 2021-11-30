@@ -1,0 +1,54 @@
+[0.010s] Invoking command in '/home/cl4y3r/VDS/build/icc': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/cl4y3r/VDS/icc -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/icc
+[0.028s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.065s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.065s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.241s] -- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)
+[0.245s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.295s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.302s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.379s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.422s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.496s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.554s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.557s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.559s] -- Looking for pthread.h
+[0.620s] -- Looking for pthread.h - found
+[0.620s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.683s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.683s] -- Looking for pthread_create in pthreads
+[0.734s] -- Looking for pthread_create in pthreads - not found
+[0.734s] -- Looking for pthread_create in pthread
+[0.794s] -- Looking for pthread_create in pthread - found
+[0.795s] -- Found Threads: TRUE  
+[0.944s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.052s] -- Found lgsvl_msgs: 0.0.4 (/opt/ros/foxy/share/lgsvl_msgs/cmake)
+[1.217s] -- Configuring done
+[1.225s] -- Generating done
+[1.226s] -- Build files have been written to: /home/cl4y3r/VDS/build/icc
+[1.231s] Invoked command in '/home/cl4y3r/VDS/build/icc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/cl4y3r/VDS/icc -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/icc
+[1.234s] Invoking command in '/home/cl4y3r/VDS/build/icc': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/icc -- -j8 -l8
+[1.268s] [35m[1mScanning dependencies of target icc[0m
+[1.392s] [ 50%] [32mBuilding CXX object CMakeFiles/icc.dir/src/icc.cpp.o[0m
+[15.083s] [100%] [32m[1mLinking CXX executable icc[0m
+[15.784s] [100%] Built target icc
+[15.793s] Invoked command in '/home/cl4y3r/VDS/build/icc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/icc -- -j8 -l8
+[15.824s] Invoking command in '/home/cl4y3r/VDS/build/icc': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/icc
+[15.831s] -- Install configuration: ""
+[15.831s] -- Installing: /home/cl4y3r/VDS/install/icc/lib/icc/icc
+[15.837s] -- Set runtime path of "/home/cl4y3r/VDS/install/icc/lib/icc/icc" to ""
+[15.837s] -- Installing: /home/cl4y3r/VDS/install/icc/share/ament_index/resource_index/package_run_dependencies/icc
+[15.837s] -- Installing: /home/cl4y3r/VDS/install/icc/share/ament_index/resource_index/parent_prefix_path/icc
+[15.837s] -- Installing: /home/cl4y3r/VDS/install/icc/share/icc/environment/ament_prefix_path.sh
+[15.837s] -- Installing: /home/cl4y3r/VDS/install/icc/share/icc/environment/ament_prefix_path.dsv
+[15.837s] -- Installing: /home/cl4y3r/VDS/install/icc/share/icc/environment/path.sh
+[15.837s] -- Installing: /home/cl4y3r/VDS/install/icc/share/icc/environment/path.dsv
+[15.838s] -- Installing: /home/cl4y3r/VDS/install/icc/share/icc/local_setup.bash
+[15.838s] -- Installing: /home/cl4y3r/VDS/install/icc/share/icc/local_setup.sh
+[15.838s] -- Installing: /home/cl4y3r/VDS/install/icc/share/icc/local_setup.zsh
+[15.838s] -- Installing: /home/cl4y3r/VDS/install/icc/share/icc/local_setup.dsv
+[15.838s] -- Installing: /home/cl4y3r/VDS/install/icc/share/icc/package.dsv
+[15.838s] -- Installing: /home/cl4y3r/VDS/install/icc/share/ament_index/resource_index/packages/icc
+[15.838s] -- Installing: /home/cl4y3r/VDS/install/icc/share/icc/cmake/iccConfig.cmake
+[15.838s] -- Installing: /home/cl4y3r/VDS/install/icc/share/icc/cmake/iccConfig-version.cmake
+[15.838s] -- Installing: /home/cl4y3r/VDS/install/icc/share/icc/package.xml
+[15.840s] Invoked command in '/home/cl4y3r/VDS/build/icc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/icc

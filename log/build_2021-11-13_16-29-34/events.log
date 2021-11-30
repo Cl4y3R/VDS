@@ -1,0 +1,95 @@
+[0.000000] (-) TimerEvent: {}
+[0.000234] (-) JobUnselected: {'identifier': 'icc'}
+[0.001249] (autodriving) JobQueued: {'identifier': 'autodriving', 'dependencies': OrderedDict()}
+[0.001330] (autodriving) JobStarted: {'identifier': 'autodriving'}
+[0.014411] (autodriving) JobProgress: {'identifier': 'autodriving', 'progress': 'cmake'}
+[0.015533] (autodriving) JobProgress: {'identifier': 'autodriving', 'progress': 'build'}
+[0.016551] (autodriving) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cl4y3r/VDS/build/autodriving', '--', '-j8', '-l8'], 'cwd': '/home/cl4y3r/VDS/build/autodriving', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cl4y3r'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1934'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/cl4y3r'), ('OLDPWD', '/home/cl4y3r'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1720'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'cl4y3r'), ('JOURNAL_STREAM', '8:47019'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cl4y3r'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/cl4y3r/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu20:@/tmp/.ICE-unix/1962,unix/Ubuntu20:/tmp/.ICE-unix/1962'), ('INVOCATION_ID', 'a4aae728bf854bef81e23cf6251350de'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/61c5d77e_bcc3_4c7f_b410_6785c69e9fd1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.263'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cl4y3r/VDS/build/autodriving'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.062927] (autodriving) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target main_msg\x1b[0m\n'}
+[0.094073] (autodriving) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o\x1b[0m\n'}
+[0.099652] (-) TimerEvent: {}
+[0.200050] (-) TimerEvent: {}
+[0.300596] (-) TimerEvent: {}
+[0.400987] (-) TimerEvent: {}
+[0.501500] (-) TimerEvent: {}
+[0.601990] (-) TimerEvent: {}
+[0.702372] (-) TimerEvent: {}
+[0.802772] (-) TimerEvent: {}
+[0.903174] (-) TimerEvent: {}
+[1.003536] (-) TimerEvent: {}
+[1.103909] (-) TimerEvent: {}
+[1.204282] (-) TimerEvent: {}
+[1.304660] (-) TimerEvent: {}
+[1.405044] (-) TimerEvent: {}
+[1.505411] (-) TimerEvent: {}
+[1.605770] (-) TimerEvent: {}
+[1.706155] (-) TimerEvent: {}
+[1.806536] (-) TimerEvent: {}
+[1.906891] (-) TimerEvent: {}
+[1.986083] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid msgSubPub::publisher_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.986332] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:142:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimu_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.986505] (autodriving) StderrLine: {'line': b'  142 |     control.acceleration_pct = \x1b[01;31m\x1b[Kimu_msg\x1b[m\x1b[K->linear_acceleration.x;  //\xe5\x8a\xa0\xe9\x80\x9f\xe8\xb8\x8f\xe6\x9d\xbf\n'}
+[1.986634] (autodriving) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.007042] (-) TimerEvent: {}
+[2.107420] (-) TimerEvent: {}
+[2.207830] (-) TimerEvent: {}
+[2.308218] (-) TimerEvent: {}
+[2.408606] (-) TimerEvent: {}
+[2.509001] (-) TimerEvent: {}
+[2.609372] (-) TimerEvent: {}
+[2.709761] (-) TimerEvent: {}
+[2.810155] (-) TimerEvent: {}
+[2.910565] (-) TimerEvent: {}
+[3.010940] (-) TimerEvent: {}
+[3.111314] (-) TimerEvent: {}
+[3.211692] (-) TimerEvent: {}
+[3.312059] (-) TimerEvent: {}
+[3.412423] (-) TimerEvent: {}
+[3.512858] (-) TimerEvent: {}
+[3.613269] (-) TimerEvent: {}
+[3.713647] (-) TimerEvent: {}
+[3.814013] (-) TimerEvent: {}
+[3.914393] (-) TimerEvent: {}
+[4.014775] (-) TimerEvent: {}
+[4.115093] (-) TimerEvent: {}
+[4.215490] (-) TimerEvent: {}
+[4.315859] (-) TimerEvent: {}
+[4.416223] (-) TimerEvent: {}
+[4.516573] (-) TimerEvent: {}
+[4.616914] (-) TimerEvent: {}
+[4.717284] (-) TimerEvent: {}
+[4.817678] (-) TimerEvent: {}
+[4.918049] (-) TimerEvent: {}
+[5.018462] (-) TimerEvent: {}
+[5.118836] (-) TimerEvent: {}
+[5.219205] (-) TimerEvent: {}
+[5.319577] (-) TimerEvent: {}
+[5.419954] (-) TimerEvent: {}
+[5.520338] (-) TimerEvent: {}
+[5.620724] (-) TimerEvent: {}
+[5.721117] (-) TimerEvent: {}
+[5.821493] (-) TimerEvent: {}
+[5.921852] (-) TimerEvent: {}
+[6.022250] (-) TimerEvent: {}
+[6.122620] (-) TimerEvent: {}
+[6.222993] (-) TimerEvent: {}
+[6.323372] (-) TimerEvent: {}
+[6.423744] (-) TimerEvent: {}
+[6.524123] (-) TimerEvent: {}
+[6.624497] (-) TimerEvent: {}
+[6.724884] (-) TimerEvent: {}
+[6.825273] (-) TimerEvent: {}
+[6.925702] (-) TimerEvent: {}
+[7.026062] (-) TimerEvent: {}
+[7.126481] (-) TimerEvent: {}
+[7.226869] (-) TimerEvent: {}
+[7.327243] (-) TimerEvent: {}
+[7.427613] (-) TimerEvent: {}
+[7.528008] (-) TimerEvent: {}
+[7.577801] (autodriving) StderrLine: {'line': b'make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1\n'}
+[7.578260] (autodriving) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2\n'}
+[7.578556] (autodriving) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[7.581093] (autodriving) CommandEnded: {'returncode': 2}
+[7.619082] (autodriving) JobEnded: {'identifier': 'autodriving', 'rc': 2}
+[7.628280] (-) TimerEvent: {}
+[7.630136] (-) EventReactorShutdown: {}

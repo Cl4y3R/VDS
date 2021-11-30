@@ -1,0 +1,14 @@
+[0.019s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.069s] [35m[1mScanning dependencies of target main_msg[0m
+[0.109s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[19.551s] [100%] [32m[1mLinking CXX executable main_msg[0m
+[20.515s] /usr/bin/ld: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o: in function `msgSubPub::msgSubPub()':
+[20.515s] msg_subpub.cpp:(.text+0x29a): undefined reference to `chassisController::chassisController()'
+[20.516s] /usr/bin/ld: msg_subpub.cpp:(.text+0xf5d): undefined reference to `chassisController::~chassisController()'
+[20.516s] /usr/bin/ld: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o: in function `msgSubPub::~msgSubPub()':
+[20.516s] msg_subpub.cpp:(.text+0x1072): undefined reference to `chassisController::~chassisController()'
+[20.516s] collect2: error: ld returned 1 exit status
+[20.517s] make[2]: *** [CMakeFiles/main_msg.dir/build.make:147: main_msg] Error 1
+[20.517s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+[20.518s] make: *** [Makefile:141: all] Error 2
+[20.520s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '2': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8

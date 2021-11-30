@@ -1,0 +1,10 @@
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K In member function ‘[01m[Kvoid msgSubPub::subscriber_callback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:125:19:[m[K [01;31m[Kerror: [m[K‘[01m[Klong_controller[m[K’ was not declared in this scope
+  125 |     auto my_out = [01;31m[Klong_controller[m[K(imu_msg->linear_acceleration.x);
+      |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:126:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kax[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  126 |     auto [01;35m[Kax[m[K = imu_msg->linear_acceleration.x;
+      |          [01;35m[K^~[m[K
+make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,18 @@
+[0.017s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.066s] [35m[1mScanning dependencies of target main_msg[0m
+[0.098s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[2.083s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K In member function ‘[01m[Kvoid msgSubPub::subscriber_callback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[2.083s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:126:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kax[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.083s]   126 |     auto [01;35m[Kax[m[K = imu_msg->linear_acceleration.x;
+[2.083s]       |          [01;35m[K^~[m[K
+[17.270s] [100%] [32m[1mLinking CXX executable main_msg[0m
+[18.042s] /usr/bin/ld: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o: in function `msgSubPub::msgSubPub()':
+[18.042s] msg_subpub.cpp:(.text+0x29a): undefined reference to `chassisController::chassisController()'
+[18.042s] /usr/bin/ld: msg_subpub.cpp:(.text+0xf5d): undefined reference to `chassisController::~chassisController()'
+[18.042s] /usr/bin/ld: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o: in function `msgSubPub::~msgSubPub()':
+[18.042s] msg_subpub.cpp:(.text+0x1072): undefined reference to `chassisController::~chassisController()'
+[18.042s] collect2: error: ld returned 1 exit status
+[18.044s] make[2]: *** [CMakeFiles/main_msg.dir/build.make:147: main_msg] Error 1
+[18.044s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+[18.045s] make: *** [Makefile:141: all] Error 2
+[18.047s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '2': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8

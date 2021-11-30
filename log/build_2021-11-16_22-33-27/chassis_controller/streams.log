@@ -1,0 +1,26 @@
+[0.013s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.050s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.074s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[7.705s] [100%] [32m[1mLinking CXX executable chassis_controller[0m
+[8.055s] [100%] Built target chassis_controller
+[8.064s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[8.093s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/chassis_controller
+[8.100s] -- Install configuration: ""
+[8.101s] -- Installing: /home/cl4y3r/VDS/install/chassis_controller/lib/chassis_controller/chassis_controller
+[8.104s] -- Set runtime path of "/home/cl4y3r/VDS/install/chassis_controller/lib/chassis_controller/chassis_controller" to ""
+[8.104s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/package_run_dependencies/chassis_controller
+[8.104s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/parent_prefix_path/chassis_controller
+[8.104s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.sh
+[8.104s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.dsv
+[8.104s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/path.sh
+[8.104s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/path.dsv
+[8.104s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.bash
+[8.104s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.sh
+[8.104s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.zsh
+[8.104s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.dsv
+[8.105s] -- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.dsv
+[8.105s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/packages/chassis_controller
+[8.105s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig.cmake
+[8.105s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig-version.cmake
+[8.105s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.xml
+[8.107s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/chassis_controller

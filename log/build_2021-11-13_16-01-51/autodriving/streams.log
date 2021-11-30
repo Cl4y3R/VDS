@@ -1,0 +1,14 @@
+[0.018s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.066s] [35m[1mScanning dependencies of target main_msg[0m
+[0.101s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[1.964s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K In constructor ‘[01m[KmsgSubPub::msgSubPub()[m[K’:
+[1.964s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:100:45:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid msgSubPub::publisher_callback()[m[K’
+[1.965s]   100 |     timer_ = this->create_wall_timer(500ms, [01;31m[Kpublisher_callback[m[K);
+[1.965s]       |                                             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.965s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:57:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.965s]    57 |     void [01;36m[Kpublisher_callback[m[K();
+[1.965s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[8.447s] make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1
+[8.447s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+[8.448s] make: *** [Makefile:141: all] Error 2
+[8.450s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '2': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8

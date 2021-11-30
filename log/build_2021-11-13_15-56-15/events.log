@@ -1,0 +1,120 @@
+[0.000000] (-) TimerEvent: {}
+[0.000184] (-) JobUnselected: {'identifier': 'icc'}
+[0.000269] (autodriving) JobQueued: {'identifier': 'autodriving', 'dependencies': OrderedDict()}
+[0.000345] (autodriving) JobStarted: {'identifier': 'autodriving'}
+[0.016289] (autodriving) JobProgress: {'identifier': 'autodriving', 'progress': 'cmake'}
+[0.017609] (autodriving) JobProgress: {'identifier': 'autodriving', 'progress': 'build'}
+[0.018863] (autodriving) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cl4y3r/VDS/build/autodriving', '--', '-j8', '-l8'], 'cwd': '/home/cl4y3r/VDS/build/autodriving', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cl4y3r'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1934'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/cl4y3r'), ('OLDPWD', '/home/cl4y3r'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1720'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'cl4y3r'), ('JOURNAL_STREAM', '8:47019'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cl4y3r'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/cl4y3r/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu20:@/tmp/.ICE-unix/1962,unix/Ubuntu20:/tmp/.ICE-unix/1962'), ('INVOCATION_ID', 'a4aae728bf854bef81e23cf6251350de'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/31b164eb_a361_43b9_8cf1_28ba78461767'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.173'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cl4y3r/VDS/build/autodriving'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.098676] (-) TimerEvent: {}
+[0.199463] (-) TimerEvent: {}
+[0.201265] (autodriving) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target main_msg\x1b[0m\n'}
+[0.261088] (autodriving) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o\x1b[0m\n'}
+[0.299616] (-) TimerEvent: {}
+[0.400018] (-) TimerEvent: {}
+[0.500386] (-) TimerEvent: {}
+[0.600760] (-) TimerEvent: {}
+[0.701130] (-) TimerEvent: {}
+[0.801512] (-) TimerEvent: {}
+[0.901877] (-) TimerEvent: {}
+[1.002226] (-) TimerEvent: {}
+[1.102625] (-) TimerEvent: {}
+[1.202972] (-) TimerEvent: {}
+[1.303346] (-) TimerEvent: {}
+[1.403761] (-) TimerEvent: {}
+[1.504248] (-) TimerEvent: {}
+[1.604626] (-) TimerEvent: {}
+[1.704985] (-) TimerEvent: {}
+[1.805370] (-) TimerEvent: {}
+[1.905758] (-) TimerEvent: {}
+[2.006135] (-) TimerEvent: {}
+[2.106498] (-) TimerEvent: {}
+[2.206863] (-) TimerEvent: {}
+[2.307256] (-) TimerEvent: {}
+[2.347859] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KmsgSubPub::msgSubPub()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.348094] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:100:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static member function \xe2\x80\x98\x1b[01m\x1b[Kvoid msgSubPub::publisher_callback(double, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.348207] (autodriving) StderrLine: {'line': b'  100 |     timer_ = this->create_wall_timer(500ms, \x1b[01;31m\x1b[Kpublisher_callback\x1b[m\x1b[K);\n'}
+[2.348292] (autodriving) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.348371] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:57:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.348449] (autodriving) StderrLine: {'line': b'   57 |     void \x1b[01;36m\x1b[Kpublisher_callback\x1b[m\x1b[K(double a, double b);\n'}
+[2.348526] (autodriving) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.407397] (-) TimerEvent: {}
+[2.507763] (-) TimerEvent: {}
+[2.560944] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.561281] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:132:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid msgSubPub::publisher_callback()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.561423] (autodriving) StderrLine: {'line': b'  132 | void \x1b[01;31m\x1b[KmsgSubPub\x1b[m\x1b[K::publisher_callback()\n'}
+[2.561533] (autodriving) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.561635] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:57:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid msgSubPub::publisher_callback(double, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.561737] (autodriving) StderrLine: {'line': b'   57 |     void \x1b[01;36m\x1b[Kpublisher_callback\x1b[m\x1b[K(double a, double b);\n'}
+[2.561836] (autodriving) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.561955] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:43:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass msgSubPub\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[2.562145] (autodriving) StderrLine: {'line': b'   43 | class \x1b[01;36m\x1b[KmsgSubPub\x1b[m\x1b[K : public rclcpp::Node, public chassisController\n'}
+[2.562289] (autodriving) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.607903] (-) TimerEvent: {}
+[2.708249] (-) TimerEvent: {}
+[2.808632] (-) TimerEvent: {}
+[2.909015] (-) TimerEvent: {}
+[3.009369] (-) TimerEvent: {}
+[3.109798] (-) TimerEvent: {}
+[3.210294] (-) TimerEvent: {}
+[3.310663] (-) TimerEvent: {}
+[3.410990] (-) TimerEvent: {}
+[3.511286] (-) TimerEvent: {}
+[3.611687] (-) TimerEvent: {}
+[3.712014] (-) TimerEvent: {}
+[3.812360] (-) TimerEvent: {}
+[3.912696] (-) TimerEvent: {}
+[4.013030] (-) TimerEvent: {}
+[4.113388] (-) TimerEvent: {}
+[4.213739] (-) TimerEvent: {}
+[4.314086] (-) TimerEvent: {}
+[4.414436] (-) TimerEvent: {}
+[4.514775] (-) TimerEvent: {}
+[4.615140] (-) TimerEvent: {}
+[4.715491] (-) TimerEvent: {}
+[4.815887] (-) TimerEvent: {}
+[4.916286] (-) TimerEvent: {}
+[5.016635] (-) TimerEvent: {}
+[5.116984] (-) TimerEvent: {}
+[5.217290] (-) TimerEvent: {}
+[5.317633] (-) TimerEvent: {}
+[5.417995] (-) TimerEvent: {}
+[5.518331] (-) TimerEvent: {}
+[5.618671] (-) TimerEvent: {}
+[5.719030] (-) TimerEvent: {}
+[5.819337] (-) TimerEvent: {}
+[5.919631] (-) TimerEvent: {}
+[6.019965] (-) TimerEvent: {}
+[6.120311] (-) TimerEvent: {}
+[6.220691] (-) TimerEvent: {}
+[6.321052] (-) TimerEvent: {}
+[6.421412] (-) TimerEvent: {}
+[6.521776] (-) TimerEvent: {}
+[6.622123] (-) TimerEvent: {}
+[6.722461] (-) TimerEvent: {}
+[6.822775] (-) TimerEvent: {}
+[6.923129] (-) TimerEvent: {}
+[7.023479] (-) TimerEvent: {}
+[7.123844] (-) TimerEvent: {}
+[7.224201] (-) TimerEvent: {}
+[7.324551] (-) TimerEvent: {}
+[7.424925] (-) TimerEvent: {}
+[7.525352] (-) TimerEvent: {}
+[7.625736] (-) TimerEvent: {}
+[7.726096] (-) TimerEvent: {}
+[7.826601] (-) TimerEvent: {}
+[7.927033] (-) TimerEvent: {}
+[8.027393] (-) TimerEvent: {}
+[8.127840] (-) TimerEvent: {}
+[8.228221] (-) TimerEvent: {}
+[8.328549] (-) TimerEvent: {}
+[8.428884] (-) TimerEvent: {}
+[8.529248] (-) TimerEvent: {}
+[8.629603] (-) TimerEvent: {}
+[8.729962] (-) TimerEvent: {}
+[8.776854] (autodriving) StderrLine: {'line': b'make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1\n'}
+[8.777357] (autodriving) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2\n'}
+[8.777698] (autodriving) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.781330] (autodriving) CommandEnded: {'returncode': 2}
+[8.828714] (autodriving) JobEnded: {'identifier': 'autodriving', 'rc': 2}
+[8.830043] (-) TimerEvent: {}
+[8.839903] (-) EventReactorShutdown: {}

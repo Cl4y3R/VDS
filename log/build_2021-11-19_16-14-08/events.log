@@ -1,0 +1,85 @@
+[0.000000] (-) TimerEvent: {}
+[0.000108] (-) JobUnselected: {'identifier': 'autodriving'}
+[0.000135] (chassis_controller) JobQueued: {'identifier': 'chassis_controller', 'dependencies': OrderedDict()}
+[0.000157] (chassis_controller) JobStarted: {'identifier': 'chassis_controller'}
+[0.008904] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'cmake'}
+[0.010103] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'build'}
+[0.010157] (chassis_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cl4y3r/VDS/build/chassis_controller', '--', '-j8', '-l8'], 'cwd': '/home/cl4y3r/VDS/build/chassis_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cl4y3r'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1940'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/cl4y3r'), ('OLDPWD', '/home/cl4y3r'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1727'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'cl4y3r'), ('JOURNAL_STREAM', '8:50637'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cl4y3r'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu20:@/tmp/.ICE-unix/1968,unix/Ubuntu20:/tmp/.ICE-unix/1968'), ('INVOCATION_ID', '5fd77e02a7fd47689ab6ce5260511cba'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/99001c06_287d_4c21_a5ff_ea13cd1550ec'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.401'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cl4y3r/VDS/build/chassis_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.048851] (chassis_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target chassis_controller\x1b[0m\n'}
+[0.073165] (chassis_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o\x1b[0m\n'}
+[0.099266] (-) TimerEvent: {}
+[0.199643] (-) TimerEvent: {}
+[0.299954] (-) TimerEvent: {}
+[0.400316] (-) TimerEvent: {}
+[0.500633] (-) TimerEvent: {}
+[0.600950] (-) TimerEvent: {}
+[0.701274] (-) TimerEvent: {}
+[0.801598] (-) TimerEvent: {}
+[0.901928] (-) TimerEvent: {}
+[1.002203] (-) TimerEvent: {}
+[1.102526] (-) TimerEvent: {}
+[1.202851] (-) TimerEvent: {}
+[1.303149] (-) TimerEvent: {}
+[1.403463] (-) TimerEvent: {}
+[1.487941] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ChassisController::msg_subscriber(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.488140] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:41:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst _pose_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct geometry_msgs::msg::PoseWithCovariance_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kposition\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.488226] (chassis_controller) StderrLine: {'line': b'   41 |     x = gps_msg->pose.\x1b[01;31m\x1b[Kposition\x1b[m\x1b[K.x;\n'}
+[1.488296] (chassis_controller) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.488531] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:\x1b[m\x1b[K At global scope:\n'}
+[1.488627] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:50:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kdouble ChassisController::lateral_controller()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.488695] (chassis_controller) StderrLine: {'line': b'   50 | double \x1b[01;31m\x1b[KChassisController\x1b[m\x1b[K::lateral_controller(){\n'}
+[1.488761] (chassis_controller) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.488821] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[1.488882] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:72:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid ChassisController::lateral_controller()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.488955] (chassis_controller) StderrLine: {'line': b'   72 |         void \x1b[01;36m\x1b[Klateral_controller\x1b[m\x1b[K();\n'}
+[1.489013] (chassis_controller) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.489071] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[1.489136] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass ChassisController\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[1.489195] (chassis_controller) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KChassisController\x1b[m\x1b[K: public rclcpp::Node{\n'}
+[1.489253] (chassis_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.503596] (-) TimerEvent: {}
+[1.603891] (-) TimerEvent: {}
+[1.704183] (-) TimerEvent: {}
+[1.804498] (-) TimerEvent: {}
+[1.904787] (-) TimerEvent: {}
+[2.005084] (-) TimerEvent: {}
+[2.105405] (-) TimerEvent: {}
+[2.205722] (-) TimerEvent: {}
+[2.306048] (-) TimerEvent: {}
+[2.406369] (-) TimerEvent: {}
+[2.506696] (-) TimerEvent: {}
+[2.607014] (-) TimerEvent: {}
+[2.707327] (-) TimerEvent: {}
+[2.807653] (-) TimerEvent: {}
+[2.907970] (-) TimerEvent: {}
+[3.008303] (-) TimerEvent: {}
+[3.108614] (-) TimerEvent: {}
+[3.208947] (-) TimerEvent: {}
+[3.309304] (-) TimerEvent: {}
+[3.409626] (-) TimerEvent: {}
+[3.509939] (-) TimerEvent: {}
+[3.610264] (-) TimerEvent: {}
+[3.710596] (-) TimerEvent: {}
+[3.810911] (-) TimerEvent: {}
+[3.911242] (-) TimerEvent: {}
+[4.011556] (-) TimerEvent: {}
+[4.111879] (-) TimerEvent: {}
+[4.212201] (-) TimerEvent: {}
+[4.312536] (-) TimerEvent: {}
+[4.412847] (-) TimerEvent: {}
+[4.513174] (-) TimerEvent: {}
+[4.613488] (-) TimerEvent: {}
+[4.713829] (-) TimerEvent: {}
+[4.814143] (-) TimerEvent: {}
+[4.914496] (-) TimerEvent: {}
+[5.014801] (-) TimerEvent: {}
+[5.115130] (-) TimerEvent: {}
+[5.215490] (-) TimerEvent: {}
+[5.315832] (-) TimerEvent: {}
+[5.416152] (-) TimerEvent: {}
+[5.480874] (chassis_controller) StderrLine: {'line': b'make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1\n'}
+[5.481155] (chassis_controller) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2\n'}
+[5.481353] (chassis_controller) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[5.483009] (chassis_controller) CommandEnded: {'returncode': 2}
+[5.515367] (chassis_controller) JobEnded: {'identifier': 'chassis_controller', 'rc': 2}
+[5.516359] (-) EventReactorShutdown: {}

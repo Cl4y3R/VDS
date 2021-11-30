@@ -1,0 +1,56 @@
+[0.022s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.076s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.112s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[1.909s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In constructor ‘[01m[KChassisController::ChassisController()[m[K’:
+[1.909s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:16:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kwp_x[m[K’ was not declared in this scope; did you mean ‘[01m[Kwp[m[K’?
+[1.909s]    16 |     for (auto i: [01;31m[Kwp_x[m[K)
+[1.910s]       |                  [01;31m[K^~~~[m[K
+[1.910s]       |                  [32m[Kwp[m[K
+[1.910s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:16:5:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kfor[m[K’ clause does not guard... [[01;35m[K-Wmisleading-indentation[m[K]
+[1.910s]    16 |     [01;35m[Kfor[m[K (auto i: wp_x)
+[1.910s]       |     [01;35m[K^~~[m[K
+[1.911s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:18:9:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kfor[m[K’
+[1.911s]    18 |         [01;36m[Kcout[m[K<<"hello"<<endl;
+[1.911s]       |         [01;36m[K^~~~[m[K
+[2.140s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kstd::vector<std::vector<double, std::allocator<double> > > ChassisController::waypoint_loader(std::string)[m[K’:
+[2.140s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:96:8:[m[K [01;31m[Kerror: [m[K‘[01m[Klocation_x[m[K’ was not declared in this scope
+[2.140s]    96 |     if([01;31m[Klocation_x[m[K.empty()) cout<<"File is empty!!!!"<<endl;
+[2.140s]       |        [01;31m[K^~~~~~~~~~[m[K
+[2.144s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:98:12:[m[K [01;31m[Kerror: [m[K‘[01m[Klocation_x[m[K’ was not declared in this scope
+[2.145s]    98 |     return [01;31m[Klocation_x[m[K,location_y;
+[2.145s]       |            [01;31m[K^~~~~~~~~~[m[K
+[2.147s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:98:23:[m[K [01;31m[Kerror: [m[K‘[01m[Klocation_y[m[K’ was not declared in this scope
+[2.148s]    98 |     return location_x,[01;31m[Klocation_y[m[K;
+[2.148s]       |                       [01;31m[K^~~~~~~~~~[m[K
+[2.148s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::longitudinal_controller(double, double)[m[K’:
+[2.149s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:101:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.149s]   101 | double ChassisController::longitudinal_controller([01;35m[Kdouble velocity_x[m[K, double acc_x){
+[2.149s]       |                                                   [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[2.149s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:101:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kacc_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.149s]   101 | ontroller::longitudinal_controller(double velocity_x, [01;35m[Kdouble acc_x[m[K){
+[2.149s]       |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+[2.149s] 
+[2.150s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::lateral_controller(double, double, double, double, double)[m[K’:
+[2.150s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:105:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.150s]   105 | double ChassisController::lateral_controller([01;35m[Kdouble yaw[m[K, double yaw_rate, double pos_x, double pos_y, double velocity_x){
+[2.150s]       |                                              [01;35m[K~~~~~~~^~~[m[K
+[2.150s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:105:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaw_rate[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.151s]   105 | ble ChassisController::lateral_controller(double yaw, [01;35m[Kdouble yaw_rate[m[K, double pos_x, double pos_y, double velocity_x){
+[2.151s]       |                                                       [01;35m[K~~~~~~~^~~~~~~~[m[K
+[2.151s] 
+[2.151s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:105:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.151s]   105 | ller::lateral_controller(double yaw, double yaw_rate, [01;35m[Kdouble pos_x[m[K, double pos_y, double velocity_x){
+[2.151s]       |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+[2.152s] 
+[2.152s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:105:96:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos_y[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.152s]   105 | controller(double yaw, double yaw_rate, double pos_x, [01;35m[Kdouble pos_y[m[K, double velocity_x){
+[2.152s]       |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+[2.152s] 
+[2.152s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:105:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.152s]   105 | er(double yaw, double yaw_rate, double pos_x, double pos_y, [01;35m[Kdouble velocity_x[m[K){
+[2.153s]       |                                                             [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[2.153s] 
+[6.692s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[6.693s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[6.693s] make: *** [Makefile:141: all] Error 2
+[6.699s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

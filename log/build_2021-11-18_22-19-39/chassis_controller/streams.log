@@ -1,0 +1,24 @@
+[0.017s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.052s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.080s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.255s] Traceback (most recent call last):
+[0.255s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[0.255s]     from ament_package.templates import get_environment_hook_template_path
+[0.255s] ModuleNotFoundError: No module named 'ament_package'
+[0.274s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[0.274s]   execute_process(/usr/bin/python3
+[0.274s]   /opt/ros/foxy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[0.274s]   /home/cl4y3r/VDS/build/chassis_controller/ament_cmake_package_templates/templates.cmake)
+[0.274s]   returned error code 1
+[0.274s] Call Stack (most recent call first):
+[0.274s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.275s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.275s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.275s]   CMakeLists.txt:15 (find_package)
+[0.275s] 
+[0.275s] 
+[0.275s] -- Configuring incomplete, errors occurred!
+[0.275s] See also "/home/cl4y3r/VDS/build/chassis_controller/CMakeFiles/CMakeOutput.log".
+[0.275s] See also "/home/cl4y3r/VDS/build/chassis_controller/CMakeFiles/CMakeError.log".
+[0.276s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.280s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

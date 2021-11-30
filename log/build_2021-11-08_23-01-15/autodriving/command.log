@@ -1,0 +1,4 @@
+Invoking command in '/home/cl4y3r/VDS/build/autodriving': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+Invoking command in '/home/cl4y3r/VDS/build/autodriving': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/autodriving
+Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/autodriving

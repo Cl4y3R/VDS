@@ -1,0 +1,9 @@
+[35m[1mScanning dependencies of target main_msg[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[100%] [32m[1mLinking CXX executable main_msg[0m
+/usr/bin/ld: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o: in function `msgSubPub::msgSubPub()':
+msg_subpub.cpp:(.text+0x29a): undefined reference to `chassisController::chassisController()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/main_msg.dir/build.make:147: main_msg] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

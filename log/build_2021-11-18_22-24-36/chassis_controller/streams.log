@@ -1,0 +1,34 @@
+[0.018s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.051s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.077s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.306s] -- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)
+[0.310s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.368s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.374s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.523s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.592s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.596s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.782s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.924s] -- Found lgsvl_msgs: 0.0.4 (/opt/ros/foxy/share/lgsvl_msgs/cmake)
+[1.096s] CMake Error at CMakeLists.txt:21 (find_package):
+[1.096s]   By not providing "Findcmath.cmake" in CMAKE_MODULE_PATH this project has
+[1.096s]   asked CMake to find a package configuration file provided by "cmath", but
+[1.097s]   CMake did not find one.
+[1.097s] 
+[1.097s]   Could not find a package configuration file provided by "cmath" with any of
+[1.097s]   the following names:
+[1.097s] 
+[1.097s]     cmathConfig.cmake
+[1.097s]     cmath-config.cmake
+[1.097s] 
+[1.097s]   Add the installation prefix of "cmath" to CMAKE_PREFIX_PATH or set
+[1.097s]   "cmath_DIR" to a directory containing one of the above files.  If "cmath"
+[1.097s]   provides a separate development package or SDK, be sure it has been
+[1.097s]   installed.
+[1.098s] 
+[1.098s] 
+[1.098s] -- Configuring incomplete, errors occurred!
+[1.098s] See also "/home/cl4y3r/VDS/build/chassis_controller/CMakeFiles/CMakeOutput.log".
+[1.098s] See also "/home/cl4y3r/VDS/build/chassis_controller/CMakeFiles/CMakeError.log".
+[1.104s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[1.107s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

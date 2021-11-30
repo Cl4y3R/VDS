@@ -1,0 +1,25 @@
+[0.011s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.035s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.055s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.207s] -- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)
+[0.209s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.238s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.241s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.339s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.381s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.382s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.507s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.607s] -- Found lgsvl_msgs: 0.0.4 (/opt/ros/foxy/share/lgsvl_msgs/cmake)
+[0.769s] -- Configuring done
+[0.777s] -- Generating done
+[0.778s] -- Build files have been written to: /home/cl4y3r/VDS/build/chassis_controller
+[0.799s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.809s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[0.815s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kchassis_controller/chassis_controller.hpp: No such file or directory
+[0.815s]     1 | #include [01;31m[K"chassis_controller/chassis_controller.hpp"[m[K
+[0.815s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.815s] compilation terminated.
+[0.816s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[0.816s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[0.816s] make: *** [Makefile:141: all] Error 2
+[0.818s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

@@ -1,0 +1,10 @@
+[35m[1mScanning dependencies of target chassis_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In constructor ‘[01m[KChassisController::ChassisController()[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:15:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_timer[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer[m[K’?
+   15 |     [01;31m[K_timer[m[K = this->create_wall_timer(500ms, std::bind(&ChassisController::long_controller, this));
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Ktimer[m[K
+make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

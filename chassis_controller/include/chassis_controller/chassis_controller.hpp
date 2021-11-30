@@ -102,6 +102,6 @@ class ChassisController: public rclcpp::Node{
 
         //controller functions
         double lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y, 
-                                            double velocity_x, double x_ref, double y_ref, double theta_ref, double kappa_ref);
+                                            double velocity_x, double velocity_y, double x_ref, double y_ref, double theta_ref, double kappa_ref);
         double longitudinal_controller(double velocity, double acc_x);
 };

@@ -1,0 +1,26 @@
+[0.012s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.048s] [35m[1mScanning dependencies of target main_msg[0m
+[0.071s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[13.754s] [100%] [32m[1mLinking CXX executable main_msg[0m
+[14.426s] [100%] Built target main_msg
+[14.436s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[14.466s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/autodriving
+[14.473s] -- Install configuration: ""
+[14.473s] -- Installing: /home/cl4y3r/VDS/install/autodriving/lib/autodriving/main_msg
+[14.479s] -- Set runtime path of "/home/cl4y3r/VDS/install/autodriving/lib/autodriving/main_msg" to ""
+[14.479s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/package_run_dependencies/autodriving
+[14.479s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/parent_prefix_path/autodriving
+[14.479s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/ament_prefix_path.sh
+[14.479s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/ament_prefix_path.dsv
+[14.479s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/path.sh
+[14.480s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/path.dsv
+[14.480s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.bash
+[14.480s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.sh
+[14.480s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.zsh
+[14.480s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.dsv
+[14.480s] -- Installing: /home/cl4y3r/VDS/install/autodriving/share/autodriving/package.dsv
+[14.480s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/packages/autodriving
+[14.480s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/cmake/autodrivingConfig.cmake
+[14.480s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/cmake/autodrivingConfig-version.cmake
+[14.480s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/package.xml
+[14.482s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/autodriving

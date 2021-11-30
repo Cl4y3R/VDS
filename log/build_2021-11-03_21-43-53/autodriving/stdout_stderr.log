@@ -1,0 +1,216 @@
+[35m[1mScanning dependencies of target main_msg[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:25:110:[m[K [01;31m[Kerror: [m[K‘[01m[KImu[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+   25 | ateTime<sensor_msgs::msg::CompressedImage, sensor_msgs::msg::[01;31m[KImu[m[K, lgsvl_msgs::msg::Detection3DArray,
+      |                                                              [01;31m[K^~~[m[K
+
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:25:110:[m[K [01;31m[Kerror: [m[K‘[01m[KImu[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:26:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+   26 |        lgsvl_msgs::msg::SignalArray, lgsvl_msgs::msg::CanBusData[01;31m[K>[m[K MySyncPolicy;
+      |                                                                 [01;31m[K^[m[K
+
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:46:51:[m[K [01;31m[Kerror: [m[K‘[01m[KImu[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+   46 |     message_filters::Subscriber<sensor_msgs::msg::[01;31m[KImu[m[K> imu_sub;                         // IMU传感器
+      |                                                   [01;31m[K^~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:46:51:[m[K [01;31m[Kerror: [m[K‘[01m[KImu[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:46:54:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   46 |     message_filters::Subscriber<sensor_msgs::msg::Imu[01;31m[K>[m[K imu_sub;                         // IMU传感器
+      |                                                      [01;31m[K^[m[K
+In file included from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:6[m[K:
+/opt/ros/foxy/include/message_filters/synchronizer.h: In instantiation of ‘[01m[Kclass message_filters::Synchronizer<int>[m[K’:
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:52:134:[m[K   required from here
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:53:7:[m[K [01;31m[Kerror: [m[Kbase type ‘[01m[Kint[m[K’ fails to be a struct or class type
+   53 | class [01;31m[KSynchronizer[m[K : public noncopyable, public Policy
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:56:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   56 |   typedef typename Policy::Messages [01;31m[KMessages[m[K;
+      |                                     [01;31m[K^~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:57:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   57 |   typedef typename Policy::Events [01;31m[KEvents[m[K;
+      |                                   [01;31m[K^~~~~~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:58:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   58 |   typedef typename Policy::Signal [01;31m[KSignal[m[K;
+      |                                   [01;31m[K^~~~~~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:60:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   60 |   typedef typename std::tuple_element<0, Messages>::type [01;31m[KM0[m[K;
+      |                                                          [01;31m[K^~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:61:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   61 |   typedef typename std::tuple_element<1, Messages>::type [01;31m[KM1[m[K;
+      |                                                          [01;31m[K^~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:62:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   62 |   typedef typename std::tuple_element<2, Messages>::type [01;31m[KM2[m[K;
+      |                                                          [01;31m[K^~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:63:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   63 |   typedef typename std::tuple_element<3, Messages>::type [01;31m[KM3[m[K;
+      |                                                          [01;31m[K^~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:64:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   64 |   typedef typename std::tuple_element<4, Messages>::type [01;31m[KM4[m[K;
+      |                                                          [01;31m[K^~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:65:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   65 |   typedef typename std::tuple_element<5, Messages>::type [01;31m[KM5[m[K;
+      |                                                          [01;31m[K^~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:66:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   66 |   typedef typename std::tuple_element<6, Messages>::type [01;31m[KM6[m[K;
+      |                                                          [01;31m[K^~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:67:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   67 |   typedef typename std::tuple_element<7, Messages>::type [01;31m[KM7[m[K;
+      |                                                          [01;31m[K^~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:68:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   68 |   typedef typename std::tuple_element<8, Messages>::type [01;31m[KM8[m[K;
+      |                                                          [01;31m[K^~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:71:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   71 |   typedef typename std::tuple_element<0, Events>::type [01;31m[KM0Event[m[K;
+      |                                                        [01;31m[K^~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:72:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   72 |   typedef typename std::tuple_element<1, Events>::type [01;31m[KM1Event[m[K;
+      |                                                        [01;31m[K^~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:73:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   73 |   typedef typename std::tuple_element<2, Events>::type [01;31m[KM2Event[m[K;
+      |                                                        [01;31m[K^~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:74:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   74 |   typedef typename std::tuple_element<3, Events>::type [01;31m[KM3Event[m[K;
+      |                                                        [01;31m[K^~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:75:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   75 |   typedef typename std::tuple_element<4, Events>::type [01;31m[KM4Event[m[K;
+      |                                                        [01;31m[K^~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:76:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   76 |   typedef typename std::tuple_element<5, Events>::type [01;31m[KM5Event[m[K;
+      |                                                        [01;31m[K^~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:77:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   77 |   typedef typename std::tuple_element<6, Events>::type [01;31m[KM6Event[m[K;
+      |                                                        [01;31m[K^~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:78:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   78 |   typedef typename std::tuple_element<7, Events>::type [01;31m[KM7Event[m[K;
+      |                                                        [01;31m[K^~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:79:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+   79 |   typedef typename std::tuple_element<8, Events>::type [01;31m[KM8Event[m[K;
+      |                                                        [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:6[m[K:
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:325:17:[m[K [01;31m[Kerror: [m[Ktype ‘[01m[Kint[m[K’ is not a base type for type ‘[01m[Kmessage_filters::Synchronizer<int>[m[K’
+  325 |   using Policy::[01;31m[Kadd[m[K;
+      |                 [01;31m[K^~~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:328:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+  328 |   void [01;31m[Kadd[m[K(const std::shared_ptr<typename std::tuple_element<i, Messages>::type const>& msg)
+      |        [01;31m[K^~~[m[K
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:344:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kint[m[K’ is not a class, struct, or union type
+  344 |   void [01;31m[Kcb[m[K(const typename std::tuple_element<i, Events>::type& evt)
+      |        [01;31m[K^~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K In constructor ‘[01m[KmsgSubPub::msgSubPub()[m[K’:
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:69:13:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksubscribe[m[K’ in ‘[01m[K((msgSubPub*)this)->msgSubPub::imu_sub[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   69 |     imu_sub.[01;31m[Ksubscribe[m[K(this, "/simulator/sensor/imu");
+      |             [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/bind.hpp:22[m[K,
+                 from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:3[m[K:
+/usr/include/boost/bind/bind.hpp: In instantiation of ‘[01m[Kstruct boost::_bi::result_traits<boost::_bi::unspecified, void (msgSubPub::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >&)>[m[K’:
+[01m[K/usr/include/boost/bind/bind.hpp:1284:48:[m[K   required from ‘[01m[Kclass boost::_bi::bind_t<boost::_bi::unspecified, void (msgSubPub::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >&), boost::_bi::list5<boost::_bi::value<msgSubPub*>, boost::arg<1>, boost::arg<2>, boost::arg<3>, boost::arg<4> > >[m[K’
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:74:95:[m[K   required from here
+[01m[K/usr/include/boost/bind/bind.hpp:75:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid (msgSubPub::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >&)[m[K’ is not a class, struct, or union type
+   75 |     typedef typename F::result_type [01;31m[Ktype[m[K;
+      |                                     [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+                 from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5[m[K:
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K In function ‘[01m[Kvoid subscriber_callback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:94:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   94 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:94:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:94:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   94 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:94:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   94 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:94:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   94 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+                 from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5[m[K:
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:94:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   94 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:94:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   94 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");
+      |                 [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+                 from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5[m[K:
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:96:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   96 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "scan stamp:%d - %d - %d - %d -%d", image_msg->header.stamp.sec, imu_msg->header.stamp.sec, groundturth_msg->header.stamp.sec,
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:96:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:96:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   96 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "scan stamp:%d - %d - %d - %d -%d", image_msg->header.stamp.sec, imu_msg->header.stamp.sec, groundturth_msg->header.stamp.sec,
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:96:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   96 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "scan stamp:%d - %d - %d - %d -%d", image_msg->header.stamp.sec, imu_msg->header.stamp.sec, groundturth_msg->header.stamp.sec,
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:96:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   96 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "scan stamp:%d - %d - %d - %d -%d", image_msg->header.stamp.sec, imu_msg->header.stamp.sec, groundturth_msg->header.stamp.sec,
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+                 from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5[m[K:
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:96:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   96 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "scan stamp:%d - %d - %d - %d -%d", image_msg->header.stamp.sec, imu_msg->header.stamp.sec, groundturth_msg->header.stamp.sec,
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:96:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   96 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "scan stamp:%d - %d - %d - %d -%d", image_msg->header.stamp.sec, imu_msg->header.stamp.sec, groundturth_msg->header.stamp.sec,
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K In member function ‘[01m[Kvoid msgSubPub::publisher_callback()[m[K’:
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:123:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct lgsvl_msgs::msg::VehicleControlData_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktarget_wheel_angle_rate[m[K’; did you mean ‘[01m[Ktarget_wheel_angular_rate[m[K’?
+  123 |     control.[01;31m[Ktarget_wheel_angle_rate[m[K = 0.1; //车轮转角角速度
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |             [32m[Ktarget_wheel_angular_rate[m[K
+In file included from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:6[m[K:
+/opt/ros/foxy/include/message_filters/synchronizer.h: In instantiation of ‘[01m[Kmessage_filters::Synchronizer<Policy>::Synchronizer(const Policy&, F0&, F1&, F2&, F3&) [with F0 = message_filters::Subscriber<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >; F1 = message_filters::Subscriber<lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >; F2 = message_filters::Subscriber<lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >; F3 = message_filters::Subscriber<lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >; Policy = int][m[K’:
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:52:134:[m[K   required from here
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:162:18:[m[K [01;31m[Kerror: [m[Ktype ‘[01m[Kint[m[K’ is not a direct base of ‘[01m[Kmessage_filters::Synchronizer<int>[m[K’
+  162 |   : Policy(policy[01;31m[K)[m[K
+      |                  [01;31m[K^[m[K
+In file included from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:6[m[K:
+/opt/ros/foxy/include/message_filters/synchronizer.h: In instantiation of ‘[01m[Kmessage_filters::Connection message_filters::Synchronizer<Policy>::registerCallback(const C&) [with C = boost::_bi::bind_t<boost::_bi::unspecified, void (msgSubPub::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >&), boost::_bi::list5<boost::_bi::value<msgSubPub*>, boost::arg<1>, boost::arg<2>, boost::arg<3>, boost::arg<4> > >; Policy = int][m[K’:
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:74:96:[m[K   required from here
+[01m[K/opt/ros/foxy/include/message_filters/synchronizer.h:298:12:[m[K [01;31m[Kerror: [m[Kusing invalid field ‘[01m[Kmessage_filters::Synchronizer<Policy>::signal_[m[K’
+  298 |     return [01;31m[Ksignal_[m[K.addCallback(callback);
+      |            [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,35 @@
+[0.016s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.112s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.146s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[1.931s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kvoid ChassisController::msg_subscriber(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[1.931s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:25:86:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgroundturth_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.932s]    25 |       [01;35m[Kconst lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg[m[K,
+[1.932s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[1.932s] 
+[1.932s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:26:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcanbus_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.932s]    26 |                  [01;35m[Kconst lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg[m[K)
+[1.932s]       |                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[1.932s] 
+[11.471s] [100%] [32m[1mLinking CXX executable chassis_controller[0m
+[12.031s] [100%] Built target chassis_controller
+[12.041s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '0': /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[12.068s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': /usr/bin/cmake --install /home/cl4y3r/VDS/build/chassis_controller
+[12.075s] -- Install configuration: ""
+[12.076s] -- Installing: /home/cl4y3r/VDS/install/chassis_controller/lib/chassis_controller/chassis_controller
+[12.080s] -- Set runtime path of "/home/cl4y3r/VDS/install/chassis_controller/lib/chassis_controller/chassis_controller" to ""
+[12.080s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/package_run_dependencies/chassis_controller
+[12.080s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/parent_prefix_path/chassis_controller
+[12.080s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.sh
+[12.080s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.dsv
+[12.080s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/path.sh
+[12.080s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/path.dsv
+[12.080s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.bash
+[12.081s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.sh
+[12.081s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.zsh
+[12.081s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.dsv
+[12.081s] -- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.dsv
+[12.081s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/packages/chassis_controller
+[12.081s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig.cmake
+[12.081s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig-version.cmake
+[12.081s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.xml
+[12.083s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '0': /usr/bin/cmake --install /home/cl4y3r/VDS/build/chassis_controller

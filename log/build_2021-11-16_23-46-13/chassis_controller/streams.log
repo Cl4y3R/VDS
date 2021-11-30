@@ -1,0 +1,24 @@
+[0.020s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.063s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.090s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[1.718s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[1.718s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.718s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.718s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.719s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.719s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.719s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.719s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.719s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.719s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.719s]                  from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+[1.719s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[1.719s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[1.719s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In constructor ‘[01m[KChassisController::ChassisController()[m[K’:
+[1.720s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:16:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kcount_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcount[m[K’?
+[1.720s]    16 |     RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", [01;31m[Kcount_[m[K++);
+[1.720s]       |                                                         [01;31m[K^~~~~~[m[K
+[5.238s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[5.239s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[5.239s] make: *** [Makefile:141: all] Error 2
+[5.243s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

@@ -1,0 +1,4 @@
+[0.020s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.072s] [35m[1mScanning dependencies of target main_msg[0m
+[0.107s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[8.892s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '2': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8

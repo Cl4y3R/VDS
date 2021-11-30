@@ -1,0 +1,7 @@
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kvoid ChassisController::msg_subscriber(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:41:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst _pose_type[m[K’ {aka ‘[01m[Kconst struct geometry_msgs::msg::PoseWithCovariance_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+   41 |     x = gps_msg->pose.[01;31m[Kposition[m[K.x;
+      |                       [01;31m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

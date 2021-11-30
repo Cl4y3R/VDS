@@ -1,0 +1,58 @@
+[0.011s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/cl4y3r/VDS/autodriving -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/autodriving
+[0.116s] -- The C compiler identification is GNU 9.3.0
+[0.179s] -- The CXX compiler identification is GNU 9.3.0
+[0.185s] -- Check for working C compiler: /usr/bin/cc
+[0.262s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.263s] -- Detecting C compiler ABI info
+[0.341s] -- Detecting C compiler ABI info - done
+[0.356s] -- Detecting C compile features
+[0.357s] -- Detecting C compile features - done
+[0.360s] -- Check for working CXX compiler: /usr/bin/c++
+[0.429s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.430s] -- Detecting CXX compiler ABI info
+[0.498s] -- Detecting CXX compiler ABI info - done
+[0.509s] -- Detecting CXX compile features
+[0.510s] -- Detecting CXX compile features - done
+[0.512s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.531s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.531s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.700s] -- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)
+[0.703s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.738s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.743s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.795s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.817s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.878s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.924s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.925s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.926s] -- Looking for pthread.h
+[0.987s] -- Looking for pthread.h - found
+[0.987s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.051s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.051s] -- Looking for pthread_create in pthreads
+[1.102s] -- Looking for pthread_create in pthreads - not found
+[1.102s] -- Looking for pthread_create in pthread
+[1.163s] -- Looking for pthread_create in pthread - found
+[1.164s] -- Found Threads: TRUE  
+[1.298s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.407s] CMake Error at CMakeLists.txt:22 (find_package):
+[1.407s]   By not providing "Findlgsvl_msgs.cmake" in CMAKE_MODULE_PATH this project
+[1.407s]   has asked CMake to find a package configuration file provided by
+[1.407s]   "lgsvl_msgs", but CMake did not find one.
+[1.407s] 
+[1.407s]   Could not find a package configuration file provided by "lgsvl_msgs" with
+[1.407s]   any of the following names:
+[1.407s] 
+[1.407s]     lgsvl_msgsConfig.cmake
+[1.407s]     lgsvl_msgs-config.cmake
+[1.407s] 
+[1.407s]   Add the installation prefix of "lgsvl_msgs" to CMAKE_PREFIX_PATH or set
+[1.407s]   "lgsvl_msgs_DIR" to a directory containing one of the above files.  If
+[1.407s]   "lgsvl_msgs" provides a separate development package or SDK, be sure it has
+[1.408s]   been installed.
+[1.408s] 
+[1.408s] 
+[1.408s] -- Configuring incomplete, errors occurred!
+[1.408s] See also "/home/cl4y3r/VDS/build/autodriving/CMakeFiles/CMakeOutput.log".
+[1.408s] See also "/home/cl4y3r/VDS/build/autodriving/CMakeFiles/CMakeError.log".
+[1.414s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/cl4y3r/VDS/autodriving -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/autodriving

@@ -1,0 +1,6 @@
+Invoking command in '/home/cl4y3r/VDS/build/icc': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/cl4y3r/VDS/icc -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/icc
+Invoked command in '/home/cl4y3r/VDS/build/icc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/cl4y3r/VDS/icc -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/icc
+Invoking command in '/home/cl4y3r/VDS/build/icc': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/icc -- -j8 -l8
+Invoked command in '/home/cl4y3r/VDS/build/icc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/icc -- -j8 -l8
+Invoking command in '/home/cl4y3r/VDS/build/icc': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/icc
+Invoked command in '/home/cl4y3r/VDS/build/icc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/icc

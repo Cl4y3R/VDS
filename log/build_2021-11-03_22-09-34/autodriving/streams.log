@@ -1,0 +1,26 @@
+[0.017s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.063s] [35m[1mScanning dependencies of target main_msg[0m
+[0.090s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[17.346s] [100%] [32m[1mLinking CXX executable main_msg[0m
+[18.190s] [100%] Built target main_msg
+[18.203s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '0': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[18.248s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': /usr/bin/cmake --install /home/cl4y3r/VDS/build/autodriving
+[18.259s] -- Install configuration: ""
+[18.260s] -- Installing: /home/cl4y3r/VDS/install/autodriving/lib/autodriving/main_msg
+[18.267s] -- Set runtime path of "/home/cl4y3r/VDS/install/autodriving/lib/autodriving/main_msg" to ""
+[18.268s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/package_run_dependencies/autodriving
+[18.268s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/parent_prefix_path/autodriving
+[18.268s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/ament_prefix_path.sh
+[18.268s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/ament_prefix_path.dsv
+[18.269s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/path.sh
+[18.269s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/path.dsv
+[18.269s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.bash
+[18.269s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.sh
+[18.269s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.zsh
+[18.269s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.dsv
+[18.269s] -- Installing: /home/cl4y3r/VDS/install/autodriving/share/autodriving/package.dsv
+[18.269s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/packages/autodriving
+[18.269s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/cmake/autodrivingConfig.cmake
+[18.270s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/cmake/autodrivingConfig-version.cmake
+[18.270s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/package.xml
+[18.272s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '0': /usr/bin/cmake --install /home/cl4y3r/VDS/build/autodriving

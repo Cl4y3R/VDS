@@ -1,0 +1,22 @@
+[0.009s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': /usr/bin/cmake /home/cl4y3r/VDS/chassis_controller -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/chassis_controller
+[0.031s] CMake Error at CMakeLists.txt:13 (find_package):
+[0.031s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.031s]   has asked CMake to find a package configuration file provided by
+[0.031s]   "ament_cmake", but CMake did not find one.
+[0.031s] 
+[0.032s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.032s]   any of the following names:
+[0.032s] 
+[0.032s]     ament_cmakeConfig.cmake
+[0.032s]     ament_cmake-config.cmake
+[0.032s] 
+[0.032s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.032s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.032s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.032s]   has been installed.
+[0.032s] 
+[0.033s] 
+[0.033s] -- Configuring incomplete, errors occurred!
+[0.033s] See also "/home/cl4y3r/VDS/build/chassis_controller/CMakeFiles/CMakeOutput.log".
+[0.035s] See also "/home/cl4y3r/VDS/build/chassis_controller/CMakeFiles/CMakeError.log".
+[0.035s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '1': /usr/bin/cmake /home/cl4y3r/VDS/chassis_controller -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/chassis_controller

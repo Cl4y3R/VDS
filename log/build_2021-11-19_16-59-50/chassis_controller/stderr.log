@@ -1,0 +1,9 @@
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kvoid ChassisController::msg_subscriber(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:41:18:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst _pose_type[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::PoseWithCovariance_<std::allocator<void> >[m[K’} to ‘[01m[Kdouble[m[K’ in assignment
+   41 |     x = [01;31m[Kgps_msg->pose[m[K;
+      |         [01;31m[K~~~~~~~~~^~~~[m[K
+      |                  [01;31m[K|[m[K
+      |                  [01;31m[Kconst _pose_type {aka const geometry_msgs::msg::PoseWithCovariance_<std::allocator<void> >}[m[K
+make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

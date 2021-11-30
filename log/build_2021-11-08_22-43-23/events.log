@@ -1,0 +1,226 @@
+[0.000000] (-) TimerEvent: {}
+[0.000247] (autodriving) JobQueued: {'identifier': 'autodriving', 'dependencies': OrderedDict()}
+[0.001302] (autodriving) JobStarted: {'identifier': 'autodriving'}
+[0.013567] (autodriving) JobProgress: {'identifier': 'autodriving', 'progress': 'cmake'}
+[0.015818] (autodriving) JobProgress: {'identifier': 'autodriving', 'progress': 'build'}
+[0.016093] (autodriving) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cl4y3r/VDS/build/autodriving', '--', '-j8', '-l8'], 'cwd': '/home/cl4y3r/VDS/build/autodriving', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cl4y3r'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1982'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/cl4y3r'), ('OLDPWD', '/home/cl4y3r'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1763'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'cl4y3r'), ('JOURNAL_STREAM', '8:47898'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cl4y3r'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/cl4y3r/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu20:@/tmp/.ICE-unix/2010,unix/Ubuntu20:/tmp/.ICE-unix/2010'), ('INVOCATION_ID', '710504b8df804bbfb2f6f7c107351ddc'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/495eb155_00fa_47f4_89fd_e894893928f2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.248'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cl4y3r/VDS/build/autodriving'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.067454] (autodriving) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target main_msg\x1b[0m\n'}
+[0.094282] (autodriving) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o\x1b[0m\n'}
+[0.099627] (-) TimerEvent: {}
+[0.199980] (-) TimerEvent: {}
+[0.300318] (-) TimerEvent: {}
+[0.400699] (-) TimerEvent: {}
+[0.501064] (-) TimerEvent: {}
+[0.601449] (-) TimerEvent: {}
+[0.701836] (-) TimerEvent: {}
+[0.802189] (-) TimerEvent: {}
+[0.902609] (-) TimerEvent: {}
+[1.002993] (-) TimerEvent: {}
+[1.103343] (-) TimerEvent: {}
+[1.203701] (-) TimerEvent: {}
+[1.304050] (-) TimerEvent: {}
+[1.404401] (-) TimerEvent: {}
+[1.504753] (-) TimerEvent: {}
+[1.605106] (-) TimerEvent: {}
+[1.705462] (-) TimerEvent: {}
+[1.805819] (-) TimerEvent: {}
+[1.906204] (-) TimerEvent: {}
+[2.006646] (-) TimerEvent: {}
+[2.107018] (-) TimerEvent: {}
+[2.207385] (-) TimerEvent: {}
+[2.307752] (-) TimerEvent: {}
+[2.408203] (-) TimerEvent: {}
+[2.508564] (-) TimerEvent: {}
+[2.608973] (-) TimerEvent: {}
+[2.709318] (-) TimerEvent: {}
+[2.809676] (-) TimerEvent: {}
+[2.910061] (-) TimerEvent: {}
+[3.010496] (-) TimerEvent: {}
+[3.110881] (-) TimerEvent: {}
+[3.211255] (-) TimerEvent: {}
+[3.311644] (-) TimerEvent: {}
+[3.411995] (-) TimerEvent: {}
+[3.512346] (-) TimerEvent: {}
+[3.612691] (-) TimerEvent: {}
+[3.713042] (-) TimerEvent: {}
+[3.813387] (-) TimerEvent: {}
+[3.913762] (-) TimerEvent: {}
+[4.014192] (-) TimerEvent: {}
+[4.114674] (-) TimerEvent: {}
+[4.215209] (-) TimerEvent: {}
+[4.315599] (-) TimerEvent: {}
+[4.415953] (-) TimerEvent: {}
+[4.516271] (-) TimerEvent: {}
+[4.616616] (-) TimerEvent: {}
+[4.716965] (-) TimerEvent: {}
+[4.817323] (-) TimerEvent: {}
+[4.917677] (-) TimerEvent: {}
+[5.018054] (-) TimerEvent: {}
+[5.118572] (-) TimerEvent: {}
+[5.218925] (-) TimerEvent: {}
+[5.319287] (-) TimerEvent: {}
+[5.419775] (-) TimerEvent: {}
+[5.520198] (-) TimerEvent: {}
+[5.620538] (-) TimerEvent: {}
+[5.720994] (-) TimerEvent: {}
+[5.821411] (-) TimerEvent: {}
+[5.921760] (-) TimerEvent: {}
+[6.022104] (-) TimerEvent: {}
+[6.122524] (-) TimerEvent: {}
+[6.222897] (-) TimerEvent: {}
+[6.323237] (-) TimerEvent: {}
+[6.423593] (-) TimerEvent: {}
+[6.523984] (-) TimerEvent: {}
+[6.624347] (-) TimerEvent: {}
+[6.724741] (-) TimerEvent: {}
+[6.825154] (-) TimerEvent: {}
+[6.925472] (-) TimerEvent: {}
+[7.025902] (-) TimerEvent: {}
+[7.126323] (-) TimerEvent: {}
+[7.226786] (-) TimerEvent: {}
+[7.327137] (-) TimerEvent: {}
+[7.427491] (-) TimerEvent: {}
+[7.527841] (-) TimerEvent: {}
+[7.628210] (-) TimerEvent: {}
+[7.728574] (-) TimerEvent: {}
+[7.828960] (-) TimerEvent: {}
+[7.929337] (-) TimerEvent: {}
+[8.029688] (-) TimerEvent: {}
+[8.130058] (-) TimerEvent: {}
+[8.230428] (-) TimerEvent: {}
+[8.330812] (-) TimerEvent: {}
+[8.431167] (-) TimerEvent: {}
+[8.531517] (-) TimerEvent: {}
+[8.631929] (-) TimerEvent: {}
+[8.732373] (-) TimerEvent: {}
+[8.832771] (-) TimerEvent: {}
+[8.933137] (-) TimerEvent: {}
+[9.033511] (-) TimerEvent: {}
+[9.133857] (-) TimerEvent: {}
+[9.234264] (-) TimerEvent: {}
+[9.334769] (-) TimerEvent: {}
+[9.435164] (-) TimerEvent: {}
+[9.535544] (-) TimerEvent: {}
+[9.635945] (-) TimerEvent: {}
+[9.736287] (-) TimerEvent: {}
+[9.836601] (-) TimerEvent: {}
+[9.937040] (-) TimerEvent: {}
+[10.037445] (-) TimerEvent: {}
+[10.137800] (-) TimerEvent: {}
+[10.238166] (-) TimerEvent: {}
+[10.338543] (-) TimerEvent: {}
+[10.438922] (-) TimerEvent: {}
+[10.539296] (-) TimerEvent: {}
+[10.639685] (-) TimerEvent: {}
+[10.740064] (-) TimerEvent: {}
+[10.840438] (-) TimerEvent: {}
+[10.940847] (-) TimerEvent: {}
+[11.041224] (-) TimerEvent: {}
+[11.141637] (-) TimerEvent: {}
+[11.241991] (-) TimerEvent: {}
+[11.342407] (-) TimerEvent: {}
+[11.442775] (-) TimerEvent: {}
+[11.543150] (-) TimerEvent: {}
+[11.643501] (-) TimerEvent: {}
+[11.743832] (-) TimerEvent: {}
+[11.844172] (-) TimerEvent: {}
+[11.944512] (-) TimerEvent: {}
+[12.044841] (-) TimerEvent: {}
+[12.145298] (-) TimerEvent: {}
+[12.245818] (-) TimerEvent: {}
+[12.346142] (-) TimerEvent: {}
+[12.446469] (-) TimerEvent: {}
+[12.546801] (-) TimerEvent: {}
+[12.647212] (-) TimerEvent: {}
+[12.747559] (-) TimerEvent: {}
+[12.847969] (-) TimerEvent: {}
+[12.948341] (-) TimerEvent: {}
+[13.048726] (-) TimerEvent: {}
+[13.149082] (-) TimerEvent: {}
+[13.249448] (-) TimerEvent: {}
+[13.349807] (-) TimerEvent: {}
+[13.450163] (-) TimerEvent: {}
+[13.550494] (-) TimerEvent: {}
+[13.650860] (-) TimerEvent: {}
+[13.751223] (-) TimerEvent: {}
+[13.851596] (-) TimerEvent: {}
+[13.951996] (-) TimerEvent: {}
+[14.052435] (-) TimerEvent: {}
+[14.152787] (-) TimerEvent: {}
+[14.253136] (-) TimerEvent: {}
+[14.353506] (-) TimerEvent: {}
+[14.453878] (-) TimerEvent: {}
+[14.554244] (-) TimerEvent: {}
+[14.654744] (-) TimerEvent: {}
+[14.755137] (-) TimerEvent: {}
+[14.855548] (-) TimerEvent: {}
+[14.955933] (-) TimerEvent: {}
+[15.056357] (-) TimerEvent: {}
+[15.156799] (-) TimerEvent: {}
+[15.257184] (-) TimerEvent: {}
+[15.357547] (-) TimerEvent: {}
+[15.457892] (-) TimerEvent: {}
+[15.558326] (-) TimerEvent: {}
+[15.658762] (-) TimerEvent: {}
+[15.759341] (-) TimerEvent: {}
+[15.859749] (-) TimerEvent: {}
+[15.960321] (-) TimerEvent: {}
+[16.060853] (-) TimerEvent: {}
+[16.161396] (-) TimerEvent: {}
+[16.261804] (-) TimerEvent: {}
+[16.362234] (-) TimerEvent: {}
+[16.462606] (-) TimerEvent: {}
+[16.562993] (-) TimerEvent: {}
+[16.663434] (-) TimerEvent: {}
+[16.763907] (-) TimerEvent: {}
+[16.864255] (-) TimerEvent: {}
+[16.964603] (-) TimerEvent: {}
+[17.065028] (-) TimerEvent: {}
+[17.165441] (-) TimerEvent: {}
+[17.265790] (-) TimerEvent: {}
+[17.366142] (-) TimerEvent: {}
+[17.466526] (-) TimerEvent: {}
+[17.566872] (-) TimerEvent: {}
+[17.667237] (-) TimerEvent: {}
+[17.767582] (-) TimerEvent: {}
+[17.867975] (-) TimerEvent: {}
+[17.968365] (-) TimerEvent: {}
+[18.068800] (-) TimerEvent: {}
+[18.169226] (-) TimerEvent: {}
+[18.261664] (autodriving) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable main_msg\x1b[0m\n'}
+[18.269343] (-) TimerEvent: {}
+[18.369686] (-) TimerEvent: {}
+[18.470023] (-) TimerEvent: {}
+[18.570422] (-) TimerEvent: {}
+[18.670834] (-) TimerEvent: {}
+[18.771242] (-) TimerEvent: {}
+[18.871579] (-) TimerEvent: {}
+[18.971925] (-) TimerEvent: {}
+[19.072300] (-) TimerEvent: {}
+[19.172656] (-) TimerEvent: {}
+[19.219661] (autodriving) StdoutLine: {'line': b'[100%] Built target main_msg\n'}
+[19.232134] (autodriving) CommandEnded: {'returncode': 0}
+[19.261036] (autodriving) JobProgress: {'identifier': 'autodriving', 'progress': 'install'}
+[19.273640] (autodriving) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cl4y3r/VDS/build/autodriving'], 'cwd': '/home/cl4y3r/VDS/build/autodriving', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cl4y3r'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1982'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/cl4y3r'), ('OLDPWD', '/home/cl4y3r'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1763'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'cl4y3r'), ('JOURNAL_STREAM', '8:47898'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cl4y3r'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/cl4y3r/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu20:@/tmp/.ICE-unix/2010,unix/Ubuntu20:/tmp/.ICE-unix/2010'), ('INVOCATION_ID', '710504b8df804bbfb2f6f7c107351ddc'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/495eb155_00fa_47f4_89fd_e894893928f2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.248'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cl4y3r/VDS/build/autodriving'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[19.275581] (-) TimerEvent: {}
+[19.285195] (autodriving) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.286850] (autodriving) StdoutLine: {'line': b'-- Installing: /home/cl4y3r/VDS/install/autodriving/lib/autodriving/main_msg\n'}
+[19.307452] (autodriving) StdoutLine: {'line': b'-- Set runtime path of "/home/cl4y3r/VDS/install/autodriving/lib/autodriving/main_msg" to ""\n'}
+[19.308253] (autodriving) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/package_run_dependencies/autodriving\n'}
+[19.308783] (autodriving) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/parent_prefix_path/autodriving\n'}
+[19.308991] (autodriving) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/ament_prefix_path.sh\n'}
+[19.309145] (autodriving) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/ament_prefix_path.dsv\n'}
+[19.309284] (autodriving) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/path.sh\n'}
+[19.309421] (autodriving) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/path.dsv\n'}
+[19.309555] (autodriving) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.bash\n'}
+[19.309689] (autodriving) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.sh\n'}
+[19.309831] (autodriving) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.zsh\n'}
+[19.310108] (autodriving) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.dsv\n'}
+[19.310260] (autodriving) StdoutLine: {'line': b'-- Installing: /home/cl4y3r/VDS/install/autodriving/share/autodriving/package.dsv\n'}
+[19.310428] (autodriving) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/packages/autodriving\n'}
+[19.310573] (autodriving) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/cmake/autodrivingConfig.cmake\n'}
+[19.310708] (autodriving) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/cmake/autodrivingConfig-version.cmake\n'}
+[19.310841] (autodriving) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/package.xml\n'}
+[19.314204] (autodriving) CommandEnded: {'returncode': 0}
+[19.371559] (autodriving) JobEnded: {'identifier': 'autodriving', 'rc': 0}
+[19.372839] (-) EventReactorShutdown: {}

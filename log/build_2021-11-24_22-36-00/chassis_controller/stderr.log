@@ -1,0 +1,63 @@
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::waypoint_loader(std::string)[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:71:8:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator![m[K’ (operand type is ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’})
+   71 |     if([01;31m[K!filename[m[K) std::cout<<"error"<<std::endl;
+      |        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:71:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Koperator!(bool)[m[K’ <built-in>
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:71:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kbool[m[K’
+In file included from [01m[K/opt/ros/foxy/include/libstatistics_collector/moving_average_statistics/moving_average.hpp:30[m[K,
+                 from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/collector.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+                 from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:11[m[K,
+                 from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/rcpputils/thread_safety_annotations.hpp:48:27:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst std::mutex& operator!(const std::mutex&)[m[K’
+   48 | inline const std::mutex & [01;36m[Koperator[m[K!(const std::mutex & a)
+      |                           [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rcpputils/thread_safety_annotations.hpp:48:56:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst std::mutex&[m[K’
+   48 | inline const std::mutex & operator!([01;36m[Kconst std::mutex & a[m[K)
+      |                                     [01;36m[K~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:97:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+   97 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::longitudinal_controller(double, double)[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:99:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   99 | double ChassisController::longitudinal_controller([01;35m[Kdouble velocity_x[m[K, double acc_x){
+      |                                                   [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:99:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kacc_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   99 | ontroller::longitudinal_controller(double velocity_x, [01;35m[Kdouble acc_x[m[K){
+      |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::lateral_controller(double, double, double, double, double)[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:103:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  103 | double ChassisController::lateral_controller([01;35m[Kdouble yaw[m[K, double yaw_rate, double pos_x, double pos_y, double velocity_x){
+      |                                              [01;35m[K~~~~~~~^~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:103:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaw_rate[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  103 | ble ChassisController::lateral_controller(double yaw, [01;35m[Kdouble yaw_rate[m[K, double pos_x, double pos_y, double velocity_x){
+      |                                                       [01;35m[K~~~~~~~^~~~~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:103:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  103 | ller::lateral_controller(double yaw, double yaw_rate, [01;35m[Kdouble pos_x[m[K, double pos_y, double velocity_x){
+      |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:103:96:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos_y[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  103 | controller(double yaw, double yaw_rate, double pos_x, [01;35m[Kdouble pos_y[m[K, double velocity_x){
+      |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:103:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  103 | er(double yaw, double yaw_rate, double pos_x, double pos_y, [01;35m[Kdouble velocity_x[m[K){
+      |                                                             [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+
+make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

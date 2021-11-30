@@ -1,0 +1,270 @@
+[0.000000] (-) TimerEvent: {}
+[0.000281] (-) JobUnselected: {'identifier': 'autodriving'}
+[0.000362] (chassis_controller) JobQueued: {'identifier': 'chassis_controller', 'dependencies': OrderedDict()}
+[0.000429] (chassis_controller) JobStarted: {'identifier': 'chassis_controller'}
+[0.016731] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'cmake'}
+[0.017977] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'build'}
+[0.023681] (chassis_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cl4y3r/VDS/build/chassis_controller', '--', '-j8', '-l8'], 'cwd': '/home/cl4y3r/VDS/build/chassis_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cl4y3r'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '2265'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/cl4y3r'), ('OLDPWD', '/home/cl4y3r'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '2045'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/cl4y3r/VDS/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'cl4y3r'), ('JOURNAL_STREAM', '8:50475'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cl4y3r'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu20:@/tmp/.ICE-unix/2293,unix/Ubuntu20:/tmp/.ICE-unix/2293'), ('INVOCATION_ID', '976cf313d85346ce80ae9c2437fad2d2'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d89e1d2b_a2be_4914_8922_19b1b7430bdc'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cl4y3r/VDS/install/icc:/home/cl4y3r/VDS/install/chassis_controller:/home/cl4y3r/VDS/install/autodriving:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cl4y3r/VDS/build/chassis_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/cl4y3r/VDS/install/icc:/home/cl4y3r/VDS/install/chassis_controller:/home/cl4y3r/VDS/install/autodriving:/opt/ros/foxy')]), 'shell': False}
+[0.082386] (chassis_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target chassis_controller\x1b[0m\n'}
+[0.096791] (-) TimerEvent: {}
+[0.119558] (chassis_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o\x1b[0m\n'}
+[0.197109] (-) TimerEvent: {}
+[0.297571] (-) TimerEvent: {}
+[0.398023] (-) TimerEvent: {}
+[0.498473] (-) TimerEvent: {}
+[0.598950] (-) TimerEvent: {}
+[0.699427] (-) TimerEvent: {}
+[0.800060] (-) TimerEvent: {}
+[0.900505] (-) TimerEvent: {}
+[1.001085] (-) TimerEvent: {}
+[1.101617] (-) TimerEvent: {}
+[1.202102] (-) TimerEvent: {}
+[1.302609] (-) TimerEvent: {}
+[1.403084] (-) TimerEvent: {}
+[1.503595] (-) TimerEvent: {}
+[1.604100] (-) TimerEvent: {}
+[1.704602] (-) TimerEvent: {}
+[1.805258] (-) TimerEvent: {}
+[1.905702] (-) TimerEvent: {}
+[2.006266] (-) TimerEvent: {}
+[2.106773] (-) TimerEvent: {}
+[2.207237] (-) TimerEvent: {}
+[2.307773] (-) TimerEvent: {}
+[2.408277] (-) TimerEvent: {}
+[2.508792] (-) TimerEvent: {}
+[2.609342] (-) TimerEvent: {}
+[2.623896] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble ChassisController::waypoint_loader(std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.624396] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:71:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvector\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::vector\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.624613] (chassis_controller) StderrLine: {'line': b'   71 |     \x1b[01;31m\x1b[Kvector\x1b[m\x1b[K<double> location_x, location_y;\n'}
+[2.624891] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.625150] (chassis_controller) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kstd::vector\x1b[m\x1b[K\n'}
+[2.625940] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/vector:67\x1b[m\x1b[K,\n'}
+[2.626166] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:7\x1b[m\x1b[K,\n'}
+[2.626342] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.626507] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_vector.h:386:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.626662] (chassis_controller) StderrLine: {'line': b'  386 |     class \x1b[01;36m\x1b[Kvector\x1b[m\x1b[K : protected _Vector_base<_Tp, _Alloc>\n'}
+[2.626821] (chassis_controller) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.626977] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:71:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.627131] (chassis_controller) StderrLine: {'line': b'   71 |     vector<\x1b[01;31m\x1b[Kdouble\x1b[m\x1b[K> location_x, location_y;\n'}
+[2.627352] (chassis_controller) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.627547] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:72:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kifstream\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::ifstream\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.628262] (chassis_controller) StderrLine: {'line': b'   72 |     \x1b[01;31m\x1b[Kifstream\x1b[m\x1b[K fin("point.csv");\n'}
+[2.628476] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.628663] (chassis_controller) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kstd::ifstream\x1b[m\x1b[K\n'}
+[2.628862] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:72\x1b[m\x1b[K,\n'}
+[2.629085] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:3\x1b[m\x1b[K,\n'}
+[2.629237] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.629409] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/iosfwd:162:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::ifstream\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.629640] (chassis_controller) StderrLine: {'line': b'  162 |   typedef basic_ifstream<char>   \x1b[01;36m\x1b[Kifstream\x1b[m\x1b[K;\n'}
+[2.629840] (chassis_controller) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.629962] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:73:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstring\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::string\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.630203] (chassis_controller) StderrLine: {'line': b'   73 |     \x1b[01;31m\x1b[Kstring\x1b[m\x1b[K line;\n'}
+[2.630390] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.630845] (chassis_controller) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kstd::string\x1b[m\x1b[K\n'}
+[2.631012] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iosfwd:39\x1b[m\x1b[K,\n'}
+[2.631160] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:72\x1b[m\x1b[K,\n'}
+[2.631313] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:3\x1b[m\x1b[K,\n'}
+[2.631456] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.631594] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stringfwd.h:79:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::string\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.631747] (chassis_controller) StderrLine: {'line': b'   79 |   typedef basic_string<char>    \x1b[01;36m\x1b[Kstring\x1b[m\x1b[K;\n'}
+[2.631899] (chassis_controller) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.632051] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:74:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfin\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksin\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.632242] (chassis_controller) StderrLine: {'line': b'   74 |     while (getline(\x1b[01;31m\x1b[Kfin\x1b[m\x1b[K, line))\n'}
+[2.632366] (chassis_controller) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.632498] (chassis_controller) StderrLine: {'line': b'      |                    \x1b[32m\x1b[Ksin\x1b[m\x1b[K\n'}
+[2.632645] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:74:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kline\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Klink\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.632816] (chassis_controller) StderrLine: {'line': b'   74 |     while (getline(fin, \x1b[01;31m\x1b[Kline\x1b[m\x1b[K))\n'}
+[2.633083] (chassis_controller) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.633244] (chassis_controller) StderrLine: {'line': b'      |                         \x1b[32m\x1b[Klink\x1b[m\x1b[K\n'}
+[2.633451] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:76:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kistringstream\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::istringstream\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.633873] (chassis_controller) StderrLine: {'line': b'   76 |         \x1b[01;31m\x1b[Kistringstream\x1b[m\x1b[K sin(line);\n'}
+[2.634065] (chassis_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.634235] (chassis_controller) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kstd::istringstream\x1b[m\x1b[K\n'}
+[2.634410] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:72\x1b[m\x1b[K,\n'}
+[2.634569] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:3\x1b[m\x1b[K,\n'}
+[2.634723] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.635152] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/iosfwd:150:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::istringstream\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.635368] (chassis_controller) StderrLine: {'line': b'  150 |   typedef basic_istringstream<char>  \x1b[01;36m\x1b[Kistringstream\x1b[m\x1b[K;\n'}
+[2.635738] (chassis_controller) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.636242] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:77:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWaypoints\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.636466] (chassis_controller) StderrLine: {'line': b'   77 |         vector<string> \x1b[01;31m\x1b[KWaypoints\x1b[m\x1b[K;\n'}
+[2.636624] (chassis_controller) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.636764] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:78:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kinfo\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.636882] (chassis_controller) StderrLine: {'line': b'   78 |         string\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Kinfo\x1b[m\x1b[K;\n'}
+[2.637195] (chassis_controller) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[2.637482] (chassis_controller) StderrLine: {'line': b'      |               \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.637776] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:79:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinfo\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.637981] (chassis_controller) StderrLine: {'line': b"   79 |         while(getline(sin, \x1b[01;31m\x1b[Kinfo\x1b[m\x1b[K, ',')){\n"}
+[2.638192] (chassis_controller) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.638419] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:82:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kx_str\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.638640] (chassis_controller) StderrLine: {'line': b'   82 |         string\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Kx_str\x1b[m\x1b[K=Waypoints[4];\n'}
+[2.638840] (chassis_controller) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~~~\x1b[m\x1b[K\n'}
+[2.639013] (chassis_controller) StderrLine: {'line': b'      |               \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.639210] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:83:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Ky_str\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.639570] (chassis_controller) StderrLine: {'line': b'   83 |         string\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Ky_str\x1b[m\x1b[K=Waypoints[5];\n'}
+[2.639761] (chassis_controller) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~~~\x1b[m\x1b[K\n'}
+[2.639937] (chassis_controller) StderrLine: {'line': b'      |               \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.640085] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:85:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstringstream\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::stringstream\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.640247] (chassis_controller) StderrLine: {'line': b'   85 |         \x1b[01;31m\x1b[Kstringstream\x1b[m\x1b[K sx,sy;\n'}
+[2.640543] (chassis_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.640753] (chassis_controller) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kstd::stringstream\x1b[m\x1b[K\n'}
+[2.641002] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:72\x1b[m\x1b[K,\n'}
+[2.641153] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:3\x1b[m\x1b[K,\n'}
+[2.641292] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.641466] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/iosfwd:156:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::stringstream\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.641639] (chassis_controller) StderrLine: {'line': b'  156 |   typedef basic_stringstream<char>  \x1b[01;36m\x1b[Kstringstream\x1b[m\x1b[K;\n'}
+[2.641788] (chassis_controller) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.641961] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:86:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksx\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kvx\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.642157] (chassis_controller) StderrLine: {'line': b'   86 |         \x1b[01;31m\x1b[Ksx\x1b[m\x1b[K<<x_str;\n'}
+[2.642278] (chassis_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.642453] (chassis_controller) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kvx\x1b[m\x1b[K\n'}
+[2.642599] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:86:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_str\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.642794] (chassis_controller) StderrLine: {'line': b'   86 |         sx<<\x1b[01;31m\x1b[Kx_str\x1b[m\x1b[K;\n'}
+[2.642965] (chassis_controller) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.643474] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:87:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksy\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kvy\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.643684] (chassis_controller) StderrLine: {'line': b'   87 |         \x1b[01;31m\x1b[Ksy\x1b[m\x1b[K<<y_str;\n'}
+[2.643800] (chassis_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.643922] (chassis_controller) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kvy\x1b[m\x1b[K\n'}
+[2.645213] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:87:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ky_str\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.645391] (chassis_controller) StderrLine: {'line': b'   87 |         sy<<\x1b[01;31m\x1b[Ky_str\x1b[m\x1b[K;\n'}
+[2.645536] (chassis_controller) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.646073] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:91:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcout\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::cout\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.646401] (chassis_controller) StderrLine: {'line': b'   91 |         \x1b[01;31m\x1b[Kcout\x1b[m\x1b[K<<"x "<<x<<" y "<<y<<endl;\n'}
+[2.646554] (chassis_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.646806] (chassis_controller) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kstd::cout\x1b[m\x1b[K\n'}
+[2.647098] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.647344] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.647521] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/iostream:61:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::cout\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.647710] (chassis_controller) StderrLine: {'line': b'   61 |   extern ostream \x1b[01;36m\x1b[Kcout\x1b[m\x1b[K;  /// Linked to standard output\n'}
+[2.648071] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.648239] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:91:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kendl\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::endl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.648415] (chassis_controller) StderrLine: {'line': b'   91 |         cout<<"x "<<x<<" y "<<y<<\x1b[01;31m\x1b[Kendl\x1b[m\x1b[K;\n'}
+[2.648577] (chassis_controller) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.648739] (chassis_controller) StderrLine: {'line': b'      |                                  \x1b[32m\x1b[Kstd::endl\x1b[m\x1b[K\n'}
+[2.648894] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.649134] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.649270] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.649388] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:599:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::endl\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.649532] (chassis_controller) StderrLine: {'line': b'  599 |     \x1b[01;36m\x1b[Kendl\x1b[m\x1b[K(basic_ostream<_CharT, _Traits>& __os)\n'}
+[2.649717] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.650114] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:92:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klocation_x\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.650334] (chassis_controller) StderrLine: {'line': b'   92 |         \x1b[01;31m\x1b[Klocation_x\x1b[m\x1b[K.push_back(x);\n'}
+[2.650505] (chassis_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.653490] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:93:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klocation_y\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.653878] (chassis_controller) StderrLine: {'line': b'   93 |         \x1b[01;31m\x1b[Klocation_y\x1b[m\x1b[K.push_back(y);\n'}
+[2.654123] (chassis_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.655143] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:95:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcout\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::cout\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.655386] (chassis_controller) StderrLine: {'line': b'   95 |     \x1b[01;31m\x1b[Kcout\x1b[m\x1b[K<<"Read data finished!!!"<<endl;\n'}
+[2.655567] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.655769] (chassis_controller) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kstd::cout\x1b[m\x1b[K\n'}
+[2.655921] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.656134] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.656329] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/iostream:61:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::cout\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.656487] (chassis_controller) StderrLine: {'line': b'   61 |   extern ostream \x1b[01;36m\x1b[Kcout\x1b[m\x1b[K;  /// Linked to standard output\n'}
+[2.656650] (chassis_controller) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.657083] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:95:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kendl\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::endl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.657262] (chassis_controller) StderrLine: {'line': b'   95 |     cout<<"Read data finished!!!"<<\x1b[01;31m\x1b[Kendl\x1b[m\x1b[K;\n'}
+[2.657408] (chassis_controller) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.657570] (chassis_controller) StderrLine: {'line': b'      |                                    \x1b[32m\x1b[Kstd::endl\x1b[m\x1b[K\n'}
+[2.657723] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.657883] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5\x1b[m\x1b[K,\n'}
+[2.658038] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.658208] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ostream:599:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::endl\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.658386] (chassis_controller) StderrLine: {'line': b'  599 |     \x1b[01;36m\x1b[Kendl\x1b[m\x1b[K(basic_ostream<_CharT, _Traits>& __os)\n'}
+[2.658544] (chassis_controller) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.658667] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:96:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[2.658834] (chassis_controller) StderrLine: {'line': b'   96 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[2.658976] (chassis_controller) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.659118] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:70:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kfilename\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.659263] (chassis_controller) StderrLine: {'line': b'   70 | double ChassisController::waypoint_loader(\x1b[01;35m\x1b[Kstd::string filename\x1b[m\x1b[K){\n'}
+[2.659407] (chassis_controller) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[2.659551] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble ChassisController::longitudinal_controller(double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.659680] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:98:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kvelocity_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.659826] (chassis_controller) StderrLine: {'line': b'   98 | double ChassisController::longitudinal_controller(\x1b[01;35m\x1b[Kdouble velocity_x\x1b[m\x1b[K, double acc_x){\n'}
+[2.659970] (chassis_controller) StderrLine: {'line': b'      |                                                   \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.660115] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:98:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kacc_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.660267] (chassis_controller) StderrLine: {'line': b'   98 | ontroller::longitudinal_controller(double velocity_x, \x1b[01;35m\x1b[Kdouble acc_x\x1b[m\x1b[K){\n'}
+[2.660409] (chassis_controller) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.660540] (chassis_controller) StderrLine: {'line': b'\n'}
+[2.660645] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble ChassisController::lateral_controller(double, double, double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.660756] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:102:53:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kyaw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.660882] (chassis_controller) StderrLine: {'line': b'  102 | double ChassisController::lateral_controller(\x1b[01;35m\x1b[Kdouble yaw\x1b[m\x1b[K, double yaw_rate, double pos_x, double pos_y, double velocity_x){\n'}
+[2.661174] (chassis_controller) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.661321] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:102:65:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kyaw_rate\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.661469] (chassis_controller) StderrLine: {'line': b'  102 | ble ChassisController::lateral_controller(double yaw, \x1b[01;35m\x1b[Kdouble yaw_rate\x1b[m\x1b[K, double pos_x, double pos_y, double velocity_x){\n'}
+[2.661603] (chassis_controller) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[2.661718] (chassis_controller) StderrLine: {'line': b'\n'}
+[2.661839] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:102:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpos_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.661962] (chassis_controller) StderrLine: {'line': b'  102 | ller::lateral_controller(double yaw, double yaw_rate, \x1b[01;35m\x1b[Kdouble pos_x\x1b[m\x1b[K, double pos_y, double velocity_x){\n'}
+[2.662106] (chassis_controller) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.662250] (chassis_controller) StderrLine: {'line': b'\n'}
+[2.662394] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:102:96:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kpos_y\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.662555] (chassis_controller) StderrLine: {'line': b'  102 | controller(double yaw, double yaw_rate, double pos_x, \x1b[01;35m\x1b[Kdouble pos_y\x1b[m\x1b[K, double velocity_x){\n'}
+[2.662687] (chassis_controller) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.662846] (chassis_controller) StderrLine: {'line': b'\n'}
+[2.662987] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:102:110:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kvelocity_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.663131] (chassis_controller) StderrLine: {'line': b'  102 | er(double yaw, double yaw_rate, double pos_x, double pos_y, \x1b[01;35m\x1b[Kdouble velocity_x\x1b[m\x1b[K){\n'}
+[2.663292] (chassis_controller) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.663462] (chassis_controller) StderrLine: {'line': b'\n'}
+[2.709603] (-) TimerEvent: {}
+[2.810111] (-) TimerEvent: {}
+[2.910716] (-) TimerEvent: {}
+[3.011236] (-) TimerEvent: {}
+[3.111768] (-) TimerEvent: {}
+[3.212328] (-) TimerEvent: {}
+[3.312856] (-) TimerEvent: {}
+[3.413530] (-) TimerEvent: {}
+[3.514096] (-) TimerEvent: {}
+[3.614723] (-) TimerEvent: {}
+[3.715380] (-) TimerEvent: {}
+[3.815995] (-) TimerEvent: {}
+[3.916687] (-) TimerEvent: {}
+[4.017334] (-) TimerEvent: {}
+[4.117978] (-) TimerEvent: {}
+[4.218669] (-) TimerEvent: {}
+[4.319278] (-) TimerEvent: {}
+[4.419860] (-) TimerEvent: {}
+[4.520451] (-) TimerEvent: {}
+[4.621042] (-) TimerEvent: {}
+[4.721533] (-) TimerEvent: {}
+[4.822084] (-) TimerEvent: {}
+[4.922755] (-) TimerEvent: {}
+[5.023286] (-) TimerEvent: {}
+[5.123811] (-) TimerEvent: {}
+[5.224350] (-) TimerEvent: {}
+[5.324862] (-) TimerEvent: {}
+[5.425458] (-) TimerEvent: {}
+[5.526006] (-) TimerEvent: {}
+[5.626603] (-) TimerEvent: {}
+[5.727196] (-) TimerEvent: {}
+[5.827770] (-) TimerEvent: {}
+[5.928457] (-) TimerEvent: {}
+[6.029012] (-) TimerEvent: {}
+[6.129552] (-) TimerEvent: {}
+[6.230131] (-) TimerEvent: {}
+[6.330968] (-) TimerEvent: {}
+[6.431587] (-) TimerEvent: {}
+[6.532353] (-) TimerEvent: {}
+[6.633672] (-) TimerEvent: {}
+[6.734584] (-) TimerEvent: {}
+[6.835169] (-) TimerEvent: {}
+[6.935733] (-) TimerEvent: {}
+[7.036271] (-) TimerEvent: {}
+[7.136963] (-) TimerEvent: {}
+[7.237619] (-) TimerEvent: {}
+[7.338329] (-) TimerEvent: {}
+[7.438995] (-) TimerEvent: {}
+[7.539535] (-) TimerEvent: {}
+[7.640088] (-) TimerEvent: {}
+[7.740744] (-) TimerEvent: {}
+[7.841505] (-) TimerEvent: {}
+[7.942219] (-) TimerEvent: {}
+[8.042899] (-) TimerEvent: {}
+[8.143583] (-) TimerEvent: {}
+[8.244237] (-) TimerEvent: {}
+[8.283108] (chassis_controller) StderrLine: {'line': b'make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1\n'}
+[8.283658] (chassis_controller) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2\n'}
+[8.284084] (chassis_controller) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.287140] (chassis_controller) CommandEnded: {'returncode': 2}
+[8.339482] (chassis_controller) JobEnded: {'identifier': 'chassis_controller', 'rc': 2}
+[8.341707] (-) EventReactorShutdown: {}

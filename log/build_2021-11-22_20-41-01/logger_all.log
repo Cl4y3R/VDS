@@ -1,0 +1,188 @@
+[0.247s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'chassis_controller']
+[0.247s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7faa910cd490>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['chassis_controller'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7faa910cd490>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7faa910cd9d0>)
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.251s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/cl4y3r/VDS'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'ros'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extensions ['cmake', 'python']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'cmake'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'python'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extensions ['python_setup_py']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(Docs) by extension 'python_setup_py'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(autodriving) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(autodriving) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(autodriving) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(autodriving) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(autodriving) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(autodriving) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(autodriving) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(autodriving) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(autodriving) by extension 'ros'
+[0.265s] DEBUG:colcon.colcon_core.package_identification:Package 'autodriving' with type 'ros.ament_cmake' and name 'autodriving'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(bag) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(bag) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(bag) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(bag) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(bag) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(bag) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(bag) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag) by extension 'ros'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag) by extensions ['cmake', 'python']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag) by extension 'cmake'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag) by extension 'python'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag) by extensions ['python_setup_py']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag) by extension 'python_setup_py'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag/rosbag2_2021_10_27-22_21_44) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag/rosbag2_2021_10_27-22_21_44) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag/rosbag2_2021_10_27-22_21_44) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag/rosbag2_2021_10_27-22_21_44) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag/rosbag2_2021_10_27-22_21_44) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag/rosbag2_2021_10_27-22_21_44) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag/rosbag2_2021_10_27-22_21_44) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag/rosbag2_2021_10_27-22_21_44) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag/rosbag2_2021_10_27-22_21_44) by extension 'ros'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag/rosbag2_2021_10_27-22_21_44) by extensions ['cmake', 'python']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag/rosbag2_2021_10_27-22_21_44) by extension 'cmake'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag/rosbag2_2021_10_27-22_21_44) by extension 'python'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag/rosbag2_2021_10_27-22_21_44) by extensions ['python_setup_py']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(bag/rosbag2_2021_10_27-22_21_44) by extension 'python_setup_py'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(chassis_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(chassis_controller) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(chassis_controller) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(chassis_controller) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(chassis_controller) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(chassis_controller) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(chassis_controller) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(chassis_controller) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(chassis_controller) by extension 'ros'
+[0.267s] DEBUG:colcon.colcon_core.package_identification:Package 'chassis_controller' with type 'ros.ament_cmake' and name 'chassis_controller'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'ros'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['cmake', 'python']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'cmake'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'python'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extensions ['python_setup_py']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(maps) by extension 'python_setup_py'
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.283s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'autodriving' in 'autodriving'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'chassis_controller' build argument 'cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'chassis_controller' build argument 'cmake_target' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'chassis_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'chassis_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'chassis_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'chassis_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'chassis_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'chassis_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'chassis_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.285s] DEBUG:colcon.colcon_core.verb:Building package 'chassis_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cl4y3r/VDS/build/chassis_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cl4y3r/VDS/install/chassis_controller', 'merge_install': False, 'path': '/home/cl4y3r/VDS/chassis_controller', 'symlink_install': False, 'test_result_base': None}
+[0.285s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.287s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.287s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cl4y3r/VDS/chassis_controller' with build type 'ament_cmake'
+[0.287s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cl4y3r/VDS/chassis_controller'
+[0.290s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.290s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.290s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.292s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.301s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[13.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[13.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/chassis_controller
+[13.199s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(chassis_controller)
+[13.200s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/chassis_controller
+[13.204s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/VDS/install/chassis_controller' for CMake module files
+[13.204s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/VDS/install/chassis_controller' for CMake config files
+[13.204s] Level 1:colcon.colcon_core.shell:create_environment_hook('chassis_controller', 'cmake_prefix_path')
+[13.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/hook/cmake_prefix_path.ps1'
+[13.205s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/hook/cmake_prefix_path.dsv'
+[13.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/hook/cmake_prefix_path.sh'
+[13.206s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/VDS/install/chassis_controller/lib'
+[13.207s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/VDS/install/chassis_controller/bin'
+[13.207s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/VDS/install/chassis_controller/lib/pkgconfig/chassis_controller.pc'
+[13.207s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/VDS/install/chassis_controller/lib/python3.8/site-packages'
+[13.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.ps1'
+[13.208s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.dsv'
+[13.208s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.sh'
+[13.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.bash'
+[13.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.zsh'
+[13.210s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cl4y3r/VDS/install/chassis_controller/share/colcon-core/packages/chassis_controller)
+[13.229s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(chassis_controller)
+[13.230s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/VDS/install/chassis_controller' for CMake module files
+[13.230s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/VDS/install/chassis_controller' for CMake config files
+[13.231s] Level 1:colcon.colcon_core.shell:create_environment_hook('chassis_controller', 'cmake_prefix_path')
+[13.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/hook/cmake_prefix_path.ps1'
+[13.232s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/hook/cmake_prefix_path.dsv'
+[13.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/hook/cmake_prefix_path.sh'
+[13.232s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/VDS/install/chassis_controller/lib'
+[13.232s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/VDS/install/chassis_controller/bin'
+[13.233s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/VDS/install/chassis_controller/lib/pkgconfig/chassis_controller.pc'
+[13.233s] Level 1:colcon.colcon_core.environment:checking '/home/cl4y3r/VDS/install/chassis_controller/lib/python3.8/site-packages'
+[13.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.ps1'
+[13.234s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.dsv'
+[13.234s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.sh'
+[13.234s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.bash'
+[13.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.zsh'
+[13.235s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cl4y3r/VDS/install/chassis_controller/share/colcon-core/packages/chassis_controller)
+[13.235s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[13.235s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[13.236s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[13.236s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[13.241s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.242s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.242s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[13.260s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[13.261s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cl4y3r/VDS/install/local_setup.ps1'
+[13.262s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cl4y3r/VDS/install/_local_setup_util_ps1.py'
+[13.263s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cl4y3r/VDS/install/setup.ps1'
+[13.265s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cl4y3r/VDS/install/local_setup.sh'
+[13.266s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cl4y3r/VDS/install/_local_setup_util_sh.py'
+[13.266s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cl4y3r/VDS/install/setup.sh'
+[13.268s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cl4y3r/VDS/install/local_setup.bash'
+[13.268s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cl4y3r/VDS/install/setup.bash'
+[13.270s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cl4y3r/VDS/install/local_setup.zsh'
+[13.271s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cl4y3r/VDS/install/setup.zsh'

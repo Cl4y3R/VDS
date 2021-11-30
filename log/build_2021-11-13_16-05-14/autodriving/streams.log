@@ -1,0 +1,11 @@
+[0.019s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.076s] [35m[1mScanning dependencies of target main_msg[0m
+[0.111s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[1.927s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:57:29:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.927s]    57 |     void publisher_callback([01;31m[K)[m[K
+[1.927s]       |                             [01;31m[K^[m[K
+[1.927s]       |                              [32m[K;[m[K
+[8.944s] make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1
+[8.945s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+[8.945s] make: *** [Makefile:141: all] Error 2
+[8.951s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '2': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8

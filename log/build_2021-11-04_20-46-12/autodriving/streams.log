@@ -1,0 +1,41 @@
+[0.011s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.045s] [35m[1mScanning dependencies of target main_msg[0m
+[0.068s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[1.661s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K In member function ‘[01m[Kvoid msgSubPub::subscriber_callback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[1.661s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:90:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kimage_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.661s]    90 | msgSubPub::subscriber_callback([01;35m[Kconst sensor_msgs::msg::CompressedImage::ConstSharedPtr& image_msg[m[K, const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg,
+[1.661s]       |                                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[1.661s] 
+[1.661s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:91:88:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgroundturth_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.661s]    91 |                               [01;35m[Kconst lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg[m[K, const lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg,
+[1.661s]       |                               [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[1.661s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:91:157:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignal_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.661s]    91 | 3DArray::ConstSharedPtr& groundturth_msg, [01;35m[Kconst lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg[m[K,
+[1.661s]       |                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[1.661s] 
+[1.661s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:92:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcanbus_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.662s]    92 |                               [01;35m[Kconst lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg[m[K)
+[1.662s]       |                               [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[13.851s] [100%] [32m[1mLinking CXX executable main_msg[0m
+[14.588s] [100%] Built target main_msg
+[14.597s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '0': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[14.625s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': /usr/bin/cmake --install /home/cl4y3r/VDS/build/autodriving
+[14.632s] -- Install configuration: ""
+[14.633s] -- Installing: /home/cl4y3r/VDS/install/autodriving/lib/autodriving/main_msg
+[14.638s] -- Set runtime path of "/home/cl4y3r/VDS/install/autodriving/lib/autodriving/main_msg" to ""
+[14.638s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/package_run_dependencies/autodriving
+[14.638s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/parent_prefix_path/autodriving
+[14.638s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/ament_prefix_path.sh
+[14.638s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/ament_prefix_path.dsv
+[14.638s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/path.sh
+[14.638s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/path.dsv
+[14.639s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.bash
+[14.639s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.sh
+[14.639s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.zsh
+[14.639s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.dsv
+[14.639s] -- Installing: /home/cl4y3r/VDS/install/autodriving/share/autodriving/package.dsv
+[14.639s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/packages/autodriving
+[14.639s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/cmake/autodrivingConfig.cmake
+[14.639s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/cmake/autodrivingConfig-version.cmake
+[14.639s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/package.xml
+[14.641s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '0': /usr/bin/cmake --install /home/cl4y3r/VDS/build/autodriving

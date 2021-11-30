@@ -1,0 +1,20 @@
+[0.013s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.047s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.071s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[1.418s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kvoid ChassisController::msg_subscriber(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[1.419s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:27:86:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgroundturth_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.419s]    27 |       [01;35m[Kconst lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg[m[K,
+[1.419s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[1.419s] 
+[1.419s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:28:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcanbus_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.419s]    28 |                  [01;35m[Kconst lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg[m[K)
+[1.419s]       |                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[1.419s] 
+[1.422s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kvoid ChassisController::long_controller()[m[K’:
+[1.422s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:37:41:[m[K [01;31m[Kerror: [m[K‘[01m[Klinear_acc_x[m[K’ was not declared in this scope
+[1.422s]    37 |     this->get_parameter("my_parameter", [01;31m[Klinear_acc_x[m[K);
+[1.422s]       |                                         [01;31m[K^~~~~~~~~~~~[m[K
+[4.873s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[4.874s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[4.874s] make: *** [Makefile:141: all] Error 2
+[4.876s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

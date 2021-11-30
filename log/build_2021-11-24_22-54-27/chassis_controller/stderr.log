@@ -1,0 +1,68 @@
+In file included from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:30:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ is not a namespace-name
+   30 | using namespace std::[01;31m[Kstring[m[K;
+      |                      [01;31m[K^~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:31:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ is not a namespace-name
+   31 | using namespace std::[01;31m[Kvector[m[K;
+      |                      [01;31m[K^~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:32:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kifstream[m[K’ is not a namespace-name
+   32 | using namespace std::[01;31m[Kifstream[m[K;
+      |                      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:33:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kistringstream[m[K’ is not a namespace-name
+   33 | using namespace std::[01;31m[Kistringstream[m[K;
+      |                      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:34:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kstringstream[m[K’ is not a namespace-name
+   34 | using namespace std::[01;31m[Kstringstream[m[K;
+      |                      [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:72:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ does not name a type
+   72 |         [01;31m[Kvector[m[K<double> wp_x, wp_y;
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:88:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ does not name a type
+   88 |         [01;31m[Kvector[m[K<double> waypoint_loader(std::string filename);
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In constructor ‘[01m[KChassisController::ChassisController()[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwp_x[m[K’ was not declared in this scope
+   17 |     [01;31m[Kwp_x[m[K,wp_y=waypoint_loader("point.csv");
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kwp_y[m[K’ was not declared in this scope
+   17 |     wp_x,[01;31m[Kwp_y[m[K=waypoint_loader("point.csv");
+      |          [01;31m[K^~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoint_loader[m[K’ was not declared in this scope
+   17 |     wp_x,wp_y=[01;31m[Kwaypoint_loader[m[K("point.csv");
+      |               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K At global scope:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:70:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ does not name a type
+   70 | [01;31m[Kvector[m[K<double> ChassisController::waypoint_loader(std::string filename){
+      | [01;31m[K^~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::longitudinal_controller(double, double)[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:100:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  100 | double ChassisController::longitudinal_controller([01;35m[Kdouble velocity_x[m[K, double acc_x){
+      |                                                   [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:100:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kacc_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  100 | ontroller::longitudinal_controller(double velocity_x, [01;35m[Kdouble acc_x[m[K){
+      |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::lateral_controller(double, double, double, double, double)[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  104 | double ChassisController::lateral_controller([01;35m[Kdouble yaw[m[K, double yaw_rate, double pos_x, double pos_y, double velocity_x){
+      |                                              [01;35m[K~~~~~~~^~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaw_rate[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  104 | ble ChassisController::lateral_controller(double yaw, [01;35m[Kdouble yaw_rate[m[K, double pos_x, double pos_y, double velocity_x){
+      |                                                       [01;35m[K~~~~~~~^~~~~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  104 | ller::lateral_controller(double yaw, double yaw_rate, [01;35m[Kdouble pos_x[m[K, double pos_y, double velocity_x){
+      |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:96:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos_y[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  104 | controller(double yaw, double yaw_rate, double pos_x, [01;35m[Kdouble pos_y[m[K, double velocity_x){
+      |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  104 | er(double yaw, double yaw_rate, double pos_x, double pos_y, [01;35m[Kdouble velocity_x[m[K){
+      |                                                             [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+
+make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,35 @@
+[35m[1mScanning dependencies of target chassis_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In constructor ‘[01m[KChassisController::ChassisController()[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:11:37:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Ksensor_msgs::msg::Imu_<std::allocator<void> >::ConstSharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<const sensor_msgs::msg::Imu_<std::allocator<void> > >[m[K’} to ‘[01m[Kdouble[m[K’
+   11 |     data_process([01;31m[KChassisController::imu_msg[m[K);
+      |                  [01;31m[K~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+      |                                     [01;31m[K|[m[K
+      |                                     [01;31m[Ksensor_msgs::msg::Imu_<std::allocator<void> >::ConstSharedPtr {aka std::shared_ptr<const sensor_msgs::msg::Imu_<std::allocator<void> > >}[m[K
+In file included from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:55:36:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kdouble ChassisController::data_process(double)[m[K’
+   55 |         double data_process([01;36m[Kdouble linear_acc_x[m[K);
+      |                             [01;36m[K~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kvoid ChassisController::msg_subscriber(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:25:86:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgroundturth_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   25 |       [01;35m[Kconst lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg[m[K,
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:26:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcanbus_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   26 |                  [01;35m[Kconst lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg[m[K)
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K At global scope:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:34:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdouble ChassisController::data_process[m[K’ is not a static data member of ‘[01m[Kclass ChassisController[m[K’
+   34 | double  [01;31m[KChassisController[m[K::data_process(imu_msg){
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:34:41:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KChassisController::imu_msg[m[K’
+   34 | double  ChassisController::data_process([01;31m[Kimu_msg[m[K){
+      |                                         [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:46:47:[m[K [01;36m[Knote: [m[Kdeclared here
+   46 |         sensor_msgs::msg::Imu::ConstSharedPtr [01;36m[Kimu_msg[m[K;
+      |                                               [01;36m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

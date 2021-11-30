@@ -1,0 +1,7 @@
+[01m[K/home/cl4y3r/VDS/icc/src/icc.cpp:25:10:[m[K [01;31m[Kfatal error: [m[Kchassis_controller.cpp: No such file or directory
+   25 | #include [01;31m[K"chassis_controller.cpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/icc.dir/build.make:63: CMakeFiles/icc.dir/src/icc.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/icc.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

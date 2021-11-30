@@ -1,0 +1,2 @@
+Invoking command in '/home/cl4y3r/VDS/build/icc': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/icc -- -j8 -l8
+Invoked command in '/home/cl4y3r/VDS/build/icc' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/icc -- -j8 -l8

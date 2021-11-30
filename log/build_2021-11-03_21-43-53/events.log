@@ -1,0 +1,281 @@
+[0.000000] (-) TimerEvent: {}
+[0.000544] (autodriving) JobQueued: {'identifier': 'autodriving', 'dependencies': OrderedDict()}
+[0.001643] (autodriving) JobStarted: {'identifier': 'autodriving'}
+[0.016483] (autodriving) JobProgress: {'identifier': 'autodriving', 'progress': 'cmake'}
+[0.017709] (autodriving) JobProgress: {'identifier': 'autodriving', 'progress': 'build'}
+[0.018977] (autodriving) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cl4y3r/VDS/build/autodriving', '--', '-j8', '-l8'], 'cwd': '/home/cl4y3r/VDS/build/autodriving', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cl4y3r'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1967'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/cl4y3r'), ('OLDPWD', '/home/cl4y3r'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1751'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=59d5e6cabf75868295d730da61828241'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'cl4y3r'), ('JOURNAL_STREAM', '8:45624'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cl4y3r'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/cl4y3r/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu20:@/tmp/.ICE-unix/1995,unix/Ubuntu20:/tmp/.ICE-unix/1995'), ('INVOCATION_ID', '7ba4cbbda7844d26885267ae409c9c6b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/afab60c0_6d1d_43e6_b9ab_6c715f7127fb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.109'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cl4y3r/VDS/build/autodriving'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=59d5e6cabf75868295d730da61828241'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.100134] (-) TimerEvent: {}
+[0.144262] (autodriving) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target main_msg\x1b[0m\n'}
+[0.185542] (autodriving) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o\x1b[0m\n'}
+[0.200247] (-) TimerEvent: {}
+[0.300598] (-) TimerEvent: {}
+[0.401035] (-) TimerEvent: {}
+[0.501560] (-) TimerEvent: {}
+[0.601937] (-) TimerEvent: {}
+[0.702316] (-) TimerEvent: {}
+[0.802682] (-) TimerEvent: {}
+[0.903050] (-) TimerEvent: {}
+[1.003513] (-) TimerEvent: {}
+[1.104114] (-) TimerEvent: {}
+[1.204510] (-) TimerEvent: {}
+[1.304885] (-) TimerEvent: {}
+[1.405256] (-) TimerEvent: {}
+[1.505622] (-) TimerEvent: {}
+[1.605990] (-) TimerEvent: {}
+[1.706360] (-) TimerEvent: {}
+[1.806722] (-) TimerEvent: {}
+[1.812669] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:25:110:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KImu\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.812912] (autodriving) StderrLine: {'line': b'   25 | ateTime<sensor_msgs::msg::CompressedImage, sensor_msgs::msg::\x1b[01;31m\x1b[KImu\x1b[m\x1b[K, lgsvl_msgs::msg::Detection3DArray,\n'}
+[1.813020] (autodriving) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.813113] (autodriving) StderrLine: {'line': b'\n'}
+[1.813354] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:25:110:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KImu\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.813453] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:26:116:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[1.813547] (autodriving) StderrLine: {'line': b'   26 |        lgsvl_msgs::msg::SignalArray, lgsvl_msgs::msg::CanBusData\x1b[01;31m\x1b[K>\x1b[m\x1b[K MySyncPolicy;\n'}
+[1.813637] (autodriving) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.813724] (autodriving) StderrLine: {'line': b'\n'}
+[1.834315] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:46:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KImu\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.834595] (autodriving) StderrLine: {'line': b'   46 |     message_filters::Subscriber<sensor_msgs::msg::\x1b[01;31m\x1b[KImu\x1b[m\x1b[K> imu_sub;                         // IMU\xe4\xbc\xa0\xe6\x84\x9f\xe5\x99\xa8\n'}
+[1.834686] (autodriving) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.835225] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:46:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KImu\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.835440] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:46:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.835531] (autodriving) StderrLine: {'line': b'   46 |     message_filters::Subscriber<sensor_msgs::msg::Imu\x1b[01;31m\x1b[K>\x1b[m\x1b[K imu_sub;                         // IMU\xe4\xbc\xa0\xe6\x84\x9f\xe5\x99\xa8\n'}
+[1.835615] (autodriving) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.904636] (autodriving) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:6\x1b[m\x1b[K:\n'}
+[1.905213] (autodriving) StderrLine: {'line': b'/opt/ros/foxy/include/message_filters/synchronizer.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass message_filters::Synchronizer<int>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.905356] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:52:134:\x1b[m\x1b[K   required from here\n'}
+[1.905456] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:53:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 fails to be a struct or class type\n'}
+[1.905565] (autodriving) StderrLine: {'line': b'   53 | class \x1b[01;31m\x1b[KSynchronizer\x1b[m\x1b[K : public noncopyable, public Policy\n'}
+[1.905769] (autodriving) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.905862] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:56:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.905962] (autodriving) StderrLine: {'line': b'   56 |   typedef typename Policy::Messages \x1b[01;31m\x1b[KMessages\x1b[m\x1b[K;\n'}
+[1.906052] (autodriving) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.906140] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:57:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.906229] (autodriving) StderrLine: {'line': b'   57 |   typedef typename Policy::Events \x1b[01;31m\x1b[KEvents\x1b[m\x1b[K;\n'}
+[1.906317] (autodriving) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.906402] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:58:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.906488] (autodriving) StderrLine: {'line': b'   58 |   typedef typename Policy::Signal \x1b[01;31m\x1b[KSignal\x1b[m\x1b[K;\n'}
+[1.906701] (autodriving) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.906795] (-) TimerEvent: {}
+[1.906928] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:60:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.907057] (autodriving) StderrLine: {'line': b'   60 |   typedef typename std::tuple_element<0, Messages>::type \x1b[01;31m\x1b[KM0\x1b[m\x1b[K;\n'}
+[1.907236] (autodriving) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.907317] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:61:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.907397] (autodriving) StderrLine: {'line': b'   61 |   typedef typename std::tuple_element<1, Messages>::type \x1b[01;31m\x1b[KM1\x1b[m\x1b[K;\n'}
+[1.907475] (autodriving) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.907551] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:62:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.907641] (autodriving) StderrLine: {'line': b'   62 |   typedef typename std::tuple_element<2, Messages>::type \x1b[01;31m\x1b[KM2\x1b[m\x1b[K;\n'}
+[1.907728] (autodriving) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.907804] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:63:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.907881] (autodriving) StderrLine: {'line': b'   63 |   typedef typename std::tuple_element<3, Messages>::type \x1b[01;31m\x1b[KM3\x1b[m\x1b[K;\n'}
+[1.907956] (autodriving) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.908032] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:64:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.908108] (autodriving) StderrLine: {'line': b'   64 |   typedef typename std::tuple_element<4, Messages>::type \x1b[01;31m\x1b[KM4\x1b[m\x1b[K;\n'}
+[1.908183] (autodriving) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.908258] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:65:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.908334] (autodriving) StderrLine: {'line': b'   65 |   typedef typename std::tuple_element<5, Messages>::type \x1b[01;31m\x1b[KM5\x1b[m\x1b[K;\n'}
+[1.908409] (autodriving) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.908484] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:66:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.908559] (autodriving) StderrLine: {'line': b'   66 |   typedef typename std::tuple_element<6, Messages>::type \x1b[01;31m\x1b[KM6\x1b[m\x1b[K;\n'}
+[1.908635] (autodriving) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.908710] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:67:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.908788] (autodriving) StderrLine: {'line': b'   67 |   typedef typename std::tuple_element<7, Messages>::type \x1b[01;31m\x1b[KM7\x1b[m\x1b[K;\n'}
+[1.908863] (autodriving) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.908939] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:68:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.909015] (autodriving) StderrLine: {'line': b'   68 |   typedef typename std::tuple_element<8, Messages>::type \x1b[01;31m\x1b[KM8\x1b[m\x1b[K;\n'}
+[1.909090] (autodriving) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.909165] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:71:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.909242] (autodriving) StderrLine: {'line': b'   71 |   typedef typename std::tuple_element<0, Events>::type \x1b[01;31m\x1b[KM0Event\x1b[m\x1b[K;\n'}
+[1.909325] (autodriving) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.909402] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:72:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.909478] (autodriving) StderrLine: {'line': b'   72 |   typedef typename std::tuple_element<1, Events>::type \x1b[01;31m\x1b[KM1Event\x1b[m\x1b[K;\n'}
+[1.909555] (autodriving) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.909630] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:73:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.909722] (autodriving) StderrLine: {'line': b'   73 |   typedef typename std::tuple_element<2, Events>::type \x1b[01;31m\x1b[KM2Event\x1b[m\x1b[K;\n'}
+[1.909802] (autodriving) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.909882] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:74:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.909967] (autodriving) StderrLine: {'line': b'   74 |   typedef typename std::tuple_element<3, Events>::type \x1b[01;31m\x1b[KM3Event\x1b[m\x1b[K;\n'}
+[1.910049] (autodriving) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.910130] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:75:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.910213] (autodriving) StderrLine: {'line': b'   75 |   typedef typename std::tuple_element<4, Events>::type \x1b[01;31m\x1b[KM4Event\x1b[m\x1b[K;\n'}
+[1.910294] (autodriving) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.910377] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:76:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.910465] (autodriving) StderrLine: {'line': b'   76 |   typedef typename std::tuple_element<5, Events>::type \x1b[01;31m\x1b[KM5Event\x1b[m\x1b[K;\n'}
+[1.910547] (autodriving) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.910635] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:77:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.910718] (autodriving) StderrLine: {'line': b'   77 |   typedef typename std::tuple_element<6, Events>::type \x1b[01;31m\x1b[KM6Event\x1b[m\x1b[K;\n'}
+[1.910799] (autodriving) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.910880] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:78:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.910962] (autodriving) StderrLine: {'line': b'   78 |   typedef typename std::tuple_element<7, Events>::type \x1b[01;31m\x1b[KM7Event\x1b[m\x1b[K;\n'}
+[1.911050] (autodriving) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.911217] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:79:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.911301] (autodriving) StderrLine: {'line': b'   79 |   typedef typename std::tuple_element<8, Events>::type \x1b[01;31m\x1b[KM8Event\x1b[m\x1b[K;\n'}
+[1.911383] (autodriving) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.911464] (autodriving) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:6\x1b[m\x1b[K:\n'}
+[1.911546] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:325:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a base type for type \xe2\x80\x98\x1b[01m\x1b[Kmessage_filters::Synchronizer<int>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.911630] (autodriving) StderrLine: {'line': b'  325 |   using Policy::\x1b[01;31m\x1b[Kadd\x1b[m\x1b[K;\n'}
+[1.911712] (autodriving) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.911794] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:328:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.911876] (autodriving) StderrLine: {'line': b'  328 |   void \x1b[01;31m\x1b[Kadd\x1b[m\x1b[K(const std::shared_ptr<typename std::tuple_element<i, Messages>::type const>& msg)\n'}
+[1.911959] (autodriving) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.912040] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:344:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.912124] (autodriving) StderrLine: {'line': b'  344 |   void \x1b[01;31m\x1b[Kcb\x1b[m\x1b[K(const typename std::tuple_element<i, Events>::type& evt)\n'}
+[1.912206] (autodriving) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.913804] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KmsgSubPub::msgSubPub()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.913945] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:69:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Ksubscribe\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[K((msgSubPub*)this)->msgSubPub::imu_sub\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.914081] (autodriving) StderrLine: {'line': b'   69 |     imu_sub.\x1b[01;31m\x1b[Ksubscribe\x1b[m\x1b[K(this, "/simulator/sensor/imu");\n'}
+[1.914188] (autodriving) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.916169] (autodriving) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/bind.hpp:22\x1b[m\x1b[K,\n'}
+[1.916300] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:3\x1b[m\x1b[K:\n'}
+[1.916385] (autodriving) StderrLine: {'line': b'/usr/include/boost/bind/bind.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct boost::_bi::result_traits<boost::_bi::unspecified, void (msgSubPub::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >&)>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.916493] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind/bind.hpp:1284:48:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kclass boost::_bi::bind_t<boost::_bi::unspecified, void (msgSubPub::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >&), boost::_bi::list5<boost::_bi::value<msgSubPub*>, boost::arg<1>, boost::arg<2>, boost::arg<3>, boost::arg<4> > >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.916586] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:74:95:\x1b[m\x1b[K   required from here\n'}
+[1.916669] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind/bind.hpp:75:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid (msgSubPub::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >&)\x1b[m\x1b[K\xe2\x80\x99 is not a class, struct, or union type\n'}
+[1.916750] (autodriving) StderrLine: {'line': b'   75 |     typedef typename F::result_type \x1b[01;31m\x1b[Ktype\x1b[m\x1b[K;\n'}
+[1.916825] (autodriving) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.931785] (autodriving) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[1.932010] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[1.932186] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.932670] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.933475] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.933589] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.933684] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.933770] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.933855] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.933940] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.934024] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/subscriber.h:38\x1b[m\x1b[K,\n'}
+[1.934106] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5\x1b[m\x1b[K:\n'}
+[1.934187] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid subscriber_callback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.934285] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:94:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.934368] (autodriving) StderrLine: {'line': b'   94 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");\n'}
+[1.934450] (autodriving) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.934531] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:94:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.934615] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:94:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.934697] (autodriving) StderrLine: {'line': b'   94 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");\n'}
+[1.934794] (autodriving) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.934870] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:94:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.934942] (autodriving) StderrLine: {'line': b'   94 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");\n'}
+[1.935015] (autodriving) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.935102] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:94:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.935259] (autodriving) StderrLine: {'line': b'   94 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");\n'}
+[1.935336] (autodriving) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.935408] (autodriving) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.935481] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[1.935555] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.935628] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.935701] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.935774] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.935854] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.935930] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.936010] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.936084] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.936162] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/subscriber.h:38\x1b[m\x1b[K,\n'}
+[1.936235] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5\x1b[m\x1b[K:\n'}
+[1.936308] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:94:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.936381] (autodriving) StderrLine: {'line': b'   94 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");\n'}
+[1.936514] (autodriving) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.936673] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:94:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.936826] (autodriving) StderrLine: {'line': b'   94 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Subscribed: Get 3D_ground_truth & Imu & signal & can_bus_data Message");\n'}
+[1.936929] (autodriving) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.937002] (autodriving) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[1.937075] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[1.937148] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.937220] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.937292] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.937364] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.937436] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.937507] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.937578] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.937651] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.937723] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/subscriber.h:38\x1b[m\x1b[K,\n'}
+[1.937796] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5\x1b[m\x1b[K:\n'}
+[1.937868] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:96:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.937941] (autodriving) StderrLine: {'line': b'   96 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "scan stamp:%d - %d - %d - %d -%d", image_msg->header.stamp.sec, imu_msg->header.stamp.sec, groundturth_msg->header.stamp.sec,\n'}
+[1.938024] (autodriving) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.938097] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:96:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.938176] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:96:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.938248] (autodriving) StderrLine: {'line': b'   96 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "scan stamp:%d - %d - %d - %d -%d", image_msg->header.stamp.sec, imu_msg->header.stamp.sec, groundturth_msg->header.stamp.sec,\n'}
+[1.938322] (autodriving) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.938393] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:96:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.938466] (autodriving) StderrLine: {'line': b'   96 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "scan stamp:%d - %d - %d - %d -%d", image_msg->header.stamp.sec, imu_msg->header.stamp.sec, groundturth_msg->header.stamp.sec,\n'}
+[1.938539] (autodriving) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.938611] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:96:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.938685] (autodriving) StderrLine: {'line': b'   96 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "scan stamp:%d - %d - %d - %d -%d", image_msg->header.stamp.sec, imu_msg->header.stamp.sec, groundturth_msg->header.stamp.sec,\n'}
+[1.938759] (autodriving) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.938831] (autodriving) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.938902] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[1.939144] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.939278] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.939355] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.939437] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.939511] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.939584] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.939657] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.939745] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.939820] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/subscriber.h:38\x1b[m\x1b[K,\n'}
+[1.939895] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5\x1b[m\x1b[K:\n'}
+[1.939972] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:96:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.940050] (autodriving) StderrLine: {'line': b'   96 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "scan stamp:%d - %d - %d - %d -%d", image_msg->header.stamp.sec, imu_msg->header.stamp.sec, groundturth_msg->header.stamp.sec,\n'}
+[1.940135] (autodriving) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.940211] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:96:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.940290] (autodriving) StderrLine: {'line': b'   96 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "scan stamp:%d - %d - %d - %d -%d", image_msg->header.stamp.sec, imu_msg->header.stamp.sec, groundturth_msg->header.stamp.sec,\n'}
+[1.940367] (autodriving) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.945918] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid msgSubPub::publisher_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.946121] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:123:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct lgsvl_msgs::msg::VehicleControlData_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ktarget_wheel_angle_rate\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktarget_wheel_angular_rate\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.946249] (autodriving) StderrLine: {'line': b'  123 |     control.\x1b[01;31m\x1b[Ktarget_wheel_angle_rate\x1b[m\x1b[K = 0.1; //\xe8\xbd\xa6\xe8\xbd\xae\xe8\xbd\xac\xe8\xa7\x92\xe8\xa7\x92\xe9\x80\x9f\xe5\xba\xa6\n'}
+[1.946369] (autodriving) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.946466] (autodriving) StderrLine: {'line': b'      |             \x1b[32m\x1b[Ktarget_wheel_angular_rate\x1b[m\x1b[K\n'}
+[2.006964] (-) TimerEvent: {}
+[2.051612] (autodriving) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:6\x1b[m\x1b[K:\n'}
+[2.051811] (autodriving) StderrLine: {'line': b'/opt/ros/foxy/include/message_filters/synchronizer.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kmessage_filters::Synchronizer<Policy>::Synchronizer(const Policy&, F0&, F1&, F2&, F3&) [with F0 = message_filters::Subscriber<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >; F1 = message_filters::Subscriber<lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >; F2 = message_filters::Subscriber<lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >; F3 = message_filters::Subscriber<lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >; Policy = int]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.051917] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:52:134:\x1b[m\x1b[K   required from here\n'}
+[2.052011] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:162:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 is not a direct base of \xe2\x80\x98\x1b[01m\x1b[Kmessage_filters::Synchronizer<int>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.052097] (autodriving) StderrLine: {'line': b'  162 |   : Policy(policy\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[2.052178] (autodriving) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.088786] (autodriving) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:6\x1b[m\x1b[K:\n'}
+[2.088995] (autodriving) StderrLine: {'line': b'/opt/ros/foxy/include/message_filters/synchronizer.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kmessage_filters::Connection message_filters::Synchronizer<Policy>::registerCallback(const C&) [with C = boost::_bi::bind_t<boost::_bi::unspecified, void (msgSubPub::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >&), boost::_bi::list5<boost::_bi::value<msgSubPub*>, boost::arg<1>, boost::arg<2>, boost::arg<3>, boost::arg<4> > >; Policy = int]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.089127] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:74:96:\x1b[m\x1b[K   required from here\n'}
+[2.089216] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/synchronizer.h:298:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kusing invalid field \xe2\x80\x98\x1b[01m\x1b[Kmessage_filters::Synchronizer<Policy>::signal_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.089303] (autodriving) StderrLine: {'line': b'  298 |     return \x1b[01;31m\x1b[Ksignal_\x1b[m\x1b[K.addCallback(callback);\n'}
+[2.089387] (autodriving) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.107159] (-) TimerEvent: {}
+[2.207715] (-) TimerEvent: {}
+[2.308060] (-) TimerEvent: {}
+[2.408453] (-) TimerEvent: {}
+[2.508850] (-) TimerEvent: {}
+[2.609214] (-) TimerEvent: {}
+[2.709579] (-) TimerEvent: {}
+[2.809958] (-) TimerEvent: {}
+[2.910378] (-) TimerEvent: {}
+[3.010903] (-) TimerEvent: {}
+[3.111304] (-) TimerEvent: {}
+[3.211689] (-) TimerEvent: {}
+[3.312159] (-) TimerEvent: {}
+[3.412566] (-) TimerEvent: {}
+[3.512938] (-) TimerEvent: {}
+[3.613388] (-) TimerEvent: {}
+[3.713740] (-) TimerEvent: {}
+[3.814106] (-) TimerEvent: {}
+[3.914471] (-) TimerEvent: {}
+[4.014817] (-) TimerEvent: {}
+[4.115169] (-) TimerEvent: {}
+[4.215476] (-) TimerEvent: {}
+[4.315836] (-) TimerEvent: {}
+[4.416189] (-) TimerEvent: {}
+[4.516623] (-) TimerEvent: {}
+[4.616998] (-) TimerEvent: {}
+[4.717375] (-) TimerEvent: {}
+[4.817796] (-) TimerEvent: {}
+[4.918175] (-) TimerEvent: {}
+[5.018548] (-) TimerEvent: {}
+[5.118916] (-) TimerEvent: {}
+[5.219314] (-) TimerEvent: {}
+[5.319725] (-) TimerEvent: {}
+[5.420109] (-) TimerEvent: {}
+[5.520596] (-) TimerEvent: {}
+[5.621032] (-) TimerEvent: {}
+[5.663921] (autodriving) StderrLine: {'line': b'make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1\n'}
+[5.664358] (autodriving) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2\n'}
+[5.664557] (autodriving) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[5.667299] (autodriving) CommandEnded: {'returncode': 2}
+[5.708681] (autodriving) JobEnded: {'identifier': 'autodriving', 'rc': 2}
+[5.720561] (-) EventReactorShutdown: {}

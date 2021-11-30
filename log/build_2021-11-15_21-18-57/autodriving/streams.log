@@ -1,0 +1,16 @@
+[0.019s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.069s] [35m[1mScanning dependencies of target main_msg[0m
+[0.103s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[2.280s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:128:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid msgSubPub::publisher_callback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’
+[2.280s]   128 | void [01;31m[KmsgSubPub[m[K::publisher_callback(const sensor_msgs::msg::CompressedImage::ConstSharedPtr& image_msg, const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg,
+[2.280s]       |      [01;31m[K^~~~~~~~~[m[K
+[2.280s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:60:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid msgSubPub::publisher_callback()[m[K’
+[2.280s]    60 |     void [01;36m[Kpublisher_callback[m[K();
+[2.281s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.281s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:41:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass msgSubPub[m[K’ defined here
+[2.281s]    41 | class [01;36m[KmsgSubPub[m[K : public rclcpp::Node, public chassisController
+[2.281s]       |       [01;36m[K^~~~~~~~~[m[K
+[8.248s] make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1
+[8.248s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+[8.248s] make: *** [Makefile:141: all] Error 2
+[8.250s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '2': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8

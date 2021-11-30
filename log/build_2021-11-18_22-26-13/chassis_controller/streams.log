@@ -1,0 +1,24 @@
+[0.018s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.047s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.072s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.286s] -- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)
+[0.289s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.336s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.340s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.475s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.537s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.539s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.709s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.852s] -- Found lgsvl_msgs: 0.0.4 (/opt/ros/foxy/share/lgsvl_msgs/cmake)
+[1.013s] CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[1.013s]   ament_target_dependencies() the passed package name 'cmath' was not found
+[1.013s]   before
+[1.014s] Call Stack (most recent call first):
+[1.014s]   CMakeLists.txt:23 (ament_target_dependencies)
+[1.014s] 
+[1.014s] 
+[1.015s] -- Configuring incomplete, errors occurred!
+[1.015s] See also "/home/cl4y3r/VDS/build/chassis_controller/CMakeFiles/CMakeOutput.log".
+[1.015s] See also "/home/cl4y3r/VDS/build/chassis_controller/CMakeFiles/CMakeError.log".
+[1.021s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[1.023s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

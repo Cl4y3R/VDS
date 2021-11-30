@@ -1,0 +1,35 @@
+[0.015s] Invoking command in '/home/cl4y3r/VDS/build/icc': /usr/bin/cmake /home/cl4y3r/VDS/icc -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/icc
+[0.099s] -- The C compiler identification is GNU 9.3.0
+[0.162s] -- The CXX compiler identification is GNU 9.3.0
+[0.177s] -- Check for working C compiler: /usr/bin/cc
+[0.254s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.255s] -- Detecting C compiler ABI info
+[0.312s] -- Detecting C compiler ABI info - done
+[0.323s] -- Detecting C compile features
+[0.324s] -- Detecting C compile features - done
+[0.326s] -- Check for working CXX compiler: /usr/bin/c++
+[0.392s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.393s] -- Detecting CXX compiler ABI info
+[0.459s] -- Detecting CXX compiler ABI info - done
+[0.471s] -- Detecting CXX compile features
+[0.471s] -- Detecting CXX compile features - done
+[0.489s] CMake Error at CMakeLists.txt:13 (find_package):
+[0.489s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.489s]   has asked CMake to find a package configuration file provided by
+[0.489s]   "ament_cmake", but CMake did not find one.
+[0.489s] 
+[0.489s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.489s]   any of the following names:
+[0.489s] 
+[0.489s]     ament_cmakeConfig.cmake
+[0.490s]     ament_cmake-config.cmake
+[0.490s] 
+[0.490s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.490s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.490s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.490s]   has been installed.
+[0.490s] 
+[0.490s] 
+[0.490s] -- Configuring incomplete, errors occurred!
+[0.490s] See also "/home/cl4y3r/VDS/build/icc/CMakeFiles/CMakeOutput.log".
+[0.492s] Invoked command in '/home/cl4y3r/VDS/build/icc' returned '1': /usr/bin/cmake /home/cl4y3r/VDS/icc -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/icc

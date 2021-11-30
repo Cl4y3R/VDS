@@ -1,0 +1,2 @@
+Invoking command in '/home/cl4y3r/VDS/build/icc': /usr/bin/cmake /home/cl4y3r/VDS/icc -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/icc
+Invoked command in '/home/cl4y3r/VDS/build/icc' returned '1': /usr/bin/cmake /home/cl4y3r/VDS/icc -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/icc

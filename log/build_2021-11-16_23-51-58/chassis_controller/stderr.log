@@ -1,0 +1,8 @@
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kvoid ChassisController::long_controller()[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:24:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Kimu_msg[m[K’?
+   24 |     control.acceleration_pct = [01;31m[Kimage_msg[m[K->linear_acceleration.x;  //加速踏板
+      |                                [01;31m[K^~~~~~~~~[m[K
+      |                                [32m[Kimu_msg[m[K
+make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target main_msg[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K In constructor ‘[01m[KmsgSubPub::msgSubPub()[m[K’:
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:100:45:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid msgSubPub::publisher_callback(double, double)[m[K’
+  100 |     timer_ = this->create_wall_timer(500ms, [01;31m[Kpublisher_callback[m[K);
+      |                                             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:57:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   57 |     void [01;36m[Kpublisher_callback[m[K(double a, double b);
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K At global scope:
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:132:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid msgSubPub::publisher_callback()[m[K’
+  132 | void [01;31m[KmsgSubPub[m[K::publisher_callback()
+      |      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:57:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid msgSubPub::publisher_callback(double, double)[m[K’
+   57 |     void [01;36m[Kpublisher_callback[m[K(double a, double b);
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:43:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass msgSubPub[m[K’ defined here
+   43 | class [01;36m[KmsgSubPub[m[K : public rclcpp::Node, public chassisController
+      |       [01;36m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

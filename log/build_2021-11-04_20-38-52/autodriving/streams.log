@@ -1,0 +1,28 @@
+[0.012s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.143s] [35m[1mScanning dependencies of target main_msg[0m
+[0.172s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[1.762s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K In member function ‘[01m[Kvoid msgSubPub::subscriber_callback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[1.762s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:90:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kimage_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.762s]    90 | ack([01;35m[Kconst sensor_msgs::msg::CompressedImage::ConstSharedPtr& image_msg[m[K, const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg,
+[1.762s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[1.762s] 
+[1.762s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:91:88:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgroundturth_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.762s]    91 |     [01;35m[Kconst lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg[m[K, const lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg,
+[1.762s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[1.762s] 
+[1.763s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:91:157:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignal_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.763s]    91 | oundturth_msg, [01;35m[Kconst lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg[m[K,
+[1.763s]       |                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[1.763s] 
+[1.763s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:92:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcanbus_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.763s]    92 |                  [01;35m[Kconst lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg[m[K)
+[1.763s]       |                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[1.763s] 
+[1.763s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K At global scope:
+[1.763s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:107:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[1.763s]   107 | [01;31m[K}[m[K
+[1.763s]       | [01;31m[K^[m[K
+[6.682s] make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1
+[6.682s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+[6.683s] make: *** [Makefile:141: all] Error 2
+[6.685s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '2': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8

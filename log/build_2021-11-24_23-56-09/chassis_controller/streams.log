@@ -1,0 +1,327 @@
+[0.020s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.074s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.116s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[1.984s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In constructor ‘[01m[KChassisController::ChassisController()[m[K’:
+[1.984s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:14:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::ostream[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>[m[K’} and ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’)
+[1.985s]    17 |         [32m[Kcout[m[K [01;31m[K<<[m[K [34m[Ki[m[K << endl;
+[1.985s]       |         [32m[K~~~~[m[K [01;31m[K^~[m[K [34m[K~[m[K
+[1.985s]       |         [32m[K|[m[K       [34m[K|[m[K
+[1.987s]       |         [32m[K|[m[K       [34m[Kstd::vector<double, std::allocator<double> >[m[K
+[1.987s]       |         [32m[Kstd::ostream {aka std::basic_ostream<char>}[m[K
+[1.987s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.987s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[1.988s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[1.988s] [01m[K/usr/include/c++/9/ostream:108:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.988s]   108 |       [01;36m[Koperator[m[K<<(__ostream_type& (*__pf)(__ostream_type&))
+[1.988s]       |       [01;36m[K^~~~~~~~[m[K
+[1.988s] [01m[K/usr/include/c++/9/ostream:108:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>& (*)(std::basic_ostream<char>&)[m[K’}
+[1.988s]   108 |       operator<<([01;36m[K__ostream_type& (*__pf)(__ostream_type&)[m[K)
+[1.989s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.989s] [01m[K/usr/include/c++/9/ostream:117:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>][m[K’
+[1.989s]   117 |       [01;36m[Koperator[m[K<<(__ios_type& (*__pf)(__ios_type&))
+[1.989s]       |       [01;36m[K^~~~~~~~[m[K
+[1.989s] [01m[K/usr/include/c++/9/ostream:117:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)[m[K’ {aka ‘[01m[Kstd::basic_ios<char>& (*)(std::basic_ios<char>&)[m[K’}
+[1.989s]   117 |       operator<<([01;36m[K__ios_type& (*__pf)(__ios_type&)[m[K)
+[1.989s]       |                  [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[1.989s] [01m[K/usr/include/c++/9/ostream:127:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.989s]   127 |       [01;36m[Koperator[m[K<<(ios_base& (*__pf) (ios_base&))
+[1.990s]       |       [01;36m[K^~~~~~~~[m[K
+[1.990s] [01m[K/usr/include/c++/9/ostream:127:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Kstd::ios_base& (*)(std::ios_base&)[m[K’
+[1.990s]   127 |       operator<<([01;36m[Kios_base& (*__pf) (ios_base&)[m[K)
+[1.990s]       |                  [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[1.990s] [01m[K/usr/include/c++/9/ostream:166:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.990s]   166 |       [01;36m[Koperator[m[K<<(long __n)
+[1.990s]       |       [01;36m[K^~~~~~~~[m[K
+[1.991s] [01m[K/usr/include/c++/9/ostream:166:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Klong int[m[K’
+[1.991s]   166 |       operator<<([01;36m[Klong __n[m[K)
+[1.991s]       |                  [01;36m[K~~~~~^~~[m[K
+[1.991s] [01m[K/usr/include/c++/9/ostream:170:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.991s]   170 |       [01;36m[Koperator[m[K<<(unsigned long __n)
+[1.991s]       |       [01;36m[K^~~~~~~~[m[K
+[1.991s] [01m[K/usr/include/c++/9/ostream:170:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Klong unsigned int[m[K’
+[1.991s]   170 |       operator<<([01;36m[Kunsigned long __n[m[K)
+[1.991s]       |                  [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[1.992s] [01m[K/usr/include/c++/9/ostream:174:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.992s]   174 |       [01;36m[Koperator[m[K<<(bool __n)
+[1.992s]       |       [01;36m[K^~~~~~~~[m[K
+[1.992s] [01m[K/usr/include/c++/9/ostream:174:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Kbool[m[K’
+[1.992s]   174 |       operator<<([01;36m[Kbool __n[m[K)
+[1.992s]       |                  [01;36m[K~~~~~^~~[m[K
+[1.992s] In file included from [01m[K/usr/include/c++/9/ostream:702[m[K,
+[1.992s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.992s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[1.992s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[1.993s] [01m[K/usr/include/c++/9/bits/ostream.tcc:91:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[1.993s]    91 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[1.993s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.993s] [01m[K/usr/include/c++/9/bits/ostream.tcc:92:22:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Kshort int[m[K’
+[1.993s]    92 |     operator<<([01;36m[Kshort __n[m[K)
+[1.993s]       |                [01;36m[K~~~~~~^~~[m[K
+[1.993s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.993s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[1.994s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[1.994s] [01m[K/usr/include/c++/9/ostream:181:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.994s]   181 |       [01;36m[Koperator[m[K<<(unsigned short __n)
+[1.994s]       |       [01;36m[K^~~~~~~~[m[K
+[1.994s] [01m[K/usr/include/c++/9/ostream:181:33:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Kshort unsigned int[m[K’
+[1.994s]   181 |       operator<<([01;36m[Kunsigned short __n[m[K)
+[1.994s]       |                  [01;36m[K~~~~~~~~~~~~~~~^~~[m[K
+[1.994s] In file included from [01m[K/usr/include/c++/9/ostream:702[m[K,
+[1.995s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.995s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[1.995s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[1.995s] [01m[K/usr/include/c++/9/bits/ostream.tcc:105:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[1.995s]   105 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[1.995s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.995s] [01m[K/usr/include/c++/9/bits/ostream.tcc:106:20:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Kint[m[K’
+[1.995s]   106 |     operator<<([01;36m[Kint __n[m[K)
+[1.995s]       |                [01;36m[K~~~~^~~[m[K
+[1.996s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.996s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[1.996s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[1.996s] [01m[K/usr/include/c++/9/ostream:192:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.996s]   192 |       [01;36m[Koperator[m[K<<(unsigned int __n)
+[1.996s]       |       [01;36m[K^~~~~~~~[m[K
+[1.996s] [01m[K/usr/include/c++/9/ostream:192:31:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Kunsigned int[m[K’
+[1.996s]   192 |       operator<<([01;36m[Kunsigned int __n[m[K)
+[1.996s]       |                  [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[1.997s] [01m[K/usr/include/c++/9/ostream:201:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.997s]   201 |       [01;36m[Koperator[m[K<<(long long __n)
+[1.997s]       |       [01;36m[K^~~~~~~~[m[K
+[1.997s] [01m[K/usr/include/c++/9/ostream:201:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Klong long int[m[K’
+[1.997s]   201 |       operator<<([01;36m[Klong long __n[m[K)
+[1.997s]       |                  [01;36m[K~~~~~~~~~~^~~[m[K
+[1.997s] [01m[K/usr/include/c++/9/ostream:205:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.997s]   205 |       [01;36m[Koperator[m[K<<(unsigned long long __n)
+[1.998s]       |       [01;36m[K^~~~~~~~[m[K
+[1.998s] [01m[K/usr/include/c++/9/ostream:205:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Klong long unsigned int[m[K’
+[1.998s]   205 |       operator<<([01;36m[Kunsigned long long __n[m[K)
+[1.998s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.998s] [01m[K/usr/include/c++/9/ostream:220:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.998s]   220 |       [01;36m[Koperator[m[K<<(double __f)
+[1.998s]       |       [01;36m[K^~~~~~~~[m[K
+[1.999s] [01m[K/usr/include/c++/9/ostream:220:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Kdouble[m[K’
+[1.999s]   220 |       operator<<([01;36m[Kdouble __f[m[K)
+[1.999s]       |                  [01;36m[K~~~~~~~^~~[m[K
+[1.999s] [01m[K/usr/include/c++/9/ostream:224:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[1.999s]   224 |       [01;36m[Koperator[m[K<<(float __f)
+[1.999s]       |       [01;36m[K^~~~~~~~[m[K
+[1.999s] [01m[K/usr/include/c++/9/ostream:224:24:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Kfloat[m[K’
+[1.999s]   224 |       operator<<([01;36m[Kfloat __f[m[K)
+[2.000s]       |                  [01;36m[K~~~~~~^~~[m[K
+[2.000s] [01m[K/usr/include/c++/9/ostream:232:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.000s]   232 |       [01;36m[Koperator[m[K<<(long double __f)
+[2.000s]       |       [01;36m[K^~~~~~~~[m[K
+[2.000s] [01m[K/usr/include/c++/9/ostream:232:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Klong double[m[K’
+[2.000s]   232 |       operator<<([01;36m[Klong double __f[m[K)
+[2.000s]       |                  [01;36m[K~~~~~~~~~~~~^~~[m[K
+[2.000s] [01m[K/usr/include/c++/9/ostream:245:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.001s]   245 |       [01;36m[Koperator[m[K<<(const void* __p)
+[2.001s]       |       [01;36m[K^~~~~~~~[m[K
+[2.001s] [01m[K/usr/include/c++/9/ostream:245:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Kconst void*[m[K’
+[2.001s]   245 |       operator<<([01;36m[Kconst void* __p[m[K)
+[2.001s]       |                  [01;36m[K~~~~~~~~~~~~^~~[m[K
+[2.001s] In file included from [01m[K/usr/include/c++/9/ostream:702[m[K,
+[2.001s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.001s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[2.002s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.002s] [01m[K/usr/include/c++/9/bits/ostream.tcc:119:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>][m[K’
+[2.002s]   119 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[2.002s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.002s] [01m[K/usr/include/c++/9/bits/ostream.tcc:120:34:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__streambuf_type*[m[K’ {aka ‘[01m[Kstd::basic_streambuf<char>*[m[K’}
+[2.003s]   120 |     operator<<([01;36m[K__streambuf_type* __sbin[m[K)
+[2.003s]       |                [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[2.003s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[2.003s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[2.003s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[2.003s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[2.003s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[2.004s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[2.004s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:3[m[K,
+[2.004s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.004s] [01m[K/usr/include/c++/9/bits/basic_string.h:6416:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+[2.004s]  6416 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+[2.004s]       |     [01;36m[K^~~~~~~~[m[K
+[2.004s] [01m[K/usr/include/c++/9/bits/basic_string.h:6416:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.004s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[2.005s]    17 |         cout << [01;36m[Ki[m[K << endl;
+[2.005s]       |                 [01;36m[K^[m[K
+[2.005s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[2.005s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:3[m[K,
+[2.005s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.005s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:66:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+[2.005s]    66 |     [01;36m[Koperator[m[K<<(std::basic_ostream<_Ch, _Tr>& __os,
+[2.005s]       |     [01;36m[K^~~~~~~~[m[K
+[2.005s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:66:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.006s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+[2.006s]    17 |         cout << [01;36m[Ki[m[K << endl;
+[2.006s]       |                 [01;36m[K^[m[K
+[2.006s] In file included from [01m[K/usr/include/c++/9/bits/ios_base.h:46[m[K,
+[2.006s]                  from [01m[K/usr/include/c++/9/ios:42[m[K,
+[2.007s]                  from [01m[K/usr/include/c++/9/ostream:38[m[K,
+[2.007s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.007s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[2.007s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.007s] [01m[K/usr/include/c++/9/system_error:217:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)[m[K’
+[2.007s]   217 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+[2.007s]       |     [01;36m[K^~~~~~~~[m[K
+[2.007s] [01m[K/usr/include/c++/9/system_error:217:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.007s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ki[m[K’ (type ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’) to type ‘[01m[Kconst std::error_code&[m[K’
+[2.008s]    17 |         cout << [01;36m[Ki[m[K << endl;
+[2.008s]       |                 [01;36m[K^[m[K
+[2.008s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.008s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[2.008s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.008s] [01m[K/usr/include/c++/9/ostream:506:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)[m[K’
+[2.008s]   506 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[2.008s]       |     [01;36m[K^~~~~~~~[m[K
+[2.008s] [01m[K/usr/include/c++/9/ostream:506:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.009s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[K_CharT[m[K’ (‘[01m[Kchar[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’)
+[2.009s]    17 |         cout << [01;36m[Ki[m[K << endl;
+[2.009s]       |                 [01;36m[K^[m[K
+[2.009s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.009s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[2.009s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.009s] [01m[K/usr/include/c++/9/ostream:511:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)[m[K’
+[2.009s]   511 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[2.009s]       |     [01;36m[K^~~~~~~~[m[K
+[2.010s] [01m[K/usr/include/c++/9/ostream:511:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.010s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ki[m[K’ (type ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’) to type ‘[01m[Kchar[m[K’
+[2.010s]    17 |         cout << [01;36m[Ki[m[K << endl;
+[2.010s]       |                 [01;36m[K^[m[K
+[2.010s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.010s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[2.010s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.010s] [01m[K/usr/include/c++/9/ostream:517:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)[m[K’
+[2.010s]   517 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, char __c)
+[2.011s]       |     [01;36m[K^~~~~~~~[m[K
+[2.011s] [01m[K/usr/include/c++/9/ostream:517:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.011s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ki[m[K’ (type ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’) to type ‘[01m[Kchar[m[K’
+[2.011s]    17 |         cout << [01;36m[Ki[m[K << endl;
+[2.011s]       |                 [01;36m[K^[m[K
+[2.011s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.011s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[2.011s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.011s] [01m[K/usr/include/c++/9/ostream:523:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)[m[K’
+[2.012s]   523 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[2.012s]       |     [01;36m[K^~~~~~~~[m[K
+[2.012s] [01m[K/usr/include/c++/9/ostream:523:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.012s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ki[m[K’ (type ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’) to type ‘[01m[Ksigned char[m[K’
+[2.012s]    17 |         cout << [01;36m[Ki[m[K << endl;
+[2.012s]       |                 [01;36m[K^[m[K
+[2.012s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.012s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[2.012s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.013s] [01m[K/usr/include/c++/9/ostream:528:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)[m[K’
+[2.013s]   528 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[2.013s]       |     [01;36m[K^~~~~~~~[m[K
+[2.013s] [01m[K/usr/include/c++/9/ostream:528:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.013s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ki[m[K’ (type ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’) to type ‘[01m[Kunsigned char[m[K’
+[2.013s]    17 |         cout << [01;36m[Ki[m[K << endl;
+[2.013s]       |                 [01;36m[K^[m[K
+[2.013s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.013s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[2.014s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.014s] [01m[K/usr/include/c++/9/ostream:548:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)[m[K’
+[2.014s]   548 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[2.014s]       |     [01;36m[K^~~~~~~~[m[K
+[2.014s] [01m[K/usr/include/c++/9/ostream:548:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.014s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’
+[2.014s]    17 |         cout << [01;36m[Ki[m[K << endl;
+[2.014s]       |                 [01;36m[K^[m[K
+[2.015s] In file included from [01m[K/usr/include/c++/9/ostream:702[m[K,
+[2.015s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.015s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[2.015s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.015s] [01m[K/usr/include/c++/9/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)[m[K’
+[2.015s]   321 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[2.015s]       |     [01;36m[K^~~~~~~~[m[K
+[2.015s] [01m[K/usr/include/c++/9/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.015s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ki[m[K’ (type ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’) to type ‘[01m[Kconst char*[m[K’
+[2.016s]    17 |         cout << [01;36m[Ki[m[K << endl;
+[2.016s]       |                 [01;36m[K^[m[K
+[2.016s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.016s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[2.016s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.016s] [01m[K/usr/include/c++/9/ostream:565:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)[m[K’
+[2.016s]   565 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[2.016s]       |     [01;36m[K^~~~~~~~[m[K
+[2.017s] [01m[K/usr/include/c++/9/ostream:565:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.017s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ki[m[K’ (type ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’) to type ‘[01m[Kconst char*[m[K’
+[2.017s]    17 |         cout << [01;36m[Ki[m[K << endl;
+[2.017s]       |                 [01;36m[K^[m[K
+[2.017s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.017s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[2.017s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.017s] [01m[K/usr/include/c++/9/ostream:578:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)[m[K’
+[2.017s]   578 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[2.018s]       |     [01;36m[K^~~~~~~~[m[K
+[2.018s] [01m[K/usr/include/c++/9/ostream:578:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.018s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ki[m[K’ (type ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’) to type ‘[01m[Kconst signed char*[m[K’
+[2.018s]    17 |         cout << [01;36m[Ki[m[K << endl;
+[2.018s]       |                 [01;36m[K^[m[K
+[2.018s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.018s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[2.018s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.019s] [01m[K/usr/include/c++/9/ostream:583:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)[m[K’
+[2.019s]   583 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[2.019s]       |     [01;36m[K^~~~~~~~[m[K
+[2.019s] [01m[K/usr/include/c++/9/ostream:583:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.020s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ki[m[K’ (type ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’) to type ‘[01m[Kconst unsigned char*[m[K’
+[2.020s]    17 |         cout << [01;36m[Ki[m[K << endl;
+[2.020s]       |                 [01;36m[K^[m[K
+[2.020s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.020s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[2.020s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.020s] [01m[K/usr/include/c++/9/ostream:691:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)[m[K’
+[2.020s]   691 |     [01;36m[Koperator[m[K<<(_Ostream&& __os, const _Tp& __x)
+[2.020s]       |     [01;36m[K^~~~~~~~[m[K
+[2.021s] [01m[K/usr/include/c++/9/ostream:691:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.021s] /usr/include/c++/9/ostream: In substitution of ‘[01m[Ktemplate<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = std::vector<double, std::allocator<double> >][m[K’:
+[2.021s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K   required from here
+[2.021s] [01m[K/usr/include/c++/9/ostream:691:5:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::basic_ostream<char>&>[m[K’
+[2.021s] In file included from [01m[K/usr/include/c++/9/future:39[m[K,
+[2.021s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[2.021s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.021s]                  from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+[2.022s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:11[m[K,
+[2.022s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.022s] [01m[K/usr/include/c++/9/thread:322:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::thread::id)[m[K’
+[2.022s]   322 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, thread::id __id)
+[2.022s]       |     [01;36m[K^~~~~~~~[m[K
+[2.022s] [01m[K/usr/include/c++/9/thread:322:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.022s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:17:17:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Ki[m[K’ (type ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’) to type ‘[01m[Kstd::thread::id[m[K’
+[2.022s]    17 |         cout << [01;36m[Ki[m[K << endl;
+[2.023s]       |                 [01;36m[K^[m[K
+[2.215s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::longitudinal_controller(double, double)[m[K’:
+[2.215s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:100:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.215s]   100 | double ChassisController::longitudinal_controller([01;35m[Kdouble velocity_x[m[K, double acc_x){
+[2.215s]       |                                                   [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[2.215s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:100:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kacc_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.216s]   100 | ontroller::longitudinal_controller(double velocity_x, [01;35m[Kdouble acc_x[m[K){
+[2.216s]       |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+[2.216s] 
+[2.216s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::lateral_controller(double, double, double, double, double)[m[K’:
+[2.216s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.216s]   104 | double ChassisController::lateral_controller([01;35m[Kdouble yaw[m[K, double yaw_rate, double pos_x, double pos_y, double velocity_x){
+[2.216s]       |                                              [01;35m[K~~~~~~~^~~[m[K
+[2.217s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaw_rate[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.217s]   104 | ble ChassisController::lateral_controller(double yaw, [01;35m[Kdouble yaw_rate[m[K, double pos_x, double pos_y, double velocity_x){
+[2.217s]       |                                                       [01;35m[K~~~~~~~^~~~~~~~[m[K
+[2.217s] 
+[2.217s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.217s]   104 | ller::lateral_controller(double yaw, double yaw_rate, [01;35m[Kdouble pos_x[m[K, double pos_y, double velocity_x){
+[2.217s]       |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+[2.218s] 
+[2.218s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:96:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos_y[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.218s]   104 | controller(double yaw, double yaw_rate, double pos_x, [01;35m[Kdouble pos_y[m[K, double velocity_x){
+[2.218s]       |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+[2.218s] 
+[2.218s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.218s]   104 | er(double yaw, double yaw_rate, double pos_x, double pos_y, [01;35m[Kdouble velocity_x[m[K){
+[2.219s]       |                                                             [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[2.219s] 
+[6.982s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[6.983s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[6.983s] make: *** [Makefile:141: all] Error 2
+[6.988s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

@@ -1,0 +1,9 @@
+[35m[1mScanning dependencies of target main_msg[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:57:29:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   57 |     void publisher_callback([01;31m[K)[m[K
+      |                             [01;31m[K^[m[K
+      |                              [32m[K;[m[K
+make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

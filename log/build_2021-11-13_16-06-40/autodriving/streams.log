@@ -1,0 +1,11 @@
+[0.020s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.071s] [35m[1mScanning dependencies of target main_msg[0m
+[0.103s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[19.628s] [100%] [32m[1mLinking CXX executable main_msg[0m
+[20.579s] /usr/bin/ld: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o: in function `msgSubPub::msgSubPub()':
+[20.579s] msg_subpub.cpp:(.text+0x29a): undefined reference to `chassisController::chassisController()'
+[20.586s] collect2: error: ld returned 1 exit status
+[20.590s] make[2]: *** [CMakeFiles/main_msg.dir/build.make:147: main_msg] Error 1
+[20.590s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+[20.591s] make: *** [Makefile:141: all] Error 2
+[20.594s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '2': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8

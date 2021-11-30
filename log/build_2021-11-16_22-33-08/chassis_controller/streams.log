@@ -1,0 +1,24 @@
+[0.013s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.049s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.073s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[1.362s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.362s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:52:33:[m[K [01;31m[Kerror: [m[K‘[01m[KmsgSubPub[m[K’ was not declared in this scope
+[1.362s]    52 |   rclcpp::spin(std::make_shared<[01;31m[KmsgSubPub[m[K>());
+[1.362s]       |                                 [01;31m[K^~~~~~~~~[m[K
+[1.362s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:52:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[1.362s]    52 |   rclcpp::spin(std::make_shared<msgSubPub>([01;31m[K)[m[K);
+[1.362s]       |                                            [01;31m[K^[m[K
+[1.362s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.362s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:2[m[K,
+[1.362s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[1.362s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:714:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[1.362s]   714 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[1.362s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[1.363s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:714:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.363s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:52:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.363s]    52 |   rclcpp::spin(std::make_shared<msgSubPub>([01;31m[K)[m[K);
+[1.363s]       |                                            [01;31m[K^[m[K
+[4.055s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[4.055s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[4.056s] make: *** [Makefile:141: all] Error 2
+[4.057s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

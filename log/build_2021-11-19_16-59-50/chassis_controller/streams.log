@@ -1,0 +1,13 @@
+[0.013s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.050s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.074s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[1.458s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kvoid ChassisController::msg_subscriber(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[1.458s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:41:18:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst _pose_type[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::PoseWithCovariance_<std::allocator<void> >[m[K’} to ‘[01m[Kdouble[m[K’ in assignment
+[1.458s]    41 |     x = [01;31m[Kgps_msg->pose[m[K;
+[1.458s]       |         [01;31m[K~~~~~~~~~^~~~[m[K
+[1.458s]       |                  [01;31m[K|[m[K
+[1.459s]       |                  [01;31m[Kconst _pose_type {aka const geometry_msgs::msg::PoseWithCovariance_<std::allocator<void> >}[m[K
+[5.385s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[5.385s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[5.385s] make: *** [Makefile:141: all] Error 2
+[5.387s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

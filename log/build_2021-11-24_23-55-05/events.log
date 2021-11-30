@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.001005] (-) JobUnselected: {'identifier': 'autodriving'}
+[0.001111] (-) JobUnselected: {'identifier': 'chassis_controller'}
+[0.002001] (-) EventReactorShutdown: {}

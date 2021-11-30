@@ -1,0 +1,12 @@
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:128:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid msgSubPub::publisher_callback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’
+  128 | void [01;31m[KmsgSubPub[m[K::publisher_callback(const sensor_msgs::msg::CompressedImage::ConstSharedPtr& image_msg, const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg,
+      |      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:60:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid msgSubPub::publisher_callback()[m[K’
+   60 |     void [01;36m[Kpublisher_callback[m[K();
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:41:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass msgSubPub[m[K’ defined here
+   41 | class [01;36m[KmsgSubPub[m[K : public rclcpp::Node, public chassisController
+      |       [01;36m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

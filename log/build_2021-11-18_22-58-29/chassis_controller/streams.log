@@ -1,0 +1,16 @@
+[0.016s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.065s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.099s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[1.752s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In constructor ‘[01m[KChassisController::ChassisController()[m[K’:
+[1.752s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:11:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgroundturth_sub[m[K’ was not declared in this scope
+[1.752s]    11 |     [01;31m[Kgroundturth_sub[m[K.subscribe(this, "/simulator/odometry");
+[1.752s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.768s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kvoid ChassisController::msg_subscriber(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[1.769s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:28:85:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kodometry_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.769s]    28 |           [01;35m[Kconst lgsvl_msgs::msg::VehicleOdometry::ConstSharedPtr& odometry_msg[m[K,
+[1.769s]       |           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[1.769s] 
+[5.685s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[5.685s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[5.686s] make: *** [Makefile:141: all] Error 2
+[5.688s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

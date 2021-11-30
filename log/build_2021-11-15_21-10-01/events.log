@@ -1,0 +1,91 @@
+[0.000000] (-) TimerEvent: {}
+[0.000666] (-) JobUnselected: {'identifier': 'icc'}
+[0.000760] (autodriving) JobQueued: {'identifier': 'autodriving', 'dependencies': OrderedDict()}
+[0.001365] (autodriving) JobStarted: {'identifier': 'autodriving'}
+[0.019393] (autodriving) JobProgress: {'identifier': 'autodriving', 'progress': 'cmake'}
+[0.020450] (autodriving) JobProgress: {'identifier': 'autodriving', 'progress': 'build'}
+[0.021680] (autodriving) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cl4y3r/VDS/build/autodriving', '--', '-j8', '-l8'], 'cwd': '/home/cl4y3r/VDS/build/autodriving', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cl4y3r'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1961'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/cl4y3r'), ('OLDPWD', '/home/cl4y3r'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1747'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'cl4y3r'), ('JOURNAL_STREAM', '8:50490'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cl4y3r'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/cl4y3r/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu20:@/tmp/.ICE-unix/1989,unix/Ubuntu20:/tmp/.ICE-unix/1989'), ('INVOCATION_ID', '5e1c517a65bc4d94a563be511de7fd15'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6493a3a1_d46d_4e94_9b91_dc18bbf1a215'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cl4y3r/VDS/build/autodriving'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.100597] (-) TimerEvent: {}
+[0.201266] (-) TimerEvent: {}
+[0.209834] (autodriving) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o\x1b[0m\n'}
+[0.301479] (-) TimerEvent: {}
+[0.401989] (-) TimerEvent: {}
+[0.502381] (-) TimerEvent: {}
+[0.602829] (-) TimerEvent: {}
+[0.703207] (-) TimerEvent: {}
+[0.803609] (-) TimerEvent: {}
+[0.903994] (-) TimerEvent: {}
+[1.004399] (-) TimerEvent: {}
+[1.104837] (-) TimerEvent: {}
+[1.205237] (-) TimerEvent: {}
+[1.305620] (-) TimerEvent: {}
+[1.406019] (-) TimerEvent: {}
+[1.506410] (-) TimerEvent: {}
+[1.606858] (-) TimerEvent: {}
+[1.707251] (-) TimerEvent: {}
+[1.807650] (-) TimerEvent: {}
+[1.908051] (-) TimerEvent: {}
+[2.008504] (-) TimerEvent: {}
+[2.108879] (-) TimerEvent: {}
+[2.111372] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid msgSubPub::publisher_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.111615] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:143:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimu_msg\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KmsgSubPub\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.111725] (autodriving) StderrLine: {'line': b'  143 |     control.acceleration_pct = msgSubPub::\x1b[01;31m\x1b[Kimu_msg\x1b[m\x1b[K->linear_acceleration.x;  //\xe5\x8a\xa0\xe9\x80\x9f\xe8\xb8\x8f\xe6\x9d\xbf\n'}
+[2.111818] (autodriving) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.209025] (-) TimerEvent: {}
+[2.309435] (-) TimerEvent: {}
+[2.409828] (-) TimerEvent: {}
+[2.510237] (-) TimerEvent: {}
+[2.610665] (-) TimerEvent: {}
+[2.711058] (-) TimerEvent: {}
+[2.811448] (-) TimerEvent: {}
+[2.911832] (-) TimerEvent: {}
+[3.012198] (-) TimerEvent: {}
+[3.112581] (-) TimerEvent: {}
+[3.212973] (-) TimerEvent: {}
+[3.313361] (-) TimerEvent: {}
+[3.413749] (-) TimerEvent: {}
+[3.514133] (-) TimerEvent: {}
+[3.614565] (-) TimerEvent: {}
+[3.714953] (-) TimerEvent: {}
+[3.815333] (-) TimerEvent: {}
+[3.915929] (-) TimerEvent: {}
+[4.016290] (-) TimerEvent: {}
+[4.116676] (-) TimerEvent: {}
+[4.217054] (-) TimerEvent: {}
+[4.317456] (-) TimerEvent: {}
+[4.417846] (-) TimerEvent: {}
+[4.518255] (-) TimerEvent: {}
+[4.618733] (-) TimerEvent: {}
+[4.719132] (-) TimerEvent: {}
+[4.819526] (-) TimerEvent: {}
+[4.919928] (-) TimerEvent: {}
+[5.020313] (-) TimerEvent: {}
+[5.120689] (-) TimerEvent: {}
+[5.221092] (-) TimerEvent: {}
+[5.321482] (-) TimerEvent: {}
+[5.421885] (-) TimerEvent: {}
+[5.522298] (-) TimerEvent: {}
+[5.622757] (-) TimerEvent: {}
+[5.723143] (-) TimerEvent: {}
+[5.823533] (-) TimerEvent: {}
+[5.923938] (-) TimerEvent: {}
+[6.024325] (-) TimerEvent: {}
+[6.124691] (-) TimerEvent: {}
+[6.225180] (-) TimerEvent: {}
+[6.325573] (-) TimerEvent: {}
+[6.425962] (-) TimerEvent: {}
+[6.526353] (-) TimerEvent: {}
+[6.626915] (-) TimerEvent: {}
+[6.727299] (-) TimerEvent: {}
+[6.827699] (-) TimerEvent: {}
+[6.928087] (-) TimerEvent: {}
+[7.028460] (-) TimerEvent: {}
+[7.128842] (-) TimerEvent: {}
+[7.229226] (-) TimerEvent: {}
+[7.329601] (-) TimerEvent: {}
+[7.357584] (autodriving) StderrLine: {'line': b'make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1\n'}
+[7.358160] (autodriving) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2\n'}
+[7.358506] (autodriving) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[7.361180] (autodriving) CommandEnded: {'returncode': 2}
+[7.401953] (autodriving) JobEnded: {'identifier': 'autodriving', 'rc': 2}
+[7.413086] (-) EventReactorShutdown: {}

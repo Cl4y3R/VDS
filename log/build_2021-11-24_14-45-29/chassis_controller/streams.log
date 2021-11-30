@@ -1,0 +1,157 @@
+[0.021s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.068s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.099s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[1.996s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In function ‘[01m[Kvoid msg_subscriber(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[1.996s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvx[m[K’ was not declared in this scope
+[1.997s]    36 |     [01;31m[Kvx[m[K = canbus_msg->speed_mps;
+[1.997s]       |     [01;31m[K^~[m[K
+[1.998s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:37:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvy[m[K’ was not declared in this scope
+[1.998s]    37 |     [01;31m[Kvy[m[K = 0; //unused for now
+[1.998s]       |     [01;31m[K^~[m[K
+[1.999s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:38:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kphi_p[m[K’ was not declared in this scope
+[1.999s]    38 |     [01;31m[Kphi_p[m[K = imu_msg->angular_velocity.z;
+[1.999s]       |     [01;31m[K^~~~~[m[K
+[2.000s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kphi[m[K’ was not declared in this scope
+[2.000s]    40 |     [01;31m[Kphi[m[K = imu_msg->orientation.z; //wrong! need to calculate from quaternion!
+[2.000s]       |     [01;31m[K^~~[m[K
+[2.001s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+[2.001s]    41 |     [01;31m[Kx[m[K = -gps_msg->pose.pose.position.y; //to be modified
+[2.002s]       |     [01;31m[K^[m[K
+[2.003s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:42:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+[2.003s]    42 |     [01;31m[Ky[m[K = gps_msg->pose.pose.position.x; //to be modified
+[2.003s]       |     [01;31m[K^[m[K
+[2.003s]       |     [32m[Kyn[m[K
+[2.004s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:43:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdelta[m[K’ was not declared in this scope
+[2.004s]    43 |     [01;31m[Kdelta[m[K = odometry_msg->front_wheel_angle;
+[2.004s]       |     [01;31m[K^~~~~[m[K
+[2.005s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kax[m[K’ was not declared in this scope
+[2.006s]    44 |     [01;31m[Kax[m[K = imu_msg->linear_acceleration.x;
+[2.006s]       |     [01;31m[K^~[m[K
+[2.007s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:45:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kay[m[K’ was not declared in this scope
+[2.007s]    45 |     [01;31m[Kay[m[K = imu_msg->linear_acceleration.y;
+[2.007s]       |     [01;31m[K^~[m[K
+[2.009s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:46:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksteer_angle[m[K’ was not declared in this scope
+[2.010s]    46 |     [01;31m[Ksteer_angle[m[K = odometry_msg->front_wheel_angle;
+[2.010s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.010s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[2.010s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[2.011s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.011s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.011s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.011s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.012s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.012s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.012s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.012s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.012s]                  from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+[2.012s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:6[m[K,
+[2.012s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.012s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:50:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.012s]    50 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "PositionX: %f [m], PositionY: %f [m]", x, y);
+[2.013s]       |                 [01;31m[K^~~~[m[K
+[2.013s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:50:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.013s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:50:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.013s]    50 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "PositionX: %f [m], PositionY: %f [m]", x, y);
+[2.013s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.013s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:50:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.013s]    50 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "PositionX: %f [m], PositionY: %f [m]", x, y);
+[2.013s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.013s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:50:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.013s]    50 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "PositionX: %f [m], PositionY: %f [m]", x, y);
+[2.013s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.014s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[2.014s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[2.014s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.014s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.014s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.014s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.014s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.014s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.014s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.014s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.015s]                  from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+[2.015s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:6[m[K,
+[2.015s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.015s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:50:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.015s]    50 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "PositionX: %f [m], PositionY: %f [m]", x, y);
+[2.015s]       |                 [01;31m[K^~~~[m[K
+[2.015s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:50:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.015s]    50 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "PositionX: %f [m], PositionY: %f [m]", x, y);
+[2.015s]       |                 [01;31m[K^~~~[m[K
+[2.015s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[2.016s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[2.016s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.016s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.016s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.016s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.016s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.016s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.016s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.016s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.016s]                  from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+[2.016s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:6[m[K,
+[2.017s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.017s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:51:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.017s]    51 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "PositionX: %f [m], PositionY: %f [m]", new_gps_msg->latitude, new_gps_msg->longitude);
+[2.017s]       |                 [01;31m[K^~~~[m[K
+[2.017s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:51:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.017s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:51:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.017s]    51 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "PositionX: %f [m], PositionY: %f [m]", new_gps_msg->latitude, new_gps_msg->longitude);
+[2.017s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.017s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:51:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.017s]    51 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "PositionX: %f [m], PositionY: %f [m]", new_gps_msg->latitude, new_gps_msg->longitude);
+[2.017s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.018s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:51:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.018s]    51 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "PositionX: %f [m], PositionY: %f [m]", new_gps_msg->latitude, new_gps_msg->longitude);
+[2.018s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.018s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[2.018s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[2.018s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.018s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.018s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.018s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.018s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.018s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.018s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.019s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.019s]                  from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+[2.019s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:6[m[K,
+[2.019s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[2.019s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:51:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.019s]    51 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "PositionX: %f [m], PositionY: %f [m]", new_gps_msg->latitude, new_gps_msg->longitude);
+[2.019s]       |                 [01;31m[K^~~~[m[K
+[2.019s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:51:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.019s]    51 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "PositionX: %f [m], PositionY: %f [m]", new_gps_msg->latitude, new_gps_msg->longitude);
+[2.019s]       |                 [01;31m[K^~~~[m[K
+[2.029s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::longitudinal_controller(double, double)[m[K’:
+[2.029s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:70:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.029s]    70 | double ChassisController::longitudinal_controller([01;35m[Kdouble velocity_x[m[K, double acc_x){
+[2.029s]       |                                                   [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[2.029s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:70:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kacc_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.029s]    70 | ontroller::longitudinal_controller(double velocity_x, [01;35m[Kdouble acc_x[m[K){
+[2.029s]       |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+[2.030s] 
+[2.030s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::lateral_controller(double, double, double, double, double)[m[K’:
+[2.030s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:74:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.030s]    74 | double ChassisController::lateral_controller([01;35m[Kdouble yaw[m[K, double yaw_rate, double pos_x, double pos_y, double velocity_x){
+[2.030s]       |                                              [01;35m[K~~~~~~~^~~[m[K
+[2.030s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:74:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaw_rate[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.030s]    74 | ble ChassisController::lateral_controller(double yaw, [01;35m[Kdouble yaw_rate[m[K, double pos_x, double pos_y, double velocity_x){
+[2.030s]       |                                                       [01;35m[K~~~~~~~^~~~~~~~[m[K
+[2.030s] 
+[2.030s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:74:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.030s]    74 | ller::lateral_controller(double yaw, double yaw_rate, [01;35m[Kdouble pos_x[m[K, double pos_y, double velocity_x){
+[2.030s]       |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+[2.030s] 
+[2.031s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:74:96:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos_y[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.031s]    74 | controller(double yaw, double yaw_rate, double pos_x, [01;35m[Kdouble pos_y[m[K, double velocity_x){
+[2.031s]       |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+[2.031s] 
+[2.031s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:74:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.031s]    74 | er(double yaw, double yaw_rate, double pos_x, double pos_y, [01;35m[Kdouble velocity_x[m[K){
+[2.031s]       |                                                             [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[2.031s] 
+[7.488s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[7.488s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[7.489s] make: *** [Makefile:141: all] Error 2
+[7.492s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

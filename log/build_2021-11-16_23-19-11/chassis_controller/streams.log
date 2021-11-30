@@ -1,0 +1,12 @@
+[0.020s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.064s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.097s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[1.696s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In constructor ‘[01m[KChassisController::ChassisController()[m[K’:
+[1.696s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:15:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_timer[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer[m[K’?
+[1.696s]    15 |     [01;31m[K_timer[m[K = this->create_wall_timer(500ms, std::bind(&ChassisController::long_controller, this));
+[1.696s]       |     [01;31m[K^~~~~~[m[K
+[1.696s]       |     [32m[Ktimer[m[K
+[4.894s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[4.895s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[4.895s] make: *** [Makefile:141: all] Error 2
+[4.900s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

@@ -1,0 +1,11 @@
+[0.020s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.051s] CMake Error at CMakeLists.txt:14 (target_link_libraries):
+[0.051s]   Cannot specify link libraries for target "chassis_controller" which is not
+[0.052s]   built by this project.
+[0.052s] 
+[0.052s] 
+[0.052s] -- Configuring incomplete, errors occurred!
+[0.052s] See also "/home/cl4y3r/VDS/build/chassis_controller/CMakeFiles/CMakeOutput.log".
+[0.052s] See also "/home/cl4y3r/VDS/build/chassis_controller/CMakeFiles/CMakeError.log".
+[0.053s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.056s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

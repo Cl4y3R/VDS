@@ -1,0 +1,13 @@
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K In member function ‘[01m[Kvoid msgSubPub::subscriber_callback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:126:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kax[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  126 |     auto [01;35m[Kax[m[K = imu_msg->linear_acceleration.x;
+      |          [01;35m[K^~[m[K
+/usr/bin/ld: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o: in function `msgSubPub::msgSubPub()':
+msg_subpub.cpp:(.text+0x29a): undefined reference to `chassisController::chassisController()'
+/usr/bin/ld: msg_subpub.cpp:(.text+0xf5d): undefined reference to `chassisController::~chassisController()'
+/usr/bin/ld: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o: in function `msgSubPub::~msgSubPub()':
+msg_subpub.cpp:(.text+0x1072): undefined reference to `chassisController::~chassisController()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/main_msg.dir/build.make:147: main_msg] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

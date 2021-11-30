@@ -35,7 +35,7 @@ void ChassisController::msg_subscriber(const sensor_msgs::msg::Imu::ConstSharedP
 {
     //parameters
     vx = canbus_msg->speed_mps;
-    vy = 0; //unused for now
+    vy = 0; //need calc
     phi_p = imu_msg->angular_velocity.z;
     phi_p = phi_p*PI/180;
     phi = quat_to_euler(imu_msg);
@@ -53,7 +53,8 @@ void ChassisController::msg_subscriber(const sensor_msgs::msg::Imu::ConstSharedP
     RCLCPP_INFO(this->get_logger(), "Yaw Anlge: %f [rad]", phi);
 }
 
-void ChassisController::control_publisher(){
+void ChassisController::control_publisher()
+{
     auto control = lgsvl_msgs::msg::VehicleControlData();
     control.target_gear = lgsvl_msgs::msg::VehicleControlData::GEAR_DRIVE; //gear
     control.acceleration_pct = 0;  //acc in percentage
@@ -124,9 +125,24 @@ double ChassisController::longitudinal_controller(double velocity_x, double acc_
 }
 
 double ChassisController::lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y, 
-                                            double velocity_x, double x_ref, double y_ref, double theta_ref, double kappa_ref)
+                                            double velocity_x, double velocity_y, double x_ref, double y_ref, double theta_ref, double kappa_ref)
 {
+
     double target_steer_angle = 0.5;
+
+    //err_d
+    double err_d = 0;
+
+    //err_d_p
+    double err_d_p = velocity_y + velocity_x * cos(yaw - theta_ref);
+    double s_p = velocity_x * cos(yaw-theta_ref) / (1 - kappa_ref * err_d);
+
+    //err_phi
+    double err_phi = yaw - theta_ref;
+    double theta_ref_p = 0;
+
+    //err_phi_p
+    double err_phi_p = yaw_rate - theta_ref_p;
     return target_steer_angle;
 }
 

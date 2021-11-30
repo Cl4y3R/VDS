@@ -1,0 +1,15 @@
+[0.012s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.048s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.071s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[1.443s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In constructor ‘[01m[KChassisController::ChassisController()[m[K’:
+[1.443s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:18:55:[m[K [01;31m[Kerror: [m[K‘[01m[KLateralController[m[K’ has not been declared
+[1.443s]    18 |     timer = this->create_wall_timer(500ms, std::bind(&[01;31m[KLateralController[m[K::steer_controller, this));
+[1.443s]       |                                                       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.458s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::steer_controller()[m[K’:
+[1.458s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:58:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[1.458s]    58 | [01;35m[K}[m[K
+[1.458s]       | [01;35m[K^[m[K
+[4.972s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[4.973s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[4.973s] make: *** [Makefile:141: all] Error 2
+[4.975s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

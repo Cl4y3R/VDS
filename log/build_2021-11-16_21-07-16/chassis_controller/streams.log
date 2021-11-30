@@ -1,0 +1,33 @@
+[0.012s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.048s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.072s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[1.329s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In constructor ‘[01m[KChassisController::ChassisController()[m[K’:
+[1.329s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:3:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+[1.329s]     3 | ChassisController::ChassisController([01;31m[K)[m[K{
+[1.329s]       |                                      [01;31m[K^[m[K
+[1.329s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.329s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.329s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.329s]                  from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+[1.329s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:5[m[K,
+[1.329s]                  from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[1.329s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1193:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+[1.329s]  1193 |   [01;36m[KNode[m[K(
+[1.329s]       |   [01;36m[K^~~~[m[K
+[1.329s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1193:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[1.330s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:98:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+[1.330s]    98 |   explicit [01;36m[KNode[m[K(
+[1.330s]       |            [01;36m[K^~~~[m[K
+[1.330s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:98:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[1.330s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:86:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+[1.330s]    86 |   explicit [01;36m[KNode[m[K(
+[1.330s]       |            [01;36m[K^~~~[m[K
+[1.330s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:86:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[1.340s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:15:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+[1.340s]    15 | ssisController::long_controller, this, std::placeholders::_1)[01;31m[K)[m[K;
+[1.340s]       |                                                              [01;31m[K^[m[K
+[1.340s]       |                                                              [32m[K;[m[K
+[4.049s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[4.049s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[4.049s] make: *** [Makefile:141: all] Error 2
+[4.052s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

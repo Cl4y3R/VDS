@@ -1,0 +1,40 @@
+[0.020s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.100s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.138s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.362s] -- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)
+[0.366s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.408s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.414s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.562s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.632s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.635s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.808s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.947s] -- Found lgsvl_msgs: 0.0.4 (/opt/ros/foxy/share/lgsvl_msgs/cmake)
+[1.163s] -- Configuring done
+[1.177s] -- Generating done
+[1.178s] -- Build files have been written to: /home/cl4y3r/VDS/build/autodriving
+[1.223s] [35m[1mScanning dependencies of target main_msg[0m
+[1.258s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[15.621s] [100%] [32m[1mLinking CXX executable main_msg[0m
+[16.219s] [100%] Built target main_msg
+[16.233s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[16.275s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/autodriving
+[16.284s] -- Install configuration: ""
+[16.285s] -- Installing: /home/cl4y3r/VDS/install/autodriving/lib/autodriving/main_msg
+[16.290s] -- Set runtime path of "/home/cl4y3r/VDS/install/autodriving/lib/autodriving/main_msg" to ""
+[16.291s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/package_run_dependencies/autodriving
+[16.291s] -- Installing: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/parent_prefix_path/autodriving
+[16.291s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/ament_prefix_path.sh
+[16.292s] -- Installing: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/ament_prefix_path.dsv
+[16.292s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/path.sh
+[16.292s] -- Installing: /home/cl4y3r/VDS/install/autodriving/share/autodriving/environment/path.dsv
+[16.293s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.bash
+[16.293s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.sh
+[16.293s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.zsh
+[16.293s] -- Installing: /home/cl4y3r/VDS/install/autodriving/share/autodriving/local_setup.dsv
+[16.293s] -- Installing: /home/cl4y3r/VDS/install/autodriving/share/autodriving/package.dsv
+[16.293s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/ament_index/resource_index/packages/autodriving
+[16.293s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/cmake/autodrivingConfig.cmake
+[16.293s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/cmake/autodrivingConfig-version.cmake
+[16.293s] -- Up-to-date: /home/cl4y3r/VDS/install/autodriving/share/autodriving/package.xml
+[16.295s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/autodriving

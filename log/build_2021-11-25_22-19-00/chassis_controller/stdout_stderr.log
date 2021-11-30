@@ -1,0 +1,52 @@
+[35m[1mScanning dependencies of target chassis_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+In file included from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:96:16:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KChassisController::[m[K’ on member ‘[01m[Klateral_controller[m[K’ [[01;31m[K-fpermissive[m[K]
+   96 |         double [01;31m[KChassisController[m[K::lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y,
+      |                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::longitudinal_controller(double, double)[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  104 | double ChassisController::longitudinal_controller([01;35m[Kdouble velocity_x[m[K, double acc_x){
+      |                                                   [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:104:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kacc_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  104 | ontroller::longitudinal_controller(double velocity_x, [01;35m[Kdouble acc_x[m[K){
+      |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::lateral_controller(double, double, double, double, double, double, double, double, double)[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:108:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaw[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  108 | double ChassisController::lateral_controller([01;35m[Kdouble yaw[m[K, double yaw_rate, double pos_x, double pos_y,
+      |                                              [01;35m[K~~~~~~~^~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:108:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kyaw_rate[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  108 | ble ChassisController::lateral_controller(double yaw, [01;35m[Kdouble yaw_rate[m[K, double pos_x, double pos_y,
+      |                                                       [01;35m[K~~~~~~~^~~~~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:108:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  108 | ller::lateral_controller(double yaw, double yaw_rate, [01;35m[Kdouble pos_x[m[K, double pos_y,
+      |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:108:96:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpos_y[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  108 | controller(double yaw, double yaw_rate, double pos_x, [01;35m[Kdouble pos_y[m[K,
+      |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:109:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  109 |                                             [01;35m[Kdouble velocity_x[m[K, double x_ref, double y_ref, double theta_ref, double kappa_ref)
+      |                                             [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:109:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx_ref[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  109 |                                    double velocity_x, [01;35m[Kdouble x_ref[m[K, double y_ref, double theta_ref, double kappa_ref)
+      |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:109:85:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ky_ref[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  109 |                      double velocity_x, double x_ref, [01;35m[Kdouble y_ref[m[K, double theta_ref, double kappa_ref)
+      |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:109:99:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktheta_ref[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  109 |        double velocity_x, double x_ref, double y_ref, [01;35m[Kdouble theta_ref[m[K, double kappa_ref)
+      |                                                       [01;35m[K~~~~~~~^~~~~~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:109:117:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kkappa_ref[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  109 | ble velocity_x, double x_ref, double y_ref, double theta_ref, [01;35m[Kdouble kappa_ref[m[K)
+      |                                                               [01;35m[K~~~~~~~^~~~~~~~~[m[K
+
+make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

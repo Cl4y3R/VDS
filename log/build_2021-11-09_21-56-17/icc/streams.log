@@ -1,0 +1,21 @@
+[0.011s] Invoking command in '/home/cl4y3r/VDS/build/icc': /usr/bin/cmake /home/cl4y3r/VDS/icc -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/icc
+[0.045s] CMake Error at CMakeLists.txt:13 (find_package):
+[0.045s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.046s]   has asked CMake to find a package configuration file provided by
+[0.046s]   "ament_cmake", but CMake did not find one.
+[0.046s] 
+[0.046s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.046s]   any of the following names:
+[0.046s] 
+[0.046s]     ament_cmakeConfig.cmake
+[0.046s]     ament_cmake-config.cmake
+[0.046s] 
+[0.046s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.046s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.046s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.046s]   has been installed.
+[0.046s] 
+[0.046s] 
+[0.046s] -- Configuring incomplete, errors occurred!
+[0.046s] See also "/home/cl4y3r/VDS/build/icc/CMakeFiles/CMakeOutput.log".
+[0.047s] Invoked command in '/home/cl4y3r/VDS/build/icc' returned '1': /usr/bin/cmake /home/cl4y3r/VDS/icc -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/icc

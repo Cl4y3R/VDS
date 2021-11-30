@@ -1,0 +1,2 @@
+source;share/autodriving/environment/ament_prefix_path.sh
+source;share/autodriving/environment/path.sh

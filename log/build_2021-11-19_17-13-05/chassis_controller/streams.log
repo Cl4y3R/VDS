@@ -1,0 +1,11 @@
+[0.012s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.048s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.072s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[1.448s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kvoid ChassisController::msg_subscriber(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[1.448s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:41:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst _pose_type[m[K’ {aka ‘[01m[Kconst struct geometry_msgs::msg::PoseWithCovariance_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+[1.448s]    41 |     x = gps_msg->pose.[01;31m[Kposition[m[K;
+[1.448s]       |                       [01;31m[K^~~~~~~~[m[K
+[5.461s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[5.461s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[5.461s] make: *** [Makefile:141: all] Error 2
+[5.463s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

@@ -1,0 +1,45 @@
+[0.000000] (-) TimerEvent: {}
+[0.000106] (autodriving) JobQueued: {'identifier': 'autodriving', 'dependencies': OrderedDict()}
+[0.000136] (autodriving) JobStarted: {'identifier': 'autodriving'}
+[0.007745] (autodriving) JobProgress: {'identifier': 'autodriving', 'progress': 'cmake'}
+[0.008380] (autodriving) Command: {'cmd': ['/usr/bin/cmake', '/home/cl4y3r/VDS/autodriving', '-DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/autodriving'], 'cwd': '/home/cl4y3r/VDS/build/autodriving', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cl4y3r'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1653'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/cl4y3r'), ('OLDPWD', '/home/cl4y3r'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1438'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=aff294155c819062fc23580f61434f1f'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'cl4y3r'), ('JOURNAL_STREAM', '8:41800'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cl4y3r'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu20:@/tmp/.ICE-unix/1712,unix/Ubuntu20:/tmp/.ICE-unix/1712'), ('INVOCATION_ID', '890d302d030647c98783be4dd179d379'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/47b8ac1c_3f6e_4a6f_a82a_47d33bc4ee14'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.125'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cl4y3r/VDS/build/autodriving'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=aff294155c819062fc23580f61434f1f'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.093323] (autodriving) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.098536] (-) TimerEvent: {}
+[0.115567] (autodriving) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.198665] (-) TimerEvent: {}
+[0.260814] (autodriving) StdoutLine: {'line': b'-- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)\n'}
+[0.263094] (autodriving) StdoutLine: {'line': b'-- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.291575] (autodriving) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.294620] (autodriving) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.298773] (-) TimerEvent: {}
+[0.391082] (autodriving) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.398886] (-) TimerEvent: {}
+[0.434348] (autodriving) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.435561] (autodriving) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.499022] (-) TimerEvent: {}
+[0.559116] (autodriving) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[0.599140] (-) TimerEvent: {}
+[0.666004] (autodriving) StderrLine: {'line': b'CMake Error at CMakeLists.txt:22 (find_package):\n'}
+[0.666181] (autodriving) StderrLine: {'line': b'  By not providing "Findlgsvl_msgs.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.666242] (autodriving) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.666296] (autodriving) StderrLine: {'line': b'  "lgsvl_msgs", but CMake did not find one.\n'}
+[0.666347] (autodriving) StderrLine: {'line': b'\n'}
+[0.666398] (autodriving) StderrLine: {'line': b'  Could not find a package configuration file provided by "lgsvl_msgs" with\n'}
+[0.666449] (autodriving) StderrLine: {'line': b'  any of the following names:\n'}
+[0.666499] (autodriving) StderrLine: {'line': b'\n'}
+[0.666549] (autodriving) StderrLine: {'line': b'    lgsvl_msgsConfig.cmake\n'}
+[0.666599] (autodriving) StderrLine: {'line': b'    lgsvl_msgs-config.cmake\n'}
+[0.666648] (autodriving) StderrLine: {'line': b'\n'}
+[0.666698] (autodriving) StderrLine: {'line': b'  Add the installation prefix of "lgsvl_msgs" to CMAKE_PREFIX_PATH or set\n'}
+[0.666748] (autodriving) StderrLine: {'line': b'  "lgsvl_msgs_DIR" to a directory containing one of the above files.  If\n'}
+[0.666797] (autodriving) StderrLine: {'line': b'  "lgsvl_msgs" provides a separate development package or SDK, be sure it has\n'}
+[0.666847] (autodriving) StderrLine: {'line': b'  been installed.\n'}
+[0.666897] (autodriving) StderrLine: {'line': b'\n'}
+[0.666951] (autodriving) StderrLine: {'line': b'\n'}
+[0.667167] (autodriving) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.667248] (autodriving) StdoutLine: {'line': b'See also "/home/cl4y3r/VDS/build/autodriving/CMakeFiles/CMakeOutput.log".\n'}
+[0.667306] (autodriving) StdoutLine: {'line': b'See also "/home/cl4y3r/VDS/build/autodriving/CMakeFiles/CMakeError.log".\n'}
+[0.672493] (autodriving) CommandEnded: {'returncode': 1}
+[0.691120] (autodriving) JobEnded: {'identifier': 'autodriving', 'rc': 1}
+[0.699407] (-) TimerEvent: {}
+[0.702196] (-) EventReactorShutdown: {}

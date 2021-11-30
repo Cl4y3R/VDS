@@ -1,0 +1,2 @@
+Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': /usr/bin/cmake /home/cl4y3r/VDS/chassiscontroller -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/chassis_controller
+Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '1': /usr/bin/cmake /home/cl4y3r/VDS/chassiscontroller -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/chassis_controller

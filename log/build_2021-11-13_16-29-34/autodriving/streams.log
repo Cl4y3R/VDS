@@ -1,0 +1,11 @@
+[0.019s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.062s] [35m[1mScanning dependencies of target main_msg[0m
+[0.093s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[1.985s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K In member function ‘[01m[Kvoid msgSubPub::publisher_callback()[m[K’:
+[1.985s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:142:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_msg[m[K’ was not declared in this scope
+[1.985s]   142 |     control.acceleration_pct = [01;31m[Kimu_msg[m[K->linear_acceleration.x;  //加速踏板
+[1.985s]       |                                [01;31m[K^~~~~~~[m[K
+[7.577s] make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1
+[7.577s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+[7.577s] make: *** [Makefile:141: all] Error 2
+[7.580s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '2': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8

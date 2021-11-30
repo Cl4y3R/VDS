@@ -1,0 +1,32 @@
+[0.011s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/cl4y3r/VDS/autodriving -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/autodriving
+[0.093s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.116s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.261s] -- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)
+[0.263s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.292s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.295s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.391s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.434s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.435s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.559s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.666s] CMake Error at CMakeLists.txt:22 (find_package):
+[0.666s]   By not providing "Findlgsvl_msgs.cmake" in CMAKE_MODULE_PATH this project
+[0.666s]   has asked CMake to find a package configuration file provided by
+[0.666s]   "lgsvl_msgs", but CMake did not find one.
+[0.666s] 
+[0.666s]   Could not find a package configuration file provided by "lgsvl_msgs" with
+[0.666s]   any of the following names:
+[0.666s] 
+[0.666s]     lgsvl_msgsConfig.cmake
+[0.666s]     lgsvl_msgs-config.cmake
+[0.667s] 
+[0.667s]   Add the installation prefix of "lgsvl_msgs" to CMAKE_PREFIX_PATH or set
+[0.667s]   "lgsvl_msgs_DIR" to a directory containing one of the above files.  If
+[0.667s]   "lgsvl_msgs" provides a separate development package or SDK, be sure it has
+[0.667s]   been installed.
+[0.667s] 
+[0.667s] 
+[0.667s] -- Configuring incomplete, errors occurred!
+[0.667s] See also "/home/cl4y3r/VDS/build/autodriving/CMakeFiles/CMakeOutput.log".
+[0.667s] See also "/home/cl4y3r/VDS/build/autodriving/CMakeFiles/CMakeError.log".
+[0.673s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/cl4y3r/VDS/autodriving -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/autodriving

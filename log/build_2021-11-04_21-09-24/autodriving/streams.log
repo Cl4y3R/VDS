@@ -1,0 +1,70 @@
+[0.013s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.050s] [35m[1mScanning dependencies of target main_msg[0m
+[0.074s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[1.640s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[1.640s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[1.640s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.641s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.641s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.641s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.641s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.641s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.641s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.641s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.641s]                  from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+[1.641s]                  from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5[m[K:
+[1.641s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K In member function ‘[01m[Kvoid msgSubPub::subscriber_callback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[1.641s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:105:5:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Krclcpp::Logger rclcpp::Node::get_logger() const[m[K’
+[1.641s]   105 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger, "Speed: %.3f [m/s] - Throttle: %.3f [-] - Brake: %.3f [-] - Steer: %.3f [-]",
+[1.641s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.641s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.641s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.642s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.642s]                  from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+[1.642s]                  from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5[m[K:
+[1.642s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:139:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.642s]   139 |   [01;36m[Kget_logger[m[K() const;
+[1.642s]       |   [01;36m[K^~~~~~~~~~[m[K
+[1.642s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[1.642s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[1.642s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.642s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.642s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.642s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.642s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.642s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.642s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.642s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.643s]                  from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+[1.643s]                  from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5[m[K:
+[1.643s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:105:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.643s]   105 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger, "Speed: %.3f [m/s] - Throttle: %.3f [-] - Brake: %.3f [-] - Steer: %.3f [-]",
+[1.643s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.643s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:105:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.643s]   105 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger, "Speed: %.3f [m/s] - Throttle: %.3f [-] - Brake: %.3f [-] - Steer: %.3f [-]",
+[1.643s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.643s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:105:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.643s]   105 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger, "Speed: %.3f [m/s] - Throttle: %.3f [-] - Brake: %.3f [-] - Steer: %.3f [-]",
+[1.643s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.643s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[1.643s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.643s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.643s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.644s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.644s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.644s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.644s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.644s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.644s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.644s]                  from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+[1.644s]                  from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5[m[K:
+[1.644s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:105:23:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Krclcpp::Logger rclcpp::Node::get_logger() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[1.644s]   105 |     RCLCPP_INFO([01;31m[Kthis->get_logger[m[K, "Speed: %.3f [m/s] - Throttle: %.3f [-] - Brake: %.3f [-] - Steer: %.3f [-]",
+[1.644s]       |                 [01;31m[K~~~~~~^~~~~~~~~~[m[K
+[1.644s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:105:23:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Krclcpp::Logger rclcpp::Node::get_logger() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[1.644s]   105 |     RCLCPP_INFO([01;31m[Kthis->get_logger[m[K, "Speed: %.3f [m/s] - Throttle: %.3f [-] - Brake: %.3f [-] - Steer: %.3f [-]",
+[1.644s]       |                 [01;31m[K~~~~~~^~~~~~~~~~[m[K
+[6.566s] make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1
+[6.566s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+[6.566s] make: *** [Makefile:141: all] Error 2
+[6.568s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8

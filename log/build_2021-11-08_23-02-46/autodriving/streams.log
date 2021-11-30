@@ -1,0 +1,11 @@
+[0.012s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.053s] [35m[1mScanning dependencies of target main_msg[0m
+[0.076s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[1.692s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K In member function ‘[01m[Kvoid msgSubPub::publisher_callback()[m[K’:
+[1.692s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:145:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_msg[m[K’ was not declared in this scope
+[1.692s]   145 |     auto my_out = chassisController::long_controller([01;31m[Kimu_msg[m[K->linear_acceleration.x);
+[1.692s]       |                                                      [01;31m[K^~~~~~~[m[K
+[6.722s] make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1
+[6.722s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+[6.722s] make: *** [Makefile:141: all] Error 2
+[6.724s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8

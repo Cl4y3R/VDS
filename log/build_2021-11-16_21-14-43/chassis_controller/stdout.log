@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target chassis_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable chassis_controller[0m
+[100%] Built target chassis_controller
+-- Install configuration: ""
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/lib/chassis_controller/chassis_controller
+-- Set runtime path of "/home/cl4y3r/VDS/install/chassis_controller/lib/chassis_controller/chassis_controller" to ""
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/package_run_dependencies/chassis_controller
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/parent_prefix_path/chassis_controller
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.sh
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.dsv
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/path.sh
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/path.dsv
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.bash
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.sh
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.zsh
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.dsv
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.dsv
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/packages/chassis_controller
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig.cmake
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig-version.cmake
+-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.xml

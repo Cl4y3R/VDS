@@ -1,0 +1,21 @@
+[35m[1mScanning dependencies of target chassis_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kvoid ChassisController::msg_subscriber(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:41:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst _pose_type[m[K’ {aka ‘[01m[Kconst struct geometry_msgs::msg::PoseWithCovariance_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+   41 |     x = gps_msg->pose.[01;31m[Kposition[m[K.x;
+      |                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K At global scope:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:50:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdouble ChassisController::lateral_controller()[m[K’
+   50 | double [01;31m[KChassisController[m[K::lateral_controller(){
+      |        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:72:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid ChassisController::lateral_controller()[m[K’
+   72 |         void [01;36m[Klateral_controller[m[K();
+      |              [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ChassisController[m[K’ defined here
+   29 | class [01;36m[KChassisController[m[K: public rclcpp::Node{
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

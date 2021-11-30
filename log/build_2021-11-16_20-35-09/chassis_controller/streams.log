@@ -1,0 +1,36 @@
+[0.011s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': /usr/bin/cmake /home/cl4y3r/VDS/chassis_controller -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/chassis_controller
+[0.057s] -- The C compiler identification is GNU 9.3.0
+[0.103s] -- The CXX compiler identification is GNU 9.3.0
+[0.108s] -- Check for working C compiler: /usr/bin/cc
+[0.164s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.165s] -- Detecting C compiler ABI info
+[0.222s] -- Detecting C compiler ABI info - done
+[0.233s] -- Detecting C compile features
+[0.233s] -- Detecting C compile features - done
+[0.236s] -- Check for working CXX compiler: /usr/bin/c++
+[0.300s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.301s] -- Detecting CXX compiler ABI info
+[0.368s] -- Detecting CXX compiler ABI info - done
+[0.380s] -- Detecting CXX compile features
+[0.381s] -- Detecting CXX compile features - done
+[0.390s] CMake Error at CMakeLists.txt:13 (find_package):
+[0.390s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.390s]   has asked CMake to find a package configuration file provided by
+[0.390s]   "ament_cmake", but CMake did not find one.
+[0.390s] 
+[0.390s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.390s]   any of the following names:
+[0.391s] 
+[0.391s]     ament_cmakeConfig.cmake
+[0.391s]     ament_cmake-config.cmake
+[0.391s] 
+[0.391s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.391s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.391s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.391s]   has been installed.
+[0.391s] 
+[0.391s] 
+[0.391s] -- Configuring incomplete, errors occurred!
+[0.392s] See also "/home/cl4y3r/VDS/build/chassis_controller/CMakeFiles/CMakeOutput.log".
+[0.392s] See also "/home/cl4y3r/VDS/build/chassis_controller/CMakeFiles/CMakeError.log".
+[0.393s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '1': /usr/bin/cmake /home/cl4y3r/VDS/chassis_controller -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/chassis_controller

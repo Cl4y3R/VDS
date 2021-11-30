@@ -1,0 +1,39 @@
+[0.012s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/cl4y3r/VDS/chassis_controller -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/chassis_controller
+[0.025s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.046s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.046s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.207s] -- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)
+[0.210s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.246s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.251s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.306s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.330s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.392s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.440s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.441s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.442s] -- Looking for pthread.h
+[0.499s] -- Looking for pthread.h - found
+[0.499s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.561s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.561s] -- Looking for pthread_create in pthreads
+[0.613s] -- Looking for pthread_create in pthreads - not found
+[0.613s] -- Looking for pthread_create in pthread
+[0.684s] -- Looking for pthread_create in pthread - found
+[0.685s] -- Found Threads: TRUE  
+[0.824s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.927s] -- Found lgsvl_msgs: 0.0.4 (/opt/ros/foxy/share/lgsvl_msgs/cmake)
+[1.093s] -- Configuring done
+[1.101s] -- Generating done
+[1.102s] -- Build files have been written to: /home/cl4y3r/VDS/build/chassis_controller
+[1.107s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/cl4y3r/VDS/chassis_controller -DCMAKE_INSTALL_PREFIX=/home/cl4y3r/VDS/install/chassis_controller
+[1.110s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[1.145s] [35m[1mScanning dependencies of target chassis_controller[0m
+[1.155s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[1.162s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kchassis_controller/chassis_controller.hpp: No such file or directory
+[1.162s]     1 | #include [01;31m[K"chassis_controller/chassis_controller.hpp"[m[K
+[1.162s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.162s] compilation terminated.
+[1.162s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[1.162s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[1.163s] make: *** [Makefile:141: all] Error 2
+[1.164s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

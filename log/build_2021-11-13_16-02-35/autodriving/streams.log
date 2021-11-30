@@ -1,0 +1,63 @@
+[0.019s] Invoking command in '/home/cl4y3r/VDS/build/autodriving': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8
+[0.069s] [35m[1mScanning dependencies of target main_msg[0m
+[0.101s] [ 50%] [32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o[0m
+[1.979s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/context.hpp:19[m[K,
+[1.979s]                  from [01m[K/opt/ros/foxy/include/rclcpp/contexts/default_context.hpp:18[m[K,
+[1.979s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:32[m[K,
+[1.979s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.980s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.980s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.980s]                  from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+[1.980s]                  from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5[m[K:
+[1.980s] /usr/include/c++/9/functional: In instantiation of ‘[01m[Kstruct std::_Bind_check_arity<void (msgSubPub::*)(double), msgSubPub*>[m[K’:
+[1.980s] [01m[K/usr/include/c++/9/functional:787:12:[m[K   required from ‘[01m[Kstruct std::_Bind_helper<false, void (msgSubPub::*)(double), msgSubPub*>[m[K’
+[1.980s] [01m[K/usr/include/c++/9/functional:808:5:[m[K   required by substitution of ‘[01m[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (msgSubPub::*)(double); _BoundArgs = {msgSubPub*}][m[K’
+[1.980s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:99:91:[m[K   required from here
+[1.980s] [01m[K/usr/include/c++/9/functional:775:7:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: Wrong number of arguments for pointer-to-member
+[1.980s]   774 |       static_assert(_Varargs::[01;31m[Kvalue[m[K
+[1.980s]       |                               [01;31m[K~~~~~[m[K
+[1.980s]   775 | [01;31m[K      ? sizeof...(_BoundArgs) >= _Arity::value + 1[m[K
+[1.981s]       |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.981s]   776 | [01;31m[K      : sizeof...(_BoundArgs) == _Arity::value + 1[m[K,
+[1.981s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.986s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K In constructor ‘[01m[KmsgSubPub::msgSubPub()[m[K’:
+[1.987s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:99:92:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KmsgSubPub::create_wall_timer(std::chrono::milliseconds, std::_Bind_helper<false, void (msgSubPub::*)(double), msgSubPub*>::type)[m[K’
+[1.987s]    99 | _timer(500ms, std::bind(&msgSubPub::publisher_callback, this)[01;31m[K)[m[K;    // 定时执行发布的回调函数
+[1.987s]       |                                                              [01;31m[K^[m[K
+[1.987s] 
+[1.987s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.987s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.987s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.987s]                  from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+[1.987s]                  from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5[m[K:
+[1.988s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:232:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)[m[K’
+[1.988s]   232 |   [01;36m[Kcreate_wall_timer[m[K(
+[1.988s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[1.988s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:232:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.988s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1224[m[K,
+[1.988s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.988s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.988s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.988s]                  from [01m[K/opt/ros/foxy/include/message_filters/subscriber.h:38[m[K,
+[1.988s]                  from [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5[m[K:
+[1.989s] /opt/ros/foxy/include/rclcpp/node_impl.hpp: In substitution of ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr) [with DurationRepT = long int; DurationT = std::ratio<1, 1000>; CallbackT = std::_Bind<void (msgSubPub::*(msgSubPub*))(double)>][m[K’:
+[1.989s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:99:92:[m[K   required from here
+[1.989s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[1.989s]   109 | [01;31m[KNode[m[K::create_wall_timer(
+[1.989s]       | [01;31m[K^~~~[m[K
+[1.989s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[1.989s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:[m[K [01;36m[Knote: [m[Kinvalid template non-type parameter
+[2.192s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:[m[K At global scope:
+[2.192s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:131:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid msgSubPub::publisher_callback()[m[K’
+[2.192s]   131 | void [01;31m[KmsgSubPub[m[K::publisher_callback()
+[2.193s]       |      [01;31m[K^~~~~~~~~[m[K
+[2.193s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:57:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid msgSubPub::publisher_callback(double)[m[K’
+[2.193s]    57 |     void [01;36m[Kpublisher_callback[m[K(double a);
+[2.193s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.193s] [01m[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:43:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass msgSubPub[m[K’ defined here
+[2.193s]    43 | class [01;36m[KmsgSubPub[m[K : public rclcpp::Node, public chassisController
+[2.193s]       |       [01;36m[K^~~~~~~~~[m[K
+[8.279s] make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1
+[8.279s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2
+[8.279s] make: *** [Makefile:141: all] Error 2
+[8.284s] Invoked command in '/home/cl4y3r/VDS/build/autodriving' returned '2': /usr/bin/cmake --build /home/cl4y3r/VDS/build/autodriving -- -j8 -l8

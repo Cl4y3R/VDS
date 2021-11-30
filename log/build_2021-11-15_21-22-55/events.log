@@ -1,0 +1,161 @@
+[0.000000] (-) TimerEvent: {}
+[0.000766] (-) JobUnselected: {'identifier': 'icc'}
+[0.001458] (autodriving) JobQueued: {'identifier': 'autodriving', 'dependencies': OrderedDict()}
+[0.001501] (autodriving) JobStarted: {'identifier': 'autodriving'}
+[0.013563] (autodriving) JobProgress: {'identifier': 'autodriving', 'progress': 'cmake'}
+[0.015251] (autodriving) JobProgress: {'identifier': 'autodriving', 'progress': 'build'}
+[0.015342] (autodriving) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cl4y3r/VDS/build/autodriving', '--', '-j8', '-l8'], 'cwd': '/home/cl4y3r/VDS/build/autodriving', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cl4y3r'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1961'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('HOME', '/home/cl4y3r'), ('OLDPWD', '/home/cl4y3r'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1747'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'cl4y3r'), ('JOURNAL_STREAM', '8:50490'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cl4y3r'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/home/cl4y3r/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu20:@/tmp/.ICE-unix/1989,unix/Ubuntu20:/tmp/.ICE-unix/1989'), ('INVOCATION_ID', '5e1c517a65bc4d94a563be511de7fd15'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6493a3a1_d46d_4e94_9b91_dc18bbf1a215'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cl4y3r/VDS/build/autodriving'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.062817] (autodriving) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target main_msg\x1b[0m\n'}
+[0.091488] (autodriving) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o\x1b[0m\n'}
+[0.098150] (-) TimerEvent: {}
+[0.198539] (-) TimerEvent: {}
+[0.298911] (-) TimerEvent: {}
+[0.399366] (-) TimerEvent: {}
+[0.499726] (-) TimerEvent: {}
+[0.600060] (-) TimerEvent: {}
+[0.700441] (-) TimerEvent: {}
+[0.800830] (-) TimerEvent: {}
+[0.901202] (-) TimerEvent: {}
+[1.001575] (-) TimerEvent: {}
+[1.101954] (-) TimerEvent: {}
+[1.202430] (-) TimerEvent: {}
+[1.302823] (-) TimerEvent: {}
+[1.403262] (-) TimerEvent: {}
+[1.503687] (-) TimerEvent: {}
+[1.604118] (-) TimerEvent: {}
+[1.704637] (-) TimerEvent: {}
+[1.805181] (-) TimerEvent: {}
+[1.905619] (-) TimerEvent: {}
+[1.941642] (autodriving) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/context.hpp:19\x1b[m\x1b[K,\n'}
+[1.941952] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/contexts/default_context.hpp:18\x1b[m\x1b[K,\n'}
+[1.942099] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:32\x1b[m\x1b[K,\n'}
+[1.942196] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.942291] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.942382] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.942472] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/subscriber.h:38\x1b[m\x1b[K,\n'}
+[1.942561] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5\x1b[m\x1b[K:\n'}
+[1.942738] (autodriving) StderrLine: {'line': b'/usr/include/c++/9/functional: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Bind_check_arity<void (msgSubPub::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::Imu_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >&), msgSubPub*>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.942844] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/functional:787:12:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Bind_helper<false, void (msgSubPub::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::Imu_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >&), msgSubPub*>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.942942] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/functional:808:5:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (msgSubPub::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::Imu_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >&); _BoundArgs = {msgSubPub*}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.943049] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:98:91:\x1b[m\x1b[K   required from here\n'}
+[1.943139] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/functional:775:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: Wrong number of arguments for pointer-to-member\n'}
+[1.943228] (autodriving) StderrLine: {'line': b'  774 |       static_assert(_Varargs::\x1b[01;31m\x1b[Kvalue\x1b[m\x1b[K\n'}
+[1.943316] (autodriving) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K~~~~~\x1b[m\x1b[K\n'}
+[1.943404] (autodriving) StderrLine: {'line': b'  775 | \x1b[01;31m\x1b[K      ? sizeof...(_BoundArgs) >= _Arity::value + 1\x1b[m\x1b[K\n'}
+[1.943494] (autodriving) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.943582] (autodriving) StderrLine: {'line': b'  776 | \x1b[01;31m\x1b[K      : sizeof...(_BoundArgs) == _Arity::value + 1\x1b[m\x1b[K,\n'}
+[1.943741] (autodriving) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.949787] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KmsgSubPub::msgSubPub()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.950063] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:98:92:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KmsgSubPub::create_wall_timer(std::chrono::milliseconds, std::_Bind_helper<false, void (msgSubPub::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::Imu_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >&), msgSubPub*>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.950265] (autodriving) StderrLine: {'line': b'   98 | _timer(500ms, std::bind(&msgSubPub::publisher_callback, this)\x1b[01;31m\x1b[K)\x1b[m\x1b[K;    // \xe5\xae\x9a\xe6\x97\xb6\xe6\x89\xa7\xe8\xa1\x8c\xe5\x8f\x91\xe5\xb8\x83\xe7\x9a\x84\xe5\x9b\x9e\xe8\xb0\x83\xe5\x87\xbd\xe6\x95\xb0\n'}
+[1.950370] (autodriving) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.950453] (autodriving) StderrLine: {'line': b'\n'}
+[1.950530] (autodriving) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.950627] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.950709] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.950790] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/subscriber.h:38\x1b[m\x1b[K,\n'}
+[1.950870] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5\x1b[m\x1b[K:\n'}
+[1.950951] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:232:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.951045] (autodriving) StderrLine: {'line': b'  232 |   \x1b[01;36m\x1b[Kcreate_wall_timer\x1b[m\x1b[K(\n'}
+[1.951126] (autodriving) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.951318] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:232:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.951411] (autodriving) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:1224\x1b[m\x1b[K,\n'}
+[1.951494] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.951576] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.951658] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.951742] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/message_filters/subscriber.h:38\x1b[m\x1b[K,\n'}
+[1.951826] (autodriving) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:5\x1b[m\x1b[K:\n'}
+[1.951906] (autodriving) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/node_impl.hpp: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr) [with DurationRepT = long int; DurationT = std::ratio<1, 1000>; CallbackT = std::_Bind<void (msgSubPub::*(msgSubPub*))(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::Imu_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::Detection3DArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::SignalArray_<std::allocator<void> > >&, const std::shared_ptr<const lgsvl_msgs::msg::CanBusData_<std::allocator<void> > >&)>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.952003] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:98:92:\x1b[m\x1b[K   required from here\n'}
+[1.952083] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.952166] (autodriving) StderrLine: {'line': b'  109 | \x1b[01;31m\x1b[KNode\x1b[m\x1b[K::create_wall_timer(\n'}
+[1.952309] (autodriving) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.952414] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.952500] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[2.005679] (-) TimerEvent: {}
+[2.106001] (-) TimerEvent: {}
+[2.163925] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid msgSubPub::publisher_callback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.164221] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:130:93:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kimage_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.164326] (autodriving) StderrLine: {'line': b'  130 | ack(\x1b[01;35m\x1b[Kconst sensor_msgs::msg::CompressedImage::ConstSharedPtr& image_msg\x1b[m\x1b[K, const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg,\n'}
+[2.164415] (autodriving) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.164506] (autodriving) StderrLine: {'line': b'\n'}
+[2.164588] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:131:94:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kgroundturth_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.164679] (autodriving) StderrLine: {'line': b'  131 |     \x1b[01;35m\x1b[Kconst lgsvl_msgs::msg::Detection3DArray::ConstSharedPtr& groundturth_msg\x1b[m\x1b[K, const lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg,\n'}
+[2.164761] (autodriving) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.164842] (autodriving) StderrLine: {'line': b'\n'}
+[2.164921] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:131:163:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksignal_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.165002] (autodriving) StderrLine: {'line': b'  131 | oundturth_msg, \x1b[01;35m\x1b[Kconst lgsvl_msgs::msg::SignalArray::ConstSharedPtr& signal_msg\x1b[m\x1b[K,\n'}
+[2.165082] (autodriving) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.165227] (autodriving) StderrLine: {'line': b'\n'}
+[2.165316] (autodriving) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/autodriving/src/msg_subpub.cpp:132:88:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcanbus_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.165399] (autodriving) StderrLine: {'line': b'  132 |                  \x1b[01;35m\x1b[Kconst lgsvl_msgs::msg::CanBusData::ConstSharedPtr& canbus_msg\x1b[m\x1b[K)\n'}
+[2.165479] (autodriving) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.165559] (autodriving) StderrLine: {'line': b'\n'}
+[2.206097] (-) TimerEvent: {}
+[2.306465] (-) TimerEvent: {}
+[2.406832] (-) TimerEvent: {}
+[2.507194] (-) TimerEvent: {}
+[2.607610] (-) TimerEvent: {}
+[2.708171] (-) TimerEvent: {}
+[2.808545] (-) TimerEvent: {}
+[2.908946] (-) TimerEvent: {}
+[3.009360] (-) TimerEvent: {}
+[3.109838] (-) TimerEvent: {}
+[3.210271] (-) TimerEvent: {}
+[3.310876] (-) TimerEvent: {}
+[3.411192] (-) TimerEvent: {}
+[3.511551] (-) TimerEvent: {}
+[3.611973] (-) TimerEvent: {}
+[3.712399] (-) TimerEvent: {}
+[3.812899] (-) TimerEvent: {}
+[3.913262] (-) TimerEvent: {}
+[4.013683] (-) TimerEvent: {}
+[4.114128] (-) TimerEvent: {}
+[4.214570] (-) TimerEvent: {}
+[4.314958] (-) TimerEvent: {}
+[4.415336] (-) TimerEvent: {}
+[4.515670] (-) TimerEvent: {}
+[4.616036] (-) TimerEvent: {}
+[4.716412] (-) TimerEvent: {}
+[4.816805] (-) TimerEvent: {}
+[4.917218] (-) TimerEvent: {}
+[5.017582] (-) TimerEvent: {}
+[5.117987] (-) TimerEvent: {}
+[5.218388] (-) TimerEvent: {}
+[5.318760] (-) TimerEvent: {}
+[5.419154] (-) TimerEvent: {}
+[5.519527] (-) TimerEvent: {}
+[5.619937] (-) TimerEvent: {}
+[5.720246] (-) TimerEvent: {}
+[5.820669] (-) TimerEvent: {}
+[5.921038] (-) TimerEvent: {}
+[6.021468] (-) TimerEvent: {}
+[6.121907] (-) TimerEvent: {}
+[6.222396] (-) TimerEvent: {}
+[6.322786] (-) TimerEvent: {}
+[6.423168] (-) TimerEvent: {}
+[6.523595] (-) TimerEvent: {}
+[6.623982] (-) TimerEvent: {}
+[6.724336] (-) TimerEvent: {}
+[6.824656] (-) TimerEvent: {}
+[6.925005] (-) TimerEvent: {}
+[7.025429] (-) TimerEvent: {}
+[7.125911] (-) TimerEvent: {}
+[7.226323] (-) TimerEvent: {}
+[7.326704] (-) TimerEvent: {}
+[7.427084] (-) TimerEvent: {}
+[7.527472] (-) TimerEvent: {}
+[7.627845] (-) TimerEvent: {}
+[7.728208] (-) TimerEvent: {}
+[7.828574] (-) TimerEvent: {}
+[7.928939] (-) TimerEvent: {}
+[8.029277] (-) TimerEvent: {}
+[8.129611] (-) TimerEvent: {}
+[8.230008] (-) TimerEvent: {}
+[8.278523] (autodriving) StderrLine: {'line': b'make[2]: *** [CMakeFiles/main_msg.dir/build.make:63: CMakeFiles/main_msg.dir/src/msg_subpub.cpp.o] Error 1\n'}
+[8.278966] (autodriving) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/main_msg.dir/all] Error 2\n'}
+[8.279231] (autodriving) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.281656] (autodriving) CommandEnded: {'returncode': 2}
+[8.323403] (autodriving) JobEnded: {'identifier': 'autodriving', 'rc': 2}
+[8.330129] (-) TimerEvent: {}
+[8.334559] (-) EventReactorShutdown: {}

@@ -1,0 +1,5 @@
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kvoid ChassisController::long_controller(const ConstSharedPtr&)[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:19:86:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kimu_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   19 | troller::long_controller([01;35m[Kconst sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg[m[K){
+      |                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+
