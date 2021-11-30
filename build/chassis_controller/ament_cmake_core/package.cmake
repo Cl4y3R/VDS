@@ -19,3 +19,4 @@ list(APPEND chassis_controller_EXPORT_TAGS "<exec_depend>sensor_msgs</exec_depen
 list(APPEND chassis_controller_EXPORT_TAGS "<exec_depend>lgsvl_msgs</exec_depend>")
 list(APPEND chassis_controller_EXPORT_TAGS "<exec_depend>geometry_msgs</exec_depend>")
 list(APPEND chassis_controller_EXPORT_TAGS "<exec_depend>nav_msgs</exec_depend>")
+list(APPEND chassis_controller_EXPORT_TAGS "<exec_depend>Eigen3</exec_depend>")

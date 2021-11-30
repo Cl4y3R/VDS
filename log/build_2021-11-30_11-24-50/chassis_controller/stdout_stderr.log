@@ -1,0 +1,36 @@
+[35m[1mScanning dependencies of target chassis_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In constructor ‘[01m[KChassisController::ChassisController()[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:18:70:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KChassisController::lateral_controller(double&, double&, double&, double&, double&, int, int, int, int)[m[K’
+   18 |     steer_control=lateral_controller(phi, phi_p, x, x, vx, 0, 0, 0, 0[01;31m[K)[m[K;
+      |                                                                      [01;31m[K^[m[K
+In file included from [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1[m[K:
+[01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:107:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdouble ChassisController::lateral_controller(double, double, double, double, double, double, double, double, double, double)[m[K’
+  107 |         double [01;36m[Klateral_controller[m[K(double yaw, double yaw_rate, double pos_x, double pos_y,
+      |                [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:107:16:[m[K [01;36m[Knote: [m[K  candidate expects 10 arguments, 9 provided
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::longitudinal_controller(double, double)[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:122:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  122 | double ChassisController::longitudinal_controller([01;35m[Kdouble velocity_x[m[K, double acc_x)
+      |                                                   [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:122:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kacc_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  122 | ontroller::longitudinal_controller(double velocity_x, [01;35m[Kdouble acc_x[m[K)
+      |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::lateral_controller(double, double, double, double, double, double, double, double, double, double)[m[K’:
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:143:36:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::Matrix<double, -1, -1>, const Eigen::Matrix<double, -1, -1> >[m[K’ to ‘[01m[Kdouble[m[K’ in initialization
+  143 |     double err_d = [01;31m[Knor.cwiseProduct(distance)[m[K;
+      |                    [01;31m[K~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+      |                                    [01;31m[K|[m[K
+      |                                    [01;31m[Kconst Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::Matrix<double, -1, -1>, const Eigen::Matrix<double, -1, -1> >[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:144:36:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::Matrix<double, -1, -1>, const Eigen::Matrix<double, -1, -1> >[m[K’ to ‘[01m[Kdouble[m[K’ in initialization
+  144 |     double err_s = [01;31m[Ktor.cwiseProduct(distance)[m[K;
+      |                    [01;31m[K~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+      |                                    [01;31m[K|[m[K
+      |                                    [01;31m[Kconst Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::Matrix<double, -1, -1>, const Eigen::Matrix<double, -1, -1> >[m[K
+[01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:144:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerr_s[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  144 |     double [01;35m[Kerr_s[m[K = tor.cwiseProduct(distance);
+      |            [01;35m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

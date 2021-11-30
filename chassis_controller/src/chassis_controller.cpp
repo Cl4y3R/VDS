@@ -15,7 +15,7 @@ ChassisController::ChassisController() : Node("mycontroller"){
     waypoint=waypoint_loader("./maps/pointmap/point.csv");
     for (auto i: waypoint)
         cout<<"X: "<<i[0]<<" Y: "<<i[1]<<endl;
-    steer_control=lateral_controller(phi, phi_p, x, x, vx, 0, 0, 0, 0);
+    steer_control=lateral_controller(phi, phi_p, x, y, vx, vy, 0, 0, 0, 0);
     // publish
     state_pub = this->create_publisher<lgsvl_msgs::msg::VehicleStateData>("/simulator/vehicle_state", 10);
     control_pub = this->create_publisher<lgsvl_msgs::msg::VehicleControlData>("/simulator/vehicle_control", 10);
@@ -130,19 +130,35 @@ double ChassisController::lateral_controller(double yaw, double yaw_rate, double
 
     double target_steer_angle = 0.5;
 
-    //err_d
-    double err_d = 0;
+    
+
+    //Matrix
+    MatrixXd tor(1,2), nor(1,2), distance(2,1);
+    tor(0,0) = cos(theta_ref);
+    tor(0,1) = sin(theta_ref);
+    nor(0,0) = -sin(theta_ref);
+    nor(0,1) = cos(theta_ref);
+    distance(0,0) = pos_x - x_ref;
+    distance(1,0) = pos_y - y_ref;
+    double err_d = nor.cwiseProduct(distance)(0,0);
+    double err_s = tor.cwiseProduct(distance)(0,0);
 
     //err_d_p
-    double err_d_p = velocity_y + velocity_x * cos(yaw - theta_ref);
-    double s_p = velocity_x * cos(yaw-theta_ref) / (1 - kappa_ref * err_d);
+    double err_d_p = velocity_y * cos(yaw - theta_ref) + velocity_x * sin(yaw - theta_ref);
+    double s_p = (velocity_x * cos(yaw - theta_ref) - velocity_y * sin(yaw - theta_ref)) / (1 - kappa_ref * err_d);
 
     //err_phi
-    double err_phi = yaw - theta_ref;
-    double theta_ref_p = 0;
+    double err_phi = sin(yaw_rate - theta_ref);
 
     //err_phi_p
-    double err_phi_p = yaw_rate - theta_ref_p;
+    double err_phi_p = yaw_rate - kappa_ref * s_p;
+
+    //state matrix
+    MatrixXd err_state(4,1);
+    err_state(0,0) = err_d;
+    err_state(0,1) = err_d_p;
+    err_state(0,2) = err_phi;
+    err_state(0,3) = err_phi_p;
     return target_steer_angle;
 }
 

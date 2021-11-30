@@ -25,6 +25,8 @@ sstream
 -
 string
 -
+eigen3/Eigen/Dense
+-
 tf2/LinearMath/Quaternion.h
 /home/cl4y3r/VDS/chassis_controller/include/chassis_controller/tf2/LinearMath/Quaternion.h
 tf2/LinearMath/Matrix3x3.h

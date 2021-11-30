@@ -11,6 +11,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 include_directories("${CMAKE_CURRENT_LIST_DIR}/include/chassis_controller")
+include_directories(${EIGEN3_INCLUDE_DIR})
 
 find_package(ament_cmake REQUIRED)
 find_package(message_filters REQUIRED)
@@ -20,6 +21,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(lgsvl_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(Eigen3 REQUIRED)
 
 add_executable(chassis_controller src/chassis_controller.cpp)
 ament_target_dependencies(chassis_controller message_filters rclcpp std_msgs sensor_msgs lgsvl_msgs geometry_msgs nav_msgs) 

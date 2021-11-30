@@ -7,6 +7,7 @@
 #include <vector>
 #include <sstream>
 #include <string>
+#include <eigen3/Eigen/Dense>
 
 //tf2
 #include "tf2/LinearMath/Quaternion.h"
@@ -34,6 +35,7 @@
 #define PI 3.1415926
 
 using namespace std::chrono_literals;
+using Eigen::MatrixXd;
 using std::string;
 using std::vector;
 using std::ifstream;
@@ -101,6 +103,7 @@ class ChassisController: public rclcpp::Node{
         double quat_to_euler(const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg);
 
         //controller functions
+        vector<double> refence_finder(vector<vector<double>> waypoint_list);
         double lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y, 
                                             double velocity_x, double velocity_y, double x_ref, double y_ref, double theta_ref, double kappa_ref);
         double longitudinal_controller(double velocity, double acc_x);
