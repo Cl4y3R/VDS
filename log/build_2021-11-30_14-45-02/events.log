@@ -1,0 +1,166 @@
+[0.000000] (-) TimerEvent: {}
+[0.000114] (-) JobUnselected: {'identifier': 'autodriving'}
+[0.000140] (-) JobUnselected: {'identifier': 'xcontrol'}
+[0.000161] (chassis_controller) JobQueued: {'identifier': 'chassis_controller', 'dependencies': OrderedDict()}
+[0.000179] (chassis_controller) JobStarted: {'identifier': 'chassis_controller'}
+[0.008567] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'cmake'}
+[0.009750] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'build'}
+[0.010420] (chassis_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cl4y3r/VDS/build/chassis_controller', '--', '-j8', '-l8'], 'cwd': '/home/cl4y3r/VDS/build/chassis_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cl4y3r'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1902'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/cl4y3r'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1690'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8f2491670c41c37bfac8c89c61a58006'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/cl4y3r/VDS/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'cl4y3r'), ('JOURNAL_STREAM', '8:45679'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cl4y3r'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu20:@/tmp/.ICE-unix/1930,unix/Ubuntu20:/tmp/.ICE-unix/1930'), ('INVOCATION_ID', '6f1bff0d416a453eaaceda3222912ada'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ccfbd6b4_0412_47d2_a6bc_0686d758ac22'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.259'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cl4y3r/VDS/install/icc:/home/cl4y3r/VDS/install/chassis_controller:/home/cl4y3r/VDS/install/autodriving:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cl4y3r/VDS/build/chassis_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=8f2491670c41c37bfac8c89c61a58006'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/cl4y3r/VDS/install/icc:/home/cl4y3r/VDS/install/chassis_controller:/home/cl4y3r/VDS/install/autodriving:/opt/ros/foxy')]), 'shell': False}
+[0.049162] (chassis_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target chassis_controller\x1b[0m\n'}
+[0.073663] (chassis_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o\x1b[0m\n'}
+[0.098742] (-) TimerEvent: {}
+[0.199100] (-) TimerEvent: {}
+[0.299380] (-) TimerEvent: {}
+[0.399765] (-) TimerEvent: {}
+[0.500078] (-) TimerEvent: {}
+[0.600400] (-) TimerEvent: {}
+[0.700721] (-) TimerEvent: {}
+[0.800996] (-) TimerEvent: {}
+[0.901307] (-) TimerEvent: {}
+[1.001622] (-) TimerEvent: {}
+[1.101951] (-) TimerEvent: {}
+[1.202299] (-) TimerEvent: {}
+[1.302620] (-) TimerEvent: {}
+[1.402936] (-) TimerEvent: {}
+[1.503265] (-) TimerEvent: {}
+[1.603601] (-) TimerEvent: {}
+[1.703927] (-) TimerEvent: {}
+[1.804262] (-) TimerEvent: {}
+[1.904599] (-) TimerEvent: {}
+[2.004937] (-) TimerEvent: {}
+[2.105268] (-) TimerEvent: {}
+[2.140850] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:122:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 6 of \xe2\x80\x98\x1b[01m\x1b[Kbool ChassisController::riccati_solver(Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd&, double, uint)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[2.141058] (chassis_controller) StderrLine: {'line': b'  122 | bool \x1b[01;31m\x1b[KChassisController\x1b[m\x1b[K::riccati_solver(Eigen::MatrixXd A,Eigen::MatrixXd B,Eigen::MatrixXd Q,\n'}
+[2.141134] (chassis_controller) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.141198] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.141261] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:106:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kbool ChassisController::riccati_solver(Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd&, double, uint)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[2.141325] (chassis_controller) StderrLine: {'line': b'  106 |         bool \x1b[01;36m\x1b[Kriccati_solver\x1b[m\x1b[K(Eigen::MatrixXd A,Eigen::MatrixXd B,Eigen::MatrixXd Q,\n'}
+[2.141387] (chassis_controller) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.141446] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:122:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 7 of \xe2\x80\x98\x1b[01m\x1b[Kbool ChassisController::riccati_solver(Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd&, double, uint)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[2.141516] (chassis_controller) StderrLine: {'line': b'  122 | bool \x1b[01;31m\x1b[KChassisController\x1b[m\x1b[K::riccati_solver(Eigen::MatrixXd A,Eigen::MatrixXd B,Eigen::MatrixXd Q,\n'}
+[2.141576] (chassis_controller) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.141637] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.141695] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:106:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kbool ChassisController::riccati_solver(Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd&, double, uint)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[2.141758] (chassis_controller) StderrLine: {'line': b'  106 |         bool \x1b[01;36m\x1b[Kriccati_solver\x1b[m\x1b[K(Eigen::MatrixXd A,Eigen::MatrixXd B,Eigen::MatrixXd Q,\n'}
+[2.141816] (chassis_controller) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.205398] (-) TimerEvent: {}
+[2.265620] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble ChassisController::longitudinal_controller(double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.265804] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:143:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kvelocity_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.265876] (chassis_controller) StderrLine: {'line': b'  143 | double ChassisController::longitudinal_controller(\x1b[01;35m\x1b[Kdouble velocity_x\x1b[m\x1b[K, double acc_x)\n'}
+[2.265941] (chassis_controller) StderrLine: {'line': b'      |                                                   \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.266003] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:143:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kacc_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.266065] (chassis_controller) StderrLine: {'line': b'  143 | ontroller::longitudinal_controller(double velocity_x, \x1b[01;35m\x1b[Kdouble acc_x\x1b[m\x1b[K)\n'}
+[2.266125] (chassis_controller) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.266185] (chassis_controller) StderrLine: {'line': b'\n'}
+[2.280893] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble ChassisController::lateral_controller(double, double, double, double, double, double, double, double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.281403] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:190:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Klvalue required as left operand of assignment\n'}
+[2.281495] (chassis_controller) StderrLine: {'line': b'  190 |     A(0,1) = \x1b[01;31m\x1b[K1\x1b[m\x1b[K;\n'}
+[2.281564] (chassis_controller) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.281627] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:191:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Klvalue required as left operand of assignment\n'}
+[2.281689] (chassis_controller) StderrLine: {'line': b'  191 |     A(1,1) = (cf + cr) / (m * vx\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.281756] (chassis_controller) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.281817] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:192:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Klvalue required as left operand of assignment\n'}
+[2.281888] (chassis_controller) StderrLine: {'line': b'  192 |     A(1,2) = - (cf + cr) / \x1b[01;31m\x1b[Km\x1b[m\x1b[K;\n'}
+[2.281955] (chassis_controller) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.282015] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:193:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Klvalue required as left operand of assignment\n'}
+[2.282075] (chassis_controller) StderrLine: {'line': b'  193 |     A(1,3) =  (cf * lf - cr * lr) / (m * vx\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.282135] (chassis_controller) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.282195] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:194:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Klvalue required as left operand of assignment\n'}
+[2.282256] (chassis_controller) StderrLine: {'line': b'  194 |     A(2,3) = \x1b[01;31m\x1b[K1\x1b[m\x1b[K;\n'}
+[2.282315] (chassis_controller) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.282374] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:195:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Klvalue required as left operand of assignment\n'}
+[2.282433] (chassis_controller) StderrLine: {'line': b'  195 |     A(3,1) = (cf * lf - cr * lr) / (iz * vx\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.282492] (chassis_controller) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.282551] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:196:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Klvalue required as left operand of assignment\n'}
+[2.282610] (chassis_controller) StderrLine: {'line': b'  196 |     A(3,2) = - (cf * lf - cr * lr) / \x1b[01;31m\x1b[Kiz\x1b[m\x1b[K;\n'}
+[2.282670] (chassis_controller) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.282730] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:197:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Klvalue required as left operand of assignment\n'}
+[2.282789] (chassis_controller) StderrLine: {'line': b'  197 |     A(3,3) = (cf * lf * lf + cr * lr * lr) / (iz * vx\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.282850] (chassis_controller) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.282909] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:198:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Klvalue required as left operand of assignment\n'}
+[2.282969] (chassis_controller) StderrLine: {'line': b'  198 |     B(2,0) = -cf / \x1b[01;31m\x1b[Km\x1b[m\x1b[K;\n'}
+[2.283028] (chassis_controller) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.283087] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:199:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Klvalue required as left operand of assignment\n'}
+[2.283147] (chassis_controller) StderrLine: {'line': b'  199 |     B(4,0) = -cf * lf / \x1b[01;31m\x1b[Kiz\x1b[m\x1b[K;\n'}
+[2.283212] (chassis_controller) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.287324] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:204:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktarget_steer_angle\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.287456] (chassis_controller) StderrLine: {'line': b'  204 |     return \x1b[01;31m\x1b[Ktarget_steer_angle\x1b[m\x1b[K;\n'}
+[2.287527] (chassis_controller) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.288041] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:205:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind non-const lvalue reference of type \xe2\x80\x98\x1b[01m\x1b[KEigen::MatrixXd&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, -1, -1>&\x1b[m\x1b[K\xe2\x80\x99} to an rvalue of type \xe2\x80\x98\x1b[01m\x1b[KEigen::MatrixXd\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, -1, -1>\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.288149] (chassis_controller) StderrLine: {'line': b'  205 |     riccati_solver(A,B,Q,R,\x1b[01;31m\x1b[KK\x1b[m\x1b[K);\n'}
+[2.288221] (chassis_controller) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.288391] (chassis_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:458\x1b[m\x1b[K,\n'}
+[2.288488] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[2.288557] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/include/chassis_controller/chassis_controller.hpp:10\x1b[m\x1b[K,\n'}
+[2.288621] (chassis_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.288682] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:376:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  after user-defined conversion: \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::EigenBase<OtherDerived>&) [with OtherDerived = Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1> >; _Scalar = double; int _Rows = -1; int _Cols = -1; int _Options = 0; int _MaxRows = -1; int _MaxCols = -1]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.288770] (chassis_controller) StderrLine: {'line': b'  376 |     EIGEN_STRONG_INLINE \x1b[01;36m\x1b[KMatrix\x1b[m\x1b[K(const EigenBase<OtherDerived> &other)\n'}
+[2.288834] (chassis_controller) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.288894] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:123:64:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 5 of \xe2\x80\x98\x1b[01m\x1b[Kbool ChassisController::riccati_solver(Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd&, double, uint)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.288963] (chassis_controller) StderrLine: {'line': b'  123 |                           Eigen::MatrixXd R,\x1b[01;36m\x1b[KEigen::MatrixXd &P\x1b[m\x1b[K,const double tolerance = 1.E-5,\n'}
+[2.289028] (chassis_controller) StderrLine: {'line': b'      |                                             \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.289088] (chassis_controller) StderrLine: {'line': b'\n'}
+[2.289148] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:160:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kerr_s\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[2.289213] (chassis_controller) StderrLine: {'line': b'  160 |     double \x1b[01;35m\x1b[Kerr_s\x1b[m\x1b[K = tor.cwiseProduct(distance)(0,0);\n'}
+[2.289272] (chassis_controller) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.305539] (-) TimerEvent: {}
+[2.405855] (-) TimerEvent: {}
+[2.506193] (-) TimerEvent: {}
+[2.606509] (-) TimerEvent: {}
+[2.706834] (-) TimerEvent: {}
+[2.807171] (-) TimerEvent: {}
+[2.907509] (-) TimerEvent: {}
+[3.007836] (-) TimerEvent: {}
+[3.108171] (-) TimerEvent: {}
+[3.208494] (-) TimerEvent: {}
+[3.308831] (-) TimerEvent: {}
+[3.409172] (-) TimerEvent: {}
+[3.509499] (-) TimerEvent: {}
+[3.609832] (-) TimerEvent: {}
+[3.710166] (-) TimerEvent: {}
+[3.810553] (-) TimerEvent: {}
+[3.910885] (-) TimerEvent: {}
+[4.011211] (-) TimerEvent: {}
+[4.111536] (-) TimerEvent: {}
+[4.211867] (-) TimerEvent: {}
+[4.312188] (-) TimerEvent: {}
+[4.412501] (-) TimerEvent: {}
+[4.512824] (-) TimerEvent: {}
+[4.613187] (-) TimerEvent: {}
+[4.713504] (-) TimerEvent: {}
+[4.813821] (-) TimerEvent: {}
+[4.914140] (-) TimerEvent: {}
+[5.014478] (-) TimerEvent: {}
+[5.114792] (-) TimerEvent: {}
+[5.215123] (-) TimerEvent: {}
+[5.315452] (-) TimerEvent: {}
+[5.415774] (-) TimerEvent: {}
+[5.516088] (-) TimerEvent: {}
+[5.616411] (-) TimerEvent: {}
+[5.716721] (-) TimerEvent: {}
+[5.817023] (-) TimerEvent: {}
+[5.917352] (-) TimerEvent: {}
+[6.017679] (-) TimerEvent: {}
+[6.118003] (-) TimerEvent: {}
+[6.218331] (-) TimerEvent: {}
+[6.318668] (-) TimerEvent: {}
+[6.418979] (-) TimerEvent: {}
+[6.519291] (-) TimerEvent: {}
+[6.619622] (-) TimerEvent: {}
+[6.719992] (-) TimerEvent: {}
+[6.820339] (-) TimerEvent: {}
+[6.920634] (-) TimerEvent: {}
+[7.020994] (-) TimerEvent: {}
+[7.121318] (-) TimerEvent: {}
+[7.221642] (-) TimerEvent: {}
+[7.321985] (-) TimerEvent: {}
+[7.422319] (-) TimerEvent: {}
+[7.522656] (-) TimerEvent: {}
+[7.623000] (-) TimerEvent: {}
+[7.723292] (-) TimerEvent: {}
+[7.723587] (chassis_controller) StderrLine: {'line': b'make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1\n'}
+[7.723891] (chassis_controller) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2\n'}
+[7.724105] (chassis_controller) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[7.725782] (chassis_controller) CommandEnded: {'returncode': 2}
+[7.757969] (chassis_controller) JobEnded: {'identifier': 'chassis_controller', 'rc': 2}
+[7.768914] (-) EventReactorShutdown: {}

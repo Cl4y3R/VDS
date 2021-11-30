@@ -1,5 +1,6 @@
 #include <chrono>
 #include <cmath>
+#include <algorithm>
 #include <memory>
 #include <boost/bind.hpp>
 #include <iostream>
@@ -102,9 +103,14 @@ class ChassisController: public rclcpp::Node{
         //quaternion to eular transform
         double quat_to_euler(const sensor_msgs::msg::Imu::ConstSharedPtr& imu_msg);
 
+        //solver function
+        bool riccati_solver(MatrixXd A, MatrixXd B, MatrixXd Q,
+                            MatrixXd R, MatrixXd &P, const double tolerance = 1.E-5,
+                            const uint iter_max = 10000);
+
         //controller functions
-        vector<double> refence_finder(vector<vector<double>> waypoint_list);
+        vector<double> reference_finder(vector<vector<double>> waypoint_list, double pos_x, double pos_y);
         double lateral_controller(double yaw, double yaw_rate, double pos_x, double pos_y, 
-                                            double velocity_x, double velocity_y, double x_ref, double y_ref, double theta_ref, double kappa_ref);
+                                            double velocity_x, double velocity_y);
         double longitudinal_controller(double velocity, double acc_x);
 };

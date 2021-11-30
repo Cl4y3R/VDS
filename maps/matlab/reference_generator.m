@@ -1,0 +1,14 @@
+load("curve.mat");
+x = data.RoadSpecifications.Centers(:,1);
+y = data.RoadSpecifications.Centers(:,2);
+waypoint = [x y];
+refPath = referencePathFrenet(waypoint);
+connector = trajectoryGeneratorFrenet(refPath);
+initstate = [0,0,0,0,0,0];
+finalstate = [150,0,0,0,0,0];
+[frenetGlob, trajGlob] = connect(connector,initstate,finalstate,10);
+show(refPath);
+hold on;
+axis equal;
+plot(trajGlob.Trajectory(:,1),trajGlob.Trajectory(:,2),'k');
+writematrix([trajGlob.Trajectory(:,1),trajGlob.Trajectory(:,2),trajGlob.Trajectory(:,3),trajGlob.Trajectory(:,4)],"curve_map.csv");

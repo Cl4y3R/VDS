@@ -1,0 +1,34 @@
+[0.013s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.050s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.073s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[2.137s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kbool ChassisController::riccati_solver(Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd&, double, uint)[m[K’:
+[2.137s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:130:14:[m[K [01;31m[Kerror: [m[K‘[01m[KAd[m[K’ was not declared in this scope; did you mean ‘[01m[KA[m[K’?
+[2.137s]   130 |     P_next = [01;31m[KAd[m[K.transpose() * P * Ad -
+[2.137s]       |              [01;31m[K^~[m[K
+[2.137s]       |              [32m[KA[m[K
+[2.138s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:131:35:[m[K [01;31m[Kerror: [m[K‘[01m[KBd[m[K’ was not declared in this scope; did you mean ‘[01m[KB[m[K’?
+[2.139s]   131 |              Ad.transpose() * P * [01;31m[KBd[m[K * (R + Bd.transpose() * P * Bd).inverse() * Bd.transpose() * P * Ad + Q;
+[2.139s]       |                                   [01;31m[K^~[m[K
+[2.139s]       |                                   [32m[KB[m[K
+[2.146s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:122:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KA[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.147s]   122 | bool ChassisController::riccati_solver([01;35m[KMatrixXd A[m[K, MatrixXd B, MatrixXd Q,
+[2.147s]       |                                        [01;35m[K~~~~~~~~~^[m[K
+[2.147s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:122:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KB[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.147s]   122 | bool ChassisController::riccati_solver(MatrixXd A, [01;35m[KMatrixXd B[m[K, MatrixXd Q,
+[2.147s]       |                                                    [01;35m[K~~~~~~~~~^[m[K
+[2.147s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::longitudinal_controller(double, double)[m[K’:
+[2.147s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:143:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.147s]   143 | double ChassisController::longitudinal_controller([01;35m[Kdouble velocity_x[m[K, double acc_x)
+[2.147s]       |                                                   [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[2.147s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:143:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kacc_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.147s]   143 | ontroller::longitudinal_controller(double velocity_x, [01;35m[Kdouble acc_x[m[K)
+[2.147s]       |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+[2.147s] 
+[2.310s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::lateral_controller(double, double, double, double, double, double, double, double, double, double)[m[K’:
+[2.311s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:160:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerr_s[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.311s]   160 |     double [01;35m[Kerr_s[m[K = (tor * distance)(0,0);
+[2.311s]       |            [01;35m[K^~~~~[m[K
+[7.721s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[7.721s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[7.721s] make: *** [Makefile:141: all] Error 2
+[7.723s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8

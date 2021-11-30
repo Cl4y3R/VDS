@@ -104,3 +104,7 @@ yaw, theta_ref, kappa_ref
 
 ### 2021.11.26
 成功使用tf2将quaternion转换为euler获得yaw。目前车辆数据方面已经完备，下面需要计算theta_ref和kappa_ref了。
+
+### 2021.11.30
+完成了lqr算法框架，可以运行但是结果不对，而且运算效率比较低。发现之前读取的point路径是路的形状，因此不能直接读取应用！！现在用matlab  
+的工具来完成轨迹规划！

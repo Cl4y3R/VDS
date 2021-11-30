@@ -1,0 +1,22 @@
+[0.012s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.049s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.073s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[2.219s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::longitudinal_controller(double, double)[m[K’:
+[2.219s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:143:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.219s]   143 | double ChassisController::longitudinal_controller([01;35m[Kdouble velocity_x[m[K, double acc_x)
+[2.219s]       |                                                   [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[2.219s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:143:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kacc_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.219s]   143 | ontroller::longitudinal_controller(double velocity_x, [01;35m[Kdouble acc_x[m[K)
+[2.219s]       |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+[2.219s] 
+[2.240s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::lateral_controller(double, double, double, double, double, double, double, double, double, double)[m[K’:
+[2.241s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:204:12:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_steer_angle[m[K’ was not declared in this scope
+[2.241s]   204 |     return [01;31m[Ktarget_steer_angle[m[K;
+[2.241s]       |            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.241s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:160:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerr_s[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.241s]   160 |     double [01;35m[Kerr_s[m[K = tor.cwiseProduct(distance)(0,0);
+[2.241s]       |            [01;35m[K^~~~~[m[K
+[7.605s] make[2]: *** [CMakeFiles/chassis_controller.dir/build.make:63: CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o] Error 1
+[7.605s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/chassis_controller.dir/all] Error 2
+[7.605s] make: *** [Makefile:141: all] Error 2
+[7.607s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
