@@ -1,0 +1,285 @@
+[0.000000] (-) TimerEvent: {}
+[0.000232] (-) JobUnselected: {'identifier': 'autodriving'}
+[0.000321] (-) JobUnselected: {'identifier': 'xcontrol'}
+[0.000361] (chassis_controller) JobQueued: {'identifier': 'chassis_controller', 'dependencies': OrderedDict()}
+[0.002476] (chassis_controller) JobStarted: {'identifier': 'chassis_controller'}
+[0.017604] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'cmake'}
+[0.018689] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'build'}
+[0.019940] (chassis_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cl4y3r/VDS/build/chassis_controller', '--', '-j8', '-l8'], 'cwd': '/home/cl4y3r/VDS/build/chassis_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cl4y3r'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1916'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/cl4y3r'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1706'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/cl4y3r/VDS/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'cl4y3r'), ('JOURNAL_STREAM', '8:43894'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cl4y3r'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu20:@/tmp/.ICE-unix/1944,unix/Ubuntu20:/tmp/.ICE-unix/1944'), ('INVOCATION_ID', '0e530c169bce44299eaaa57ecd2d776d'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/af90b5c4_1a13_4818_b5af_f68e96a461d1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.86'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cl4y3r/VDS/install/icc:/home/cl4y3r/VDS/install/chassis_controller:/home/cl4y3r/VDS/install/autodriving:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cl4y3r/VDS/build/chassis_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/cl4y3r/VDS/install/icc:/home/cl4y3r/VDS/install/chassis_controller:/home/cl4y3r/VDS/install/autodriving:/opt/ros/foxy')]), 'shell': False}
+[0.085978] (chassis_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target chassis_controller\x1b[0m\n'}
+[0.099692] (-) TimerEvent: {}
+[0.128177] (chassis_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o\x1b[0m\n'}
+[0.199834] (-) TimerEvent: {}
+[0.300217] (-) TimerEvent: {}
+[0.400578] (-) TimerEvent: {}
+[0.500941] (-) TimerEvent: {}
+[0.601298] (-) TimerEvent: {}
+[0.701712] (-) TimerEvent: {}
+[0.802034] (-) TimerEvent: {}
+[0.902379] (-) TimerEvent: {}
+[1.002700] (-) TimerEvent: {}
+[1.103068] (-) TimerEvent: {}
+[1.203485] (-) TimerEvent: {}
+[1.303843] (-) TimerEvent: {}
+[1.404215] (-) TimerEvent: {}
+[1.504599] (-) TimerEvent: {}
+[1.604978] (-) TimerEvent: {}
+[1.705697] (-) TimerEvent: {}
+[1.806108] (-) TimerEvent: {}
+[1.906483] (-) TimerEvent: {}
+[2.006827] (-) TimerEvent: {}
+[2.107269] (-) TimerEvent: {}
+[2.207643] (-) TimerEvent: {}
+[2.307995] (-) TimerEvent: {}
+[2.408359] (-) TimerEvent: {}
+[2.508724] (-) TimerEvent: {}
+[2.609142] (-) TimerEvent: {}
+[2.709493] (-) TimerEvent: {}
+[2.809932] (-) TimerEvent: {}
+[2.910305] (-) TimerEvent: {}
+[3.010683] (-) TimerEvent: {}
+[3.111051] (-) TimerEvent: {}
+[3.211396] (-) TimerEvent: {}
+[3.242323] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool ChassisController::riccati_solver(Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd&, double, uint)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.242936] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:152:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kdiff\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[3.243039] (chassis_controller) StderrLine: {'line': b'  152 |     double \x1b[01;35m\x1b[Kdiff\x1b[m\x1b[K;\n'}
+[3.243120] (chassis_controller) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.243195] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:148:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktolerance\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.243274] (chassis_controller) StderrLine: {'line': b'  148 |                       MatrixXd R, MatrixXd &P,\x1b[01;35m\x1b[Kconst double tolerance\x1b[m\x1b[K,\n'}
+[3.243347] (chassis_controller) StderrLine: {'line': b'      |                                               \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.243420] (chassis_controller) StderrLine: {'line': b'\n'}
+[3.243492] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble ChassisController::longitudinal_controller(double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.243575] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:162:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kvelocity_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.243648] (chassis_controller) StderrLine: {'line': b'  162 |  ChassisController::longitudinal_controller(\x1b[01;35m\x1b[Kdouble velocity_x\x1b[m\x1b[K, double acc_x)\n'}
+[3.243723] (chassis_controller) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.243793] (chassis_controller) StderrLine: {'line': b'\n'}
+[3.243864] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:162:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kacc_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.243936] (chassis_controller) StderrLine: {'line': b'  162 | :longitudinal_controller(double velocity_x, \x1b[01;35m\x1b[Kdouble acc_x\x1b[m\x1b[K)\n'}
+[3.244008] (chassis_controller) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[3.244080] (chassis_controller) StderrLine: {'line': b'\n'}
+[3.311544] (-) TimerEvent: {}
+[3.378976] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble ChassisController::lateral_controller(double, double, double, double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.379194] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:186:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kerr_s\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[3.379291] (chassis_controller) StderrLine: {'line': b'  186 |     double \x1b[01;35m\x1b[Kerr_s\x1b[m\x1b[K = (tor * distance)(0,0);\n'}
+[3.379375] (chassis_controller) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.411682] (-) TimerEvent: {}
+[3.512045] (-) TimerEvent: {}
+[3.612387] (-) TimerEvent: {}
+[3.712748] (-) TimerEvent: {}
+[3.813106] (-) TimerEvent: {}
+[3.913467] (-) TimerEvent: {}
+[4.013901] (-) TimerEvent: {}
+[4.114262] (-) TimerEvent: {}
+[4.214675] (-) TimerEvent: {}
+[4.315034] (-) TimerEvent: {}
+[4.415387] (-) TimerEvent: {}
+[4.515744] (-) TimerEvent: {}
+[4.616243] (-) TimerEvent: {}
+[4.716754] (-) TimerEvent: {}
+[4.817178] (-) TimerEvent: {}
+[4.917613] (-) TimerEvent: {}
+[5.017998] (-) TimerEvent: {}
+[5.118396] (-) TimerEvent: {}
+[5.218943] (-) TimerEvent: {}
+[5.319423] (-) TimerEvent: {}
+[5.419820] (-) TimerEvent: {}
+[5.520222] (-) TimerEvent: {}
+[5.620676] (-) TimerEvent: {}
+[5.721023] (-) TimerEvent: {}
+[5.821375] (-) TimerEvent: {}
+[5.921750] (-) TimerEvent: {}
+[6.022137] (-) TimerEvent: {}
+[6.122515] (-) TimerEvent: {}
+[6.222882] (-) TimerEvent: {}
+[6.323244] (-) TimerEvent: {}
+[6.423584] (-) TimerEvent: {}
+[6.523930] (-) TimerEvent: {}
+[6.624316] (-) TimerEvent: {}
+[6.724691] (-) TimerEvent: {}
+[6.825014] (-) TimerEvent: {}
+[6.925452] (-) TimerEvent: {}
+[7.026002] (-) TimerEvent: {}
+[7.126376] (-) TimerEvent: {}
+[7.226737] (-) TimerEvent: {}
+[7.327087] (-) TimerEvent: {}
+[7.427442] (-) TimerEvent: {}
+[7.527820] (-) TimerEvent: {}
+[7.628182] (-) TimerEvent: {}
+[7.728552] (-) TimerEvent: {}
+[7.828910] (-) TimerEvent: {}
+[7.929265] (-) TimerEvent: {}
+[8.029625] (-) TimerEvent: {}
+[8.129974] (-) TimerEvent: {}
+[8.230325] (-) TimerEvent: {}
+[8.330679] (-) TimerEvent: {}
+[8.431042] (-) TimerEvent: {}
+[8.531408] (-) TimerEvent: {}
+[8.631744] (-) TimerEvent: {}
+[8.732094] (-) TimerEvent: {}
+[8.832447] (-) TimerEvent: {}
+[8.932788] (-) TimerEvent: {}
+[9.033173] (-) TimerEvent: {}
+[9.133516] (-) TimerEvent: {}
+[9.233934] (-) TimerEvent: {}
+[9.334377] (-) TimerEvent: {}
+[9.434782] (-) TimerEvent: {}
+[9.535183] (-) TimerEvent: {}
+[9.635727] (-) TimerEvent: {}
+[9.736168] (-) TimerEvent: {}
+[9.836585] (-) TimerEvent: {}
+[9.937014] (-) TimerEvent: {}
+[10.037383] (-) TimerEvent: {}
+[10.137854] (-) TimerEvent: {}
+[10.238297] (-) TimerEvent: {}
+[10.338659] (-) TimerEvent: {}
+[10.439024] (-) TimerEvent: {}
+[10.539374] (-) TimerEvent: {}
+[10.639750] (-) TimerEvent: {}
+[10.740050] (-) TimerEvent: {}
+[10.840410] (-) TimerEvent: {}
+[10.940765] (-) TimerEvent: {}
+[11.041117] (-) TimerEvent: {}
+[11.141475] (-) TimerEvent: {}
+[11.241911] (-) TimerEvent: {}
+[11.342310] (-) TimerEvent: {}
+[11.442701] (-) TimerEvent: {}
+[11.543085] (-) TimerEvent: {}
+[11.643486] (-) TimerEvent: {}
+[11.743925] (-) TimerEvent: {}
+[11.844267] (-) TimerEvent: {}
+[11.944627] (-) TimerEvent: {}
+[12.044975] (-) TimerEvent: {}
+[12.145322] (-) TimerEvent: {}
+[12.245707] (-) TimerEvent: {}
+[12.346057] (-) TimerEvent: {}
+[12.446404] (-) TimerEvent: {}
+[12.546685] (-) TimerEvent: {}
+[12.647042] (-) TimerEvent: {}
+[12.747439] (-) TimerEvent: {}
+[12.847790] (-) TimerEvent: {}
+[12.948142] (-) TimerEvent: {}
+[13.048492] (-) TimerEvent: {}
+[13.148867] (-) TimerEvent: {}
+[13.249223] (-) TimerEvent: {}
+[13.349643] (-) TimerEvent: {}
+[13.450024] (-) TimerEvent: {}
+[13.550329] (-) TimerEvent: {}
+[13.650640] (-) TimerEvent: {}
+[13.750992] (-) TimerEvent: {}
+[13.851358] (-) TimerEvent: {}
+[13.951761] (-) TimerEvent: {}
+[14.052261] (-) TimerEvent: {}
+[14.152723] (-) TimerEvent: {}
+[14.253155] (-) TimerEvent: {}
+[14.353599] (-) TimerEvent: {}
+[14.454006] (-) TimerEvent: {}
+[14.554453] (-) TimerEvent: {}
+[14.654917] (-) TimerEvent: {}
+[14.755328] (-) TimerEvent: {}
+[14.855752] (-) TimerEvent: {}
+[14.956162] (-) TimerEvent: {}
+[15.056545] (-) TimerEvent: {}
+[15.156906] (-) TimerEvent: {}
+[15.257251] (-) TimerEvent: {}
+[15.357594] (-) TimerEvent: {}
+[15.457932] (-) TimerEvent: {}
+[15.558279] (-) TimerEvent: {}
+[15.658629] (-) TimerEvent: {}
+[15.758967] (-) TimerEvent: {}
+[15.859375] (-) TimerEvent: {}
+[15.959731] (-) TimerEvent: {}
+[16.060068] (-) TimerEvent: {}
+[16.160416] (-) TimerEvent: {}
+[16.260782] (-) TimerEvent: {}
+[16.361169] (-) TimerEvent: {}
+[16.461500] (-) TimerEvent: {}
+[16.562021] (-) TimerEvent: {}
+[16.662384] (-) TimerEvent: {}
+[16.762744] (-) TimerEvent: {}
+[16.863092] (-) TimerEvent: {}
+[16.963451] (-) TimerEvent: {}
+[17.063797] (-) TimerEvent: {}
+[17.164160] (-) TimerEvent: {}
+[17.264509] (-) TimerEvent: {}
+[17.364854] (-) TimerEvent: {}
+[17.465208] (-) TimerEvent: {}
+[17.565565] (-) TimerEvent: {}
+[17.665964] (-) TimerEvent: {}
+[17.766309] (-) TimerEvent: {}
+[17.866658] (-) TimerEvent: {}
+[17.967061] (-) TimerEvent: {}
+[18.067404] (-) TimerEvent: {}
+[18.167724] (-) TimerEvent: {}
+[18.268071] (-) TimerEvent: {}
+[18.368403] (-) TimerEvent: {}
+[18.468758] (-) TimerEvent: {}
+[18.569166] (-) TimerEvent: {}
+[18.669509] (-) TimerEvent: {}
+[18.770117] (-) TimerEvent: {}
+[18.870678] (-) TimerEvent: {}
+[18.971258] (-) TimerEvent: {}
+[19.071677] (-) TimerEvent: {}
+[19.172064] (-) TimerEvent: {}
+[19.272518] (-) TimerEvent: {}
+[19.372920] (-) TimerEvent: {}
+[19.473361] (-) TimerEvent: {}
+[19.573761] (-) TimerEvent: {}
+[19.674207] (-) TimerEvent: {}
+[19.774563] (-) TimerEvent: {}
+[19.874914] (-) TimerEvent: {}
+[19.975350] (-) TimerEvent: {}
+[20.075686] (-) TimerEvent: {}
+[20.176046] (-) TimerEvent: {}
+[20.276411] (-) TimerEvent: {}
+[20.376826] (-) TimerEvent: {}
+[20.477164] (-) TimerEvent: {}
+[20.577567] (-) TimerEvent: {}
+[20.678011] (-) TimerEvent: {}
+[20.778337] (-) TimerEvent: {}
+[20.878690] (-) TimerEvent: {}
+[20.979054] (-) TimerEvent: {}
+[21.079397] (-) TimerEvent: {}
+[21.179754] (-) TimerEvent: {}
+[21.280073] (-) TimerEvent: {}
+[21.380443] (-) TimerEvent: {}
+[21.480811] (-) TimerEvent: {}
+[21.581165] (-) TimerEvent: {}
+[21.681519] (-) TimerEvent: {}
+[21.781911] (-) TimerEvent: {}
+[21.829211] (chassis_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable chassis_controller\x1b[0m\n'}
+[21.882046] (-) TimerEvent: {}
+[21.982445] (-) TimerEvent: {}
+[22.082922] (-) TimerEvent: {}
+[22.183366] (-) TimerEvent: {}
+[22.283742] (-) TimerEvent: {}
+[22.384082] (-) TimerEvent: {}
+[22.484427] (-) TimerEvent: {}
+[22.584786] (-) TimerEvent: {}
+[22.685147] (-) TimerEvent: {}
+[22.779296] (chassis_controller) StdoutLine: {'line': b'[100%] Built target chassis_controller\n'}
+[22.785263] (-) TimerEvent: {}
+[22.792451] (chassis_controller) CommandEnded: {'returncode': 0}
+[22.820086] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'install'}
+[22.836997] (chassis_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cl4y3r/VDS/build/chassis_controller'], 'cwd': '/home/cl4y3r/VDS/build/chassis_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cl4y3r'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1916'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/cl4y3r'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1706'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/cl4y3r/VDS/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'cl4y3r'), ('JOURNAL_STREAM', '8:43894'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cl4y3r'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Ubuntu20:@/tmp/.ICE-unix/1944,unix/Ubuntu20:/tmp/.ICE-unix/1944'), ('INVOCATION_ID', '0e530c169bce44299eaaa57ecd2d776d'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/af90b5c4_1a13_4818_b5af_f68e96a461d1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.86'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cl4y3r/VDS/install/icc:/home/cl4y3r/VDS/install/chassis_controller:/home/cl4y3r/VDS/install/autodriving:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cl4y3r/VDS/build/chassis_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/cl4y3r/VDS/install/icc:/home/cl4y3r/VDS/install/chassis_controller:/home/cl4y3r/VDS/install/autodriving:/opt/ros/foxy')]), 'shell': False}
+[22.851086] (chassis_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.851440] (chassis_controller) StdoutLine: {'line': b'-- Installing: /home/cl4y3r/VDS/install/chassis_controller/lib/chassis_controller/chassis_controller\n'}
+[22.859527] (chassis_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/cl4y3r/VDS/install/chassis_controller/lib/chassis_controller/chassis_controller" to ""\n'}
+[22.860118] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/package_run_dependencies/chassis_controller\n'}
+[22.860772] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/parent_prefix_path/chassis_controller\n'}
+[22.860923] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.sh\n'}
+[22.861094] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.dsv\n'}
+[22.861220] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/path.sh\n'}
+[22.861341] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/path.dsv\n'}
+[22.861458] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.bash\n'}
+[22.861591] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.sh\n'}
+[22.861806] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.zsh\n'}
+[22.861910] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.dsv\n'}
+[22.862011] (chassis_controller) StdoutLine: {'line': b'-- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.dsv\n'}
+[22.862114] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/packages/chassis_controller\n'}
+[22.862228] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig.cmake\n'}
+[22.862333] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig-version.cmake\n'}
+[22.862437] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.xml\n'}
+[22.863593] (chassis_controller) CommandEnded: {'returncode': 0}
+[22.885454] (-) TimerEvent: {}
+[22.919362] (chassis_controller) JobEnded: {'identifier': 'chassis_controller', 'rc': 0}
+[22.920327] (-) EventReactorShutdown: {}

@@ -105,8 +105,8 @@ class ChassisController: public rclcpp::Node{
 
         //solver function
         bool riccati_solver(MatrixXd A, MatrixXd B, MatrixXd Q,
-                            MatrixXd R, MatrixXd &P, const double tolerance = 1.E-5,
-                            const uint iter_max = 10000);
+                            MatrixXd R, MatrixXd &P, const double tolerance = 1.E-2,
+                            const uint iter_max = 500);
 
         //controller functions
         vector<double> reference_finder(vector<vector<double>> waypoint_list, double pos_x, double pos_y);

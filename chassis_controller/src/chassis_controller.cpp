@@ -56,7 +56,7 @@ void ChassisController::control_publisher()
     steer_control=lateral_controller(phi, phi_p, x, y, vx, vy);
     auto control = lgsvl_msgs::msg::VehicleControlData();
     control.target_gear = lgsvl_msgs::msg::VehicleControlData::GEAR_DRIVE; //gear
-    control.acceleration_pct = 0;  //acc in percentage
+    control.acceleration_pct = 0.3;  //acc in percentage
     control.braking_pct = 0; //brake in percentage
     control.target_wheel_angle = steer_control; //steering angle in rad
     control.target_wheel_angular_rate = 0; //steering angle velocity in rad/s
@@ -98,7 +98,7 @@ vector<vector<double>> ChassisController::waypoint_loader(string filename)
         stheta>>waypoint_theta;
         skappa>>waypoint_kappa;
         x_y_theta_kappa.push_back(waypoint_x);
-        x_y_theta_kappa.push_back(waypoint_y);
+        x_y_theta_kappa.push_back(waypoint_y);//be careful with the sign
         x_y_theta_kappa.push_back(waypoint_theta);
         x_y_theta_kappa.push_back(waypoint_kappa);
         waypoint_container.push_back(x_y_theta_kappa);
@@ -140,7 +140,7 @@ vector<double> ChassisController::reference_finder(vector<vector<double>> waypoi
     final_point.push_back(waypoint_list[index][1]);//y
     final_point.push_back(waypoint_list[index][2]);//theta
     final_point.push_back(waypoint_list[index][3]);//kappa
-
+    cout<<"Index: "<<index<<endl;
     return final_point;
 }
 
@@ -156,7 +156,7 @@ bool ChassisController::riccati_solver(MatrixXd A, MatrixXd B, MatrixXd Q,
     diff = fabs((P_next - P).maxCoeff());
     P = P_next;
     }
-    return false;
+    return true;
 }
 
 double ChassisController::longitudinal_controller(double velocity_x, double acc_x)
@@ -172,6 +172,8 @@ double ChassisController::lateral_controller(double yaw, double yaw_rate, double
     double y_ref = reference_pos[1];
     double theta_ref = reference_pos[2];
     double kappa_ref = reference_pos[3];
+    cout<<"X_ref: "<<x_ref<<" Pos_X: "<<pos_x<<endl;
+    cout<<"Y_ref: "<<y_ref<<" Pos_Y: "<<pos_y<<endl;
     //Matrix
     MatrixXd tor(1,2), nor(1,2), distance(2,1);
     tor(0,0) = cos(theta_ref);
@@ -197,6 +199,7 @@ double ChassisController::lateral_controller(double yaw, double yaw_rate, double
     cout<<"err_d_p "<<err_d_p<<endl;
     cout<<"err_phi "<<err_phi<<endl;
     cout<<"err_phi_p "<<err_phi_p<<endl;
+    cout<<"Yaw: "<<yaw<<endl;
     //state matrix
     MatrixXd err_state(4,1);
     err_state(0,0) = err_d;
@@ -205,12 +208,12 @@ double ChassisController::lateral_controller(double yaw, double yaw_rate, double
     err_state(3,0) = err_phi_p;
 
     //vehicle parameters
-    double cf = -10000;
-    double cr = -10000;
-    double lf = 1.6;
-    double lr = 1.4;
-    double m = 1400;
-    double iz = 2000;
+    double cf = -155494.663;
+    double cr = -155494.663;
+    double lf = 1.3;
+    double lr = 1.5;
+    double m = 2080;
+    double iz = 2080;
     //dynamic matrix
     MatrixXd A = MatrixXd::Zero(4,4);
     MatrixXd B = MatrixXd::Zero(4,1);
@@ -229,15 +232,15 @@ double ChassisController::lateral_controller(double yaw, double yaw_rate, double
     const double dt = 0.01;
     MatrixXd I = MatrixXd::Identity(4, 4);
     MatrixXd Ad;
-    Ad = (I + 0.5 * dt * A) * (I - 0.5 * dt * A).inverse();
+    Ad = (I - 0.5 * dt * A).inverse() * (I + 0.5 * dt * A);
     MatrixXd Bd;
     Bd = B * dt;
     //solve lqr
     MatrixXd Q = MatrixXd::Zero(4,4);
-    Q(0,0) = 100;
-    Q(1,1) = 10;
-    Q(2,2) = 100;
-    Q(3,3) = 10;
+    Q(0,0) = 10;
+    Q(1,1) = 0;
+    Q(2,2) = 1;
+    Q(3,3) = 0;
     MatrixXd R = MatrixXd::Zero(1,1);
     R(0,0) = 1;
     MatrixXd K = MatrixXd::Zero(1,4);
@@ -245,11 +248,7 @@ double ChassisController::lateral_controller(double yaw, double yaw_rate, double
     {   
         riccati_solver(A,B,Q,R,P);
         K = (R + Bd.transpose() * P * Bd).inverse()* Bd.transpose() * P * Ad;
-        //cout<< "K calc "<<K(0,0)<<" "<<K(0,1)<<endl;
     }
-
-    //cout<<"K "<<K(0,0)<<endl;
-    //double target_steer_angle = 0.5;
     double target_steer_angle = (-1 * K * err_state)(0,0);
     cout<<"steer control angle "<<target_steer_angle<<endl;
     return target_steer_angle;
