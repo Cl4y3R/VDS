@@ -1,1 +1,13 @@
-
+*.*
+!*.pdf
+!*.cc
+!*.cpp
+!*.h
+!*.hpp
+!*.txt
+!*.md
+!*.gitignore
+!*.csv
+!*.xml
+!*.m
+!*.xodr
