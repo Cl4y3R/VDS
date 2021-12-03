@@ -1,0 +1,45 @@
+[0.013s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[0.088s] [35m[1mScanning dependencies of target chassis_controller[0m
+[0.118s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controller.dir/src/chassis_controller.cpp.o[0m
+[2.327s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kbool ChassisController::riccati_solver(Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd, Eigen::MatrixXd&, double, uint)[m[K’:
+[2.327s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:152:12:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kdiff[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[2.327s]   152 |     double [01;35m[Kdiff[m[K;
+[2.327s]       |            [01;35m[K^~~~[m[K
+[2.327s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:148:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktolerance[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.327s]   148 |                             MatrixXd R, MatrixXd &P,[01;35m[Kconst double tolerance[m[K,
+[2.327s]       |                                                     [01;35m[K~~~~~~~~~~~~~^~~~~~~~~[m[K
+[2.327s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::longitudinal_controller(double, double)[m[K’:
+[2.328s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:162:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.328s]   162 | double ChassisController::longitudinal_controller([01;35m[Kdouble velocity_x[m[K, double acc_x)
+[2.328s]       |                                                   [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[2.328s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:162:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kacc_x[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.328s]   162 | ontroller::longitudinal_controller(double velocity_x, [01;35m[Kdouble acc_x[m[K)
+[2.328s]       |                                                       [01;35m[K~~~~~~~^~~~~[m[K
+[2.328s] 
+[2.430s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kdouble ChassisController::lateral_controller(double, double, double, double, double, double)[m[K’:
+[2.430s] [01m[K/home/cl4y3r/VDS/chassis_controller/src/chassis_controller.cpp:186:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerr_s[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.430s]   186 |     double [01;35m[Kerr_s[m[K = (tor * distance)(0,0);
+[2.430s]       |            [01;35m[K^~~~~[m[K
+[15.470s] [100%] [32m[1mLinking CXX executable chassis_controller[0m
+[16.219s] [100%] Built target chassis_controller
+[16.229s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/cl4y3r/VDS/build/chassis_controller -- -j8 -l8
+[16.257s] Invoking command in '/home/cl4y3r/VDS/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/chassis_controller
+[16.268s] -- Install configuration: ""
+[16.268s] -- Installing: /home/cl4y3r/VDS/install/chassis_controller/lib/chassis_controller/chassis_controller
+[16.272s] -- Set runtime path of "/home/cl4y3r/VDS/install/chassis_controller/lib/chassis_controller/chassis_controller" to ""
+[16.272s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/package_run_dependencies/chassis_controller
+[16.273s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/parent_prefix_path/chassis_controller
+[16.273s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.sh
+[16.273s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.dsv
+[16.273s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/path.sh
+[16.273s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/environment/path.dsv
+[16.273s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.bash
+[16.273s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.sh
+[16.273s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.zsh
+[16.273s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/local_setup.dsv
+[16.273s] -- Installing: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.dsv
+[16.273s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/ament_index/resource_index/packages/chassis_controller
+[16.273s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig.cmake
+[16.273s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig-version.cmake
+[16.273s] -- Up-to-date: /home/cl4y3r/VDS/install/chassis_controller/share/chassis_controller/package.xml
+[16.275s] Invoked command in '/home/cl4y3r/VDS/build/chassis_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/cl4y3r/VDS/build/chassis_controller
