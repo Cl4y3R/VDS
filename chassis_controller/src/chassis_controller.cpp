@@ -55,7 +55,7 @@ void ChassisController::control_publisher()
     steer_control=lateral_controller(phi, phi_p, x, y, vx, vy);
     auto control = lgsvl_msgs::msg::VehicleControlData();
     control.target_gear = lgsvl_msgs::msg::VehicleControlData::GEAR_DRIVE; //gear
-    control.acceleration_pct = 0.1;  //acc in percentage
+    control.acceleration_pct = 0.05;  //acc in percentage
     control.braking_pct = 0; //brake in percentage
     control.target_wheel_angle = steer_control; //steering angle in rad
     control.target_wheel_angular_rate = 0; //steering angle velocity in rad/s
